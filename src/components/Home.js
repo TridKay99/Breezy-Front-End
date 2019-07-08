@@ -1,10 +1,11 @@
 import React from 'react';
+import Maps from './MapContainer'
+import '../App.css'
 
 const Home = () => {
     return (
-        <h1>This is the Home page!!</h1>
+        <Maps />
     )
-
 }
 
 export default Home;
