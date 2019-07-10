@@ -1,22 +1,36 @@
 import React from 'react';
 import Maps from './MapContainer';
 import '../App.css';
-import Clothes from './trialClothes';
+import Clothes from './Clothes';
+
 
 
 const Home = () => {
 return (
+  
   <div className="MainContainer">
     <div className="navbar-c">
-      <div className="navbar">
-        
-      </div>
+      <ul className="navbar">
+        <div className="title">
+          <li>Name</li>
+          <li>Logo</li>
+        </div>
+        <div className="content">
+          <li>How It Works</li>
+          <li>Pricing</li>
+          <li>FAQ</li>
+          <li>Contact</li>
+        </div>
+      </ul>
     </div>
 
-    <>
-      <Maps />
-      <Clothes />
-    </>
+      
+      <div className="map-container">
+      <>
+        <Maps />
+        {/* <Clothes /> */}
+      </>
+      </div>
 
   </div>
   )
