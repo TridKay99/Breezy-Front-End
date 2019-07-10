@@ -13,9 +13,9 @@
 
 .navbar-c {
     /* background-color: blue; */
-    border: solid black 10px;
+    /* border: solid black 1px; */
     height: 10rem;
-    width: 100rem;
+    width: 100vw;
     display: flex;
     /* flex-direction: */
     /* justify-content: space-evenly; */
@@ -67,3 +67,18 @@ li {
     align-items: center;
 
 }
+
+
+.parallax {
+    /* The image used */
+    background-image: url("image.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
