@@ -4,7 +4,6 @@ import '../App.css';
 import Clothes from './Clothes';
 
 
-
 const Home = () => {
 return (
   
