@@ -9,7 +9,7 @@ return (
   <div className="MainContainer">
     <div className="navbar-c">
       <div className="navbar">
-       
+        
       </div>
     </div>
 

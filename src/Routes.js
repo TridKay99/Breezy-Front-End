@@ -8,16 +8,17 @@ import Faq from './components/Faq';
 import Pricing from './components/Pricing';
 
 class Routes extends React.Component {
-    render () { 
+    render () {
       return (
-         <Switch> 
+         <Switch>
             <Route path="/about" component= {About} />
             <Route path="/contact" component= {Contact} />
             <Route path="/faq" component= {Faq} />
             <Route path="/pricing" component= {Pricing} />
             <Route path="/" exact component={Home} />
+            <Route path="/profile" component={Profile} />
             <Route component={Nomatch} />
-         </Switch>  
+         </Switch>
       );
     }
   }
