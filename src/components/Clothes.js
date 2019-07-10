@@ -19,7 +19,7 @@ class Clothes extends React.Component {
       return null
     } else {
       return clothes.map((item, index) => {
-        return <p key={index}>{item.name}{item.price}</p>
+        return <p key={index}>{item.name}{item.price.toFixed(2)}</p>
       })
     }
   }
