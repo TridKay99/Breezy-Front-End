@@ -8,20 +8,22 @@ import Faq from './components/Faq';
 import Pricing from './components/Pricing';
 import Admin from './components/Admin';
 import Profile from './components/Profile'
+import AllUsers from './components/AllUsers'
 
 class Routes extends React.Component {
   render () {
     return (
-        <Switch>
-          <Route path="/about" component= {About} />
-          <Route path="/contact" component= {Contact} />
-          <Route path="/faq" component= {Faq} />
-          <Route path="/pricing" component= {Pricing} />
-          <Route path="/" exact component={Home} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/admin" component={Admin} />
-          <Route component={Nomatch} />
-        </Switch>
+      <Switch>
+        <Route path="/about" component= {About} />
+        <Route path="/contact" component= {Contact} />
+        <Route path="/faq" component= {Faq} />
+        <Route path="/pricing" component= {Pricing} />
+        <Route path="/" exact component={Home} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/admin" component={Admin} />
+        <Route path="/allusers" component={AllUsers} />
+        <Route component={Nomatch} />
+      </Switch>
     );
   }
 }
