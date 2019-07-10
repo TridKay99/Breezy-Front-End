@@ -20,17 +20,17 @@ class Profile extends React.Component {
   // A link or a side box with the users pending/history of jobs thats been created. "DRY CLEANING COMING  UP"
 
   render() {
-    return(
-      <h1>hello</h1>
-    )
-    // const { user } = this.state
+    // return(
+    //   <h1>hello</h1>
+    // )
+    const { user } = this.state
     // Assume user doesnt exist in first render or render user profile. Other wise this will crash.
-    // if (!user) {
-    //   return null
-    // } else {
-    //   return // information for User profile page. 
+    if (!user) {
+      return null
+    } else {
+      return // information for User profile page. 
       // name, age, dob - links to pending orders.
-    // }
+    }
   }
 }
 
