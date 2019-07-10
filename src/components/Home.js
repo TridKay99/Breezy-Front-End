@@ -1,14 +1,24 @@
 import React from 'react';
-import Maps from './MapContainer'
-import '../App.css'
-import Clothes from './trialClothes'
+import Maps from './MapContainer';
+import '../App.css';
+import Clothes from './trialClothes';
+
 
 const Home = () => {
 return (
-  <>
-    <Maps />
-    <Clothes />
-  </>
+  <div className="MainContainer">
+    <div className="navbar-c">
+      <div className="navbar">
+       
+      </div>
+    </div>
+
+    <>
+      <Maps />
+      <Clothes />
+    </>
+
+  </div>
   )
 }
 
