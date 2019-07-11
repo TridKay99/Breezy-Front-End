@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios'
 import Users from './Users'
+import './cssComponents/Admin.css'
 
 class Admin extends React.Component {
   state = {
@@ -21,11 +22,12 @@ class Admin extends React.Component {
       return null
     } else {
       return(
-      <div className="AdminContainer">
+      <>
         <h1>Hello Admin</h1>
         <p>{admin.date}</p>
         <p>{admin.email}</p>
-      </div>
+        <button onClick={this.handleClick}>Users</button>
+      </>
       )
     }
   }
@@ -36,14 +38,20 @@ class Admin extends React.Component {
     })
   }
 
+  handleClick2 = () => {
+    this.setState({
+      users: false
+    })
+  }
+
   render() {
     return(
-      <div>
-      <button onClick={this.handleClick}>Users</button>
-      {this.state.users ?
-      <Users /> :
-      this.adminPage()
-      }
+      <div className="adminContainer">
+        {this.state.users ?
+        <Users /> :
+        this.adminPage()
+        }
+        <button onClick={this.handleClick2}>Admin Home</button>
       </div>
     )
   }
