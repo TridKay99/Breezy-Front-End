@@ -8,6 +8,7 @@ import Faq from './components/Faq';
 import Pricing from './components/Pricing';
 import Admin from './components/Admin';
 import Profile from './components/Profile'
+import Register from './components/Register'
 // import GetUsersInfo from './components/GetUsersInfo'
 import Users from './components/Users'
 // import SingleUser from './components/GetSingleInfo'
@@ -25,6 +26,9 @@ class Routes extends React.Component {
         <Route path="/admin" component={Admin} />
         {/* conditional if admin to view this */}
         <Route path="/allusers" component={Users} />
+        <Switch>
+          <Route exact path='/register'component={Register}/>
+        </Switch>
         {/* <Route path='/user/:email' component={SingleUser} /> */}
 
         <Route component={Nomatch} />
