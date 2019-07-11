@@ -8,7 +8,9 @@ import Faq from './components/Faq';
 import Pricing from './components/Pricing';
 import Admin from './components/Admin';
 import Profile from './components/Profile'
-import AllUsers from './components/AllUsers'
+// import GetUsersInfo from './components/GetUsersInfo'
+import Users from './components/Users'
+// import SingleUser from './components/GetSingleInfo'
 
 class Routes extends React.Component {
   render () {
@@ -21,7 +23,10 @@ class Routes extends React.Component {
         <Route path="/" exact component={Home} />
         <Route path="/profile" component={Profile} />
         <Route path="/admin" component={Admin} />
-        <Route path="/allusers" component={AllUsers} />
+        {/* conditional if admin to view this */}
+        <Route path="/allusers" component={Users} />
+        {/* <Route path='/user/:email' component={SingleUser} /> */}
+
         <Route component={Nomatch} />
       </Switch>
     );
