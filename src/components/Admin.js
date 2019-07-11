@@ -9,7 +9,6 @@ class Admin extends React.Component {
 
   async componentDidMount() {
     const response = await axios('http://localhost:5000/api/profile/admins')
-    console.log(response)
     this.setState({
       admin: response.data[0].user
     })
