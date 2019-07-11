@@ -26,7 +26,6 @@ class Admin extends React.Component {
         <h1>Hello Admin</h1>
         <p>{admin.date}</p>
         <p>{admin.email}</p>
-        <button onClick={this.handleClick}>Users</button>
       </>
       )
     }
@@ -46,13 +45,16 @@ class Admin extends React.Component {
 
   render() {
     return(
-      <div className="adminContainer">
-        {this.state.users ?
-        <Users /> :
-        this.adminPage()
-        }
+    <div className="adminContainer">
+      <div className="adminNav">
+        <button onClick={this.handleClick}>Users</button>
         <button onClick={this.handleClick2}>Admin Home</button>
       </div>
+      {this.state.users ?
+      <Users /> :
+      this.adminPage()
+      }
+    </div>
     )
   }
 }
