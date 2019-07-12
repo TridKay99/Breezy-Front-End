@@ -43,7 +43,7 @@ return (
         <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
         <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ex ea commodo consequat. </h4>
         <div className="button-container">
-          <button>How It Works</button>
+          <button><Link to={"/about"}>How It Works</Link></button>
         </div>
      </div>
     </div>
