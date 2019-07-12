@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 import axios from 'axios'
-import { Link } from 'react-router-dom'
+import Users from './Users'
+import './cssComponents/Admin.css'
 
 class Admin extends React.Component {
   state = {
-    admin: null
+    admin: null,
+    users: false
   };
 
   async componentDidMount() {
@@ -14,23 +16,47 @@ class Admin extends React.Component {
     })
   }
 
-  render() {
+  adminPage = () => {
     const { admin } = this.state
     if (!admin) {
       return null
     } else {
       return(
-        <div className="AdminContainer">
-          <h1>Hello Admin</h1>
-          <p>{admin.date}</p>
-          <p>{admin.email}</p>
-          <div className="linkTo">
-            <Link to='/allusers'><p>Users</p></Link>
-          </div>
-        </div>
+      <>
+        <h1>Hello Admin</h1>
+        <p>{admin.date}</p>
+        <p>{admin.email}</p>
+      </>
       )
     }
   }
+
+  handleClick = () => {
+    this.setState({
+      users: true
+    })
+  }
+
+  handleClick2 = () => {
+    this.setState({
+      users: false
+    })
+  }
+
+  render() {
+    return(
+    <div className="adminContainer">
+      <div className="adminNav">
+        <button onClick={this.handleClick}>Users</button>
+        <button onClick={this.handleClick2}>Admin Home</button>
+      </div>
+      {this.state.users ?
+      <Users /> :
+      this.adminPage()
+      }
+    </div>
+    )
+  }
 }
 
-export default Admin
+export default Admin;
