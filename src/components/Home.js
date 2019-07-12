@@ -53,9 +53,22 @@ return (
             <div className="right-box">
               <div className="hiw-content">
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, t labore et dolore magna aliqu</h4>
-                <div>Step 1</div>
-                <div>Step 2</div>
-                <div>Step 3</div>
+                <br></br> 
+                <div>
+                  <h4>Step 1</h4>
+                  <p>Lorem ipsum dolor, consectetur...</p>
+                  <br></br>
+                </div>
+                <div>
+                  <h4>Step 2</h4>
+                  <p>Lorem ipsum dolor, consectetur...</p>  
+                  <br></br>      
+                </div>
+                <div>
+                  <h4>Step 3</h4>
+                  <p>Lorem ipsum dolor, consectetur...</p>  
+                  <br></br> 
+                </div>
               </div>  
             </div>
           </div>
