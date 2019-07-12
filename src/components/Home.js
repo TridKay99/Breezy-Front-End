@@ -44,16 +44,25 @@ return (
       </div>
     </div>
       <div class="parallax"></div>
-      <div className="hiw-section">
-        <div className="hiw-content">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.</h4> 
-          <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
-          <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ex ea commodo consequat. </h4>
-          <div className="button-container">
-            <button><Link to={"/about"}>How It Works</Link></button>
+      <div className="hiw-section-grid-container">
+        <div className="grid-box">
+          <div className="left">
+            <div className="Hiw-word">HOW IT WORKS</div>
           </div>
-      </div>
-    </div>
+          <div className="right">
+            <div className="right-box">
+              <div className="hiw-content">
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, t labore et dolore magna aliqu</h4>
+                <div>Step 1</div>
+                <div>Step 2</div>
+                <div>Step 3</div>
+              </div>  
+            </div>
+          </div>
+        </div>
+
+
+      </div>  
       <div class="parallax"></div>
 
 

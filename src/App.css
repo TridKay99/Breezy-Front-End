@@ -218,11 +218,11 @@ li {
 
 .map-container {
     /* width: 100rem;
-    height: 100rem; */
     /* background-color: blueviolet; */
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 60rem;
 
 }
 
@@ -284,7 +284,7 @@ h4 {
     /* background-color: aqua; */
     margin: -3rem 0rem 0rem 7rem;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-end;
 }
 
@@ -315,13 +315,71 @@ button:hover {
 }
 
 
-.hiw-section {
-    height: 50rem;
-    
-}
-
-
 .icon {
     height: 3rem;
     width: 5rem;
 }
+
+
+/* //how it works sectio n.  */
+
+
+.hiw-section-grid-container {
+    height: 60rem;
+}
+
+.grid-box {
+    /* background-color: #3a7999; */
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+
+}
+
+.left {
+    grid-column: (1,2) ;
+    /* background-color: blue; */
+}
+
+.right {
+    grid-column: (2,2) ;
+    /* background-color: pink; */
+}
+
+
+.right-box {
+    height: 70%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0rem 0rem 5rem -3rem;
+    padding: 2rem;
+    font-family: 'Muli', sans-serif; 
+ 
+}
+
+.Hiw-word {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    margin: 0rem 0rem 0rem 5rem;
+    padding: 0rem 0rem 0rem 5rem;
+    font-family: 'Muli', sans-serif;
+    color: lightgray;
+    font-weight: bold;
+}
+
+/* .hiw-content {
+    /* height: 100%; */
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1rem;
+    margin: 6rem 0rem 5rem -3rem;
+    padding: 2rem;
+    font-family: 'Muli', sans-serif; */
+/* } */
