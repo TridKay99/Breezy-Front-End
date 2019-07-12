@@ -4,7 +4,7 @@ import '../App.css';
 import Clothes from './Clothes';
 import { Link } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css'
-import Laundry from '../laundry1.jpg'
+import Laundry from '../laundry2.jpg'
 
 
 const Home = () => {
@@ -42,15 +42,15 @@ return (
       </div>
     </div>
       <div class="parallax"></div>
-      <div className="hiw-section ">
-      <div className="hiw-content">
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.</h4> 
-        <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
-        <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ex ea commodo consequat. </h4>
-        <div className="button-container">
-          <button><Link to={"/about"}>How It Works</Link></button>
-        </div>
-     </div>
+      <div className="hiw-section">
+        <div className="hiw-content">
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.</h4> 
+          <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
+          <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ex ea commodo consequat. </h4>
+          <div className="button-container">
+            <button><Link to={"/about"}>How It Works</Link></button>
+          </div>
+      </div>
     </div>
       <div class="parallax"></div>
 
