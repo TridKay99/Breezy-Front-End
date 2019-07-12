@@ -1,25 +1,24 @@
 import React, { Fragment, useState} from 'react'
 import axios from 'axios'
 
-const Login = () => {
+const Register = () => {
     const [formData, setFormData] = useState({
         email: '',
-        password: '',
-        password2: ''
+        password: ''
     })
 
-    const {email, password, password2} = formData
+    const {email, password} = formData
 
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value})
 
     const onSubmit = async e => {
         e.preventDefault()
-        if(password !== password2) {
-            console.log('Passwords do not match')
+        if(password === null) {
+            console.log('Passwords needs to exist')
         } else {
             const newUser = {
                 email,
-                password
+                password 
             }
             try {
                 const config = {
@@ -29,7 +28,7 @@ const Login = () => {
                 }
                 const body = JSON.stringify(newUser)
 
-                const res = await axios.post('/api/users', body, config)
+                const res = await axios.post('/api/auth', body, config)
                 console.log(res.data)
             } catch (err) {
                 console.error(err.response.data)
@@ -39,8 +38,8 @@ const Login = () => {
 
     return (
         <Fragment>
-               <h1 className="large text-primary">Sign Up</h1>
-      <p className="lead"><i className="fas fa-user"></i> Create Your Account</p>
+               <h1 className="large text-primary">Sign In</h1>
+      
       <form className="form" onSubmit={e => onSubmit(e)}>
         <div className="form-group">
           <input type="email" placeholder="Email Address" name="email" value={email} onChange={e => onChange(e)} required />
@@ -54,22 +53,10 @@ const Login = () => {
             minLength="6"
           />
         </div>
-        <div className="form-group">
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            name="password2"
-            value={password2} onChange={e => onChange(e)} required
-            minLength="6"
-          />
-        </div>
-        <input type="submit" className="btn btn-primary" value="Register" />
+        <input type="submit" className="btn btn-primary" value="Log In" />
       </form>
-      <p className="my-1">
-        Already have an account? <a href="login.html">Sign In</a>
-      </p>
         </Fragment>
     )
 }
 
-export default Login
+export default Register
