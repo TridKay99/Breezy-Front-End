@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
 .leaflet-container {
     height: 400px;
     width: 800px;
@@ -12,7 +15,7 @@
 
 
 .navbar-c {
-    /* background-color: blue; */
+    /* background-image: linear-gradient(#185a9d, #43cea2); */
     /* border: solid black 1px; */
     height: 10rem;
     /* width: 100vw; */
@@ -31,6 +34,7 @@
 
 .navbar {
     display: flex;
+    font-family: 'Muli', sans-serif;
     
 }
 
@@ -40,23 +44,166 @@ li {
 
 }
 
+.Hiw {
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.Hiw:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: #000;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .Hiw:hover:after,
+  .Hiw:focus:after,
+  .Hiw:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+.Name {
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.Name:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: #000;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .Name:hover:after,
+  .Name:focus:after,
+  .Name:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+.Price {
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.Price:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: #000;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .Price:hover:after,
+  .Price:focus:after,
+  .Price:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+.Faq {
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.Faq:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: #000;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .Faq:hover:after,
+  .Faq:focus:after,
+  .Faq:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+.Contact {
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.Contact:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: #000;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .Contact:hover:after,
+  .Contact:focus:after,
+  .Contact:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+/* .Contact:hover {
+    text-decoration: underline;
+} */
 
 .title {
-    /* width: 20rem; */
-    /* height: 100%; */
+    width: 20rem;
+    height: 100%;
     /* background-color: green; */
     display: flex;
     justify-content: flex-start;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 .content {
-    /* width: 75rem; */
-    /* height: 100%; */
+    width: 65rem; 
+    height: 100%; 
     /* background-color: blueviolet; */
     display: flex;
     justify-content: flex-end;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 .map-container {
@@ -88,36 +235,73 @@ li {
 .home-section {
     height: 50rem;
     width: 100vw;
-    background-color: grey;
+    /* background-color: grey; */
+    /* background-image: url("iron-shirts-2.jpg"); */
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-family: 'Muli', sans-serif;
+
+}
+
+.home {
+    /* background-image: url("iron-shirts-2.jpg"); */
+    height: 100vh;
+    width: 100vw;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .section-content {
     height: 20rem;
+    width: 50rem;
     /* background-color: red; */
     padding: 1rem;
+    margin: 2rem;
+    color: grey;
     
+}
+
+h4 {
+    padding: 0.2rem;
 }
 
 .button-container {
     height: 8rem;
     /* background-color: aqua; */
+    margin: -3rem 0rem 0rem 7rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: flex-end;
 }
 
 button {
-    height: 5rem;
-    width:  5rem;
+    height: 2rem;
+    width:  7rem;
     margin: 1rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
+    background-color: lightgray;
+    color: grey;
+}
+
+button:hover {
+
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+
+.laundry {
+    height: 30rem;
+    width:  40rem;
+    margin: 3rem;
 }
 
 
 .hiw-section {
     height: 50rem;
-    background-color: transparent;
+    
 }
