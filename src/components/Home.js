@@ -5,6 +5,7 @@ import Clothes from './Clothes';
 import { Link } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css'
 import Laundry from '../laundry2.jpg'
+import Icon from '../Group.svg'
 
 
 const Home = () => {
@@ -15,7 +16,8 @@ return (
       <ul className="navbar">
         <div className="title">
           <li><Link className="Name" to={"/"}>IRON MAIDEN</Link></li>
-          <li><i className="fa fas fa-spinner fa-spin"></i></li>
+          <li><img src={Icon} alt="icon" className="icon"/></li>
+          {/* <li><i className="fa fas fa-spinner fa-spin"></i></li> */}
         </div>
         <div className="content">
           <li><Link className="Hiw" to={"/about"}>HOW IT WORKS</Link></li>
