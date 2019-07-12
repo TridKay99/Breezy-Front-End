@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+* {
+    margin: 0px;
+}
 
 .leaflet-container {
     height: 400px;
@@ -49,6 +52,7 @@ li {
     display: inline;
     position: relative;
     overflow: hidden;
+    color: black;
 }
 
 .Hiw:after {
@@ -77,6 +81,7 @@ li {
     display: inline;
     position: relative;
     overflow: hidden;
+    color: black;
 }
 
 .Name:after {
@@ -91,6 +96,7 @@ li {
     transition-property: width;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
+    color: grey;
   }
   .Name:hover:after,
   .Name:focus:after,
@@ -98,6 +104,7 @@ li {
     left: 0;
     right: auto;
     width: 100%;
+    color: grey;
   }
 
 .Price {
@@ -105,6 +112,7 @@ li {
     display: inline;
     position: relative;
     overflow: hidden;
+    color: black;
 }
 
 .Price:after {
@@ -133,6 +141,7 @@ li {
     display: inline;
     position: relative;
     overflow: hidden;
+    color: black;
 }
 
 .Faq:after {
@@ -161,6 +170,7 @@ li {
     display: inline;
     position: relative;
     overflow: hidden;
+    color: black;
 }
 
 .Contact:after {
@@ -251,7 +261,8 @@ li {
     /* background-color: blue; */
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+
 }
 
 .section-content {
@@ -281,8 +292,11 @@ button {
     height: 2rem;
     width:  7rem;
     margin: 1rem;
-    /* border-radius: 1rem; */
+    border-radius: 0.1rem;
     background-color: lightgray;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
     color: grey;
 }
 
@@ -297,11 +311,17 @@ button:hover {
 .laundry {
     height: 30rem;
     width:  40rem;
-    margin: 3rem;
+    margin: 0rem 0rem 1rem 7rem;
 }
 
 
 .hiw-section {
     height: 50rem;
     
+}
+
+
+.icon {
+    height: 3rem;
+    width: 5rem;
 }
