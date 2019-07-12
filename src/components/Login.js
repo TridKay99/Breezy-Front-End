@@ -1,7 +1,7 @@
 import React, { Fragment, useState} from 'react'
 import axios from 'axios'
 
-const Register = () => {
+const Login = () => {
     const [formData, setFormData] = useState({
         email: '',
         password: ''
@@ -59,4 +59,4 @@ const Register = () => {
     )
 }
 
-export default Register
+export default Login
