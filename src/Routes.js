@@ -10,7 +10,7 @@ import Admin from './components/Admin';
 import Profile from './components/Profile'
 import Register from './components/Register'
 import Login from './components/Login'
-import Order from './components/Orders'
+import Order from './components/orders'
 import LoginForm from './components/LoginForm'
 // import GetUsersInfo from './components/GetUsersInfo'
 import Users from './components/Users'
