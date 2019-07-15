@@ -12,6 +12,7 @@
     "get-google-fonts": "^1.2.0",
     "leaflet": "^1.5.1",
     "react": "^16.8.6",
+    "react-awesome-modal": "^2.0.5",
     "react-dom": "^16.8.6",
     "react-leaflet": "^2.4.0",
     "react-leaflet-markercluster": "^1.1.8",
