@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from 'react-awesome-modal';
 import './Signup.css';
+import SignupForm from './SignupForm';
 
  class Signup extends React.Component {
     constructor(props) {
@@ -35,10 +36,9 @@ import './Signup.css';
                     onClickAway={() => this.closeModal()}
                 >
                     <div>
-                        <h1>Register your account here</h1>
-                        <p>Some Contents</p>
-                        <button onClick={() => this.closeModal()}>Submit</button>
                         
+                        {/* <button onClick={() => this.closeModal()}>Submit</button> */}
+                        <SignupForm />
                     </div>
                 </Modal>
             </section>
