@@ -1,9 +1,9 @@
 import React from 'react';
 import Modal from 'react-awesome-modal';
-import './Login.css';
-import LoginForm from './LoginForm';
+import './Signup.css';
+import Register from './Register';
 
- class Login extends React.Component {
+ class Signup extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -27,7 +27,7 @@ import LoginForm from './LoginForm';
         return (
             <section>
                 
-                <input type="button" id="Login" value="Login" onClick={() => this.openModal()} />
+                <input type="button" id="Signup" value="Sign up" onClick={() => this.openModal()} />
                 <Modal 
                     visible={this.state.visible}
                     width="400"
@@ -36,11 +36,9 @@ import LoginForm from './LoginForm';
                     onClickAway={() => this.closeModal()}
                 >
                     <div>
-                        {/* <h1>Login to your account</h1>
-                        <p>Some Contents</p> */}
-                        <LoginForm />
-                        {/* <button onClick={() => this.closeModal()}>Submit</button> */}
                         
+                        {/* <button onClick={() => this.closeModal()}>Submit</button> */}
+                        <Register />
                     </div>
                 </Modal>
             </section>
@@ -51,4 +49,4 @@ import LoginForm from './LoginForm';
 
 
 
-export default Login;
+export default Signup;

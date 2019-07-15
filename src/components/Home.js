@@ -3,7 +3,11 @@ import Maps from './MapContainer';
 import '../App.css';
 import Clothes from './Clothes';
 import { Link } from 'react-router-dom';
-import 'font-awesome/css/font-awesome.min.css'
+import 'font-awesome/css/font-awesome.min.css';
+import Laundry from '../laundry2.jpg';
+import Icon from '../Group.svg';
+import Login from './Login';
+import Signup from './Signup';
 
 
 const Home = () => {
@@ -13,55 +17,92 @@ return (
     <div className="navbar-c">
       <ul className="navbar">
         <div className="title">
-          <li><Link to={"/"}>Name</Link></li>
-          <li><i className="fa fas fa-spinner fa-spin"></i></li>
+          <li><Link className="Name" to={"/"}>IRON MAIDEN</Link></li>
+          <li><img src={Icon} alt="icon" className="icon"/></li>
+          {/* <li><i className="fa fas fa-spinner fa-spin"></i></li> */}
         </div>
         <div className="content">
-          <li><Link to={"/about"}>How It Works</Link></li>
-          <li><Link to={"/pricing"}>Pricing</Link></li>
-          <li><Link to={"/Faq"}>FAQ</Link></li>
-          <li><Link to={"/contact"}>Contact</Link></li>
+          <li><a href="#hiw" className="Hiw" to={"/about"}>HOW IT WORKS</a></li>
+          <li><a href="#pricing" className="Price" to={"/pricing"}>PRICING</a></li>
+          <li><a href="#faq" className="Faq" to={"/Faq"}>FAQ</a></li>
+          <li><Link className="Contact" to={"/contact"}>CONTACT</Link></li>
         </div>
       </ul>
     </div>
     {/* <div class="parallax"></div> */}
-    <div className="home-section ">
-      <div className="section-content">
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.</h4> 
-        <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
-        <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ex ea commodo consequat. </h4>
-        <div className="button-container">
-          <button>Login</button>
-          <button>Sign up</button>
+    <div className="home">
+      <img src={Laundry} alt="laundry" className="laundry"/>
+      <div className="home-section ">
+        <div id="home" className="section-content">
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, t labore et dolore magna aliqua </h4>
+          <h4>sed do eiusmod temporincididunt ut labore et dolore magna aliqua  et dolore magna aliqua .</h4> 
+          <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat. </h4>
+          <h4>Ut enim ad minim veniam, quis nostrud exercitation . </h4>
+          <div className="button-container">
+            <Login />
+            <Signup />
+            {/* <button>Sign up</button> */}
+          </div>
         </div>
-     </div>
+      </div>
     </div>
-      <div class="parallax"></div>
-      <div className="hiw-section ">
-      <div className="hiw-content">
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua.</h4> 
-        <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h4>
-        <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ex ea commodo consequat. </h4>
-        <div className="button-container">
-          <button>How It Works</button>
+      <div className="parallax"></div>
+      <div className="hiw-section-grid-container">
+        <div className="grid-box">
+          <div className="left">
+            <div id="hiw" className="Hiw-word">HOW IT WORKS</div>
+          </div>
+          <div className="right">
+            <div className="right-box">
+              <div className="hiw-content">
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, t labore et dolore magna aliqu</h4>
+                <br></br> 
+                <div>
+                  <h4>Step 1</h4>
+                  <p>Lorem ipsum dolor, consectetur...</p>
+                  <br></br>
+                </div>
+                <div>
+                  <h4>Step 2</h4>
+                  <p>Lorem ipsum dolor, consectetur...</p>  
+                  <br></br>      
+                </div>
+                <div>
+                  <h4>Step 3</h4>
+                  <p>Lorem ipsum dolor, consectetur...</p>  
+                  <br></br> 
+                </div>
+              </div>  
+            </div>
+          </div>
         </div>
-     </div>
-    </div>
-      <div class="parallax"></div>
+      </div>  
+      <div className="parallax"></div>
+      <div id="pricing" className="Pricing">Pricing</div>
+    
+
+      <div className="parallax"></div>
 
 
+      <div id="faq" className="FAQ">FAQ</div>
 
 
+      <div className="parallax"></div>
 
 
-      <div class="parallax"></div>
+      <div className="Contact">Contact</div>
+
+
+      <div className="parallax"></div>
+
+
       <div className="map-container">
       <>
         <Maps />
         {/* <Clothes /> */}
       </>
       </div>
-      <div class="parallax"></div>
+      <div className="parallax"></div>
   </div>
   )
 }
