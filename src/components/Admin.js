@@ -25,11 +25,11 @@ class Admin extends React.Component {
       return null
     } else {
       return(
-      <>
+      <div className="adminInfo">
         <h1>Hello Admin</h1>
         <p>{admin.date}</p>
         <p>{admin.email}</p>
-      </>
+      </div>
       )
     }
   }

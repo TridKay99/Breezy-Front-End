@@ -1,10 +1,15 @@
 import React from 'react';
 
-const Order = () => {
-    return (
-        <h1>Orders page</h1>
-    )
+class Order extends React.Component {
+  class = {
+    order: false
+  }
 
+  render() {
+    return(
+      <h1>hello</h1>
+    )
+  }
 }
 
 export default Order;

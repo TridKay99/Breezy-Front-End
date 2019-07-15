@@ -8,5 +8,10 @@
 
 .adminNav {
   display: flex;
-  
+}
+
+.adminInfo h1 {
+  text-align: center;
+  margin-right: 20%;
+  width: 100;
 }
