@@ -3,9 +3,11 @@ import Maps from './MapContainer';
 import '../App.css';
 import Clothes from './Clothes';
 import { Link } from 'react-router-dom';
-import 'font-awesome/css/font-awesome.min.css'
-import Laundry from '../laundry2.jpg'
-import Icon from '../Group.svg'
+import 'font-awesome/css/font-awesome.min.css';
+import Laundry from '../laundry2.jpg';
+import Icon from '../Group.svg';
+import Login from './Login';
+import Signup from './Signup';
 
 
 const Home = () => {
@@ -20,9 +22,9 @@ return (
           {/* <li><i className="fa fas fa-spinner fa-spin"></i></li> */}
         </div>
         <div className="content">
-          <li><Link className="Hiw" to={"/about"}>HOW IT WORKS</Link></li>
-          <li><Link className="Price" to={"/pricing"}>PRICING</Link></li>
-          <li><Link className="Faq" to={"/Faq"}>FAQ</Link></li>
+          <li><a href="#hiw" className="Hiw" to={"/about"}>HOW IT WORKS</a></li>
+          <li><a href="#pricing" className="Price" to={"/pricing"}>PRICING</a></li>
+          <li><a href="#faq" className="Faq" to={"/Faq"}>FAQ</a></li>
           <li><Link className="Contact" to={"/contact"}>CONTACT</Link></li>
         </div>
       </ul>
@@ -31,14 +33,15 @@ return (
     <div className="home">
       <img src={Laundry} alt="laundry" className="laundry"/>
       <div className="home-section ">
-        <div className="section-content">
+        <div id="home" className="section-content">
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, t labore et dolore magna aliqua </h4>
           <h4>sed do eiusmod temporincididunt ut labore et dolore magna aliqua  et dolore magna aliqua .</h4> 
           <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat. </h4>
           <h4>Ut enim ad minim veniam, quis nostrud exercitation . </h4>
           <div className="button-container">
-            <button>Login</button>
-            <button>Sign up</button>
+            <Login />
+            <Signup />
+            {/* <button>Sign up</button> */}
           </div>
         </div>
       </div>
@@ -47,7 +50,7 @@ return (
       <div className="hiw-section-grid-container">
         <div className="grid-box">
           <div className="left">
-            <div className="Hiw-word">HOW IT WORKS</div>
+            <div id="hiw" className="Hiw-word">HOW IT WORKS</div>
           </div>
           <div className="right">
             <div className="right-box">
@@ -73,17 +76,26 @@ return (
             </div>
           </div>
         </div>
-
-
       </div>  
       <div class="parallax"></div>
+      <div id="pricing" className="Pricing">Pricing</div>
+    
+
+      <div class="parallax"></div>
 
 
-
-
+      <div id="faq" className="FAQ">FAQ</div>
 
 
       <div class="parallax"></div>
+
+
+      <div className="Contact">Contact</div>
+
+
+      <div class="parallax"></div>
+
+
       <div className="map-container">
       <>
         <Maps />
