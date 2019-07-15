@@ -46,7 +46,7 @@ return (
         </div>
       </div>
     </div>
-      <div class="parallax"></div>
+      <div className="parallax"></div>
       <div className="hiw-section-grid-container">
         <div className="grid-box">
           <div className="left">
@@ -77,23 +77,23 @@ return (
           </div>
         </div>
       </div>  
-      <div class="parallax"></div>
+      <div className="parallax"></div>
       <div id="pricing" className="Pricing">Pricing</div>
     
 
-      <div class="parallax"></div>
+      <div className="parallax"></div>
 
 
       <div id="faq" className="FAQ">FAQ</div>
 
 
-      <div class="parallax"></div>
+      <div className="parallax"></div>
 
 
       <div className="Contact">Contact</div>
 
 
-      <div class="parallax"></div>
+      <div className="parallax"></div>
 
 
       <div className="map-container">
@@ -102,7 +102,7 @@ return (
         {/* <Clothes /> */}
       </>
       </div>
-      <div class="parallax"></div>
+      <div className="parallax"></div>
   </div>
   )
 }

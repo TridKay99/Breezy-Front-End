@@ -9,7 +9,7 @@ import Pricing from './components/Pricing';
 import Admin from './components/Admin';
 import Profile from './components/Profile'
 import Register from './components/Register'
-import Login from './components/Login'
+import LoginForm from './components/LoginForm'
 // import GetUsersInfo from './components/GetUsersInfo'
 import Users from './components/Users'
 // import SingleUser from './components/GetSingleInfo'
@@ -29,7 +29,7 @@ class Routes extends React.Component {
         <Route path="/allusers" component={Users} />
         <Switch>
           <Route exact path='/register'component={Register}/>
-          <Route path="/login" component={Login} />
+          <Route path="/login" component={LoginForm} />
         </Switch>
         {/* <Route path='/user/:email' component={SingleUser} /> */}
 

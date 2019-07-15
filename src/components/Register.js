@@ -1,8 +1,8 @@
 import React, { Fragment, useState} from 'react'
 import axios from 'axios'
-import './SignupForm.css';
+import './Register.css';
 
-const SignupForm = () => {
+const Register = () => {
     const [formData, setFormData] = useState({
         email: '',
         password: '',
@@ -74,4 +74,4 @@ const SignupForm = () => {
     )
 }
 
-export default SignupForm;
+export default Register;

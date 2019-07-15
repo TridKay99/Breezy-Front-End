@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-awesome-modal';
 import './Signup.css';
-import SignupForm from './SignupForm';
+import Register from './Register';
 
  class Signup extends React.Component {
     constructor(props) {
@@ -38,7 +38,7 @@ import SignupForm from './SignupForm';
                     <div>
                         
                         {/* <button onClick={() => this.closeModal()}>Submit</button> */}
-                        <SignupForm />
+                        <Register />
                     </div>
                 </Modal>
             </section>
