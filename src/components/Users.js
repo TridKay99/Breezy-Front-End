@@ -1,5 +1,7 @@
 import React from 'react'
 import axios from 'axios'
+// import GetSingleInfo from './GetSingleInfo';
+import './cssComponents/Users.css'
 
 class AllUsers extends React.Component {
   state = {
@@ -13,18 +15,30 @@ class AllUsers extends React.Component {
     })
   }
 
-  render() {
+  handleUserInfo(user) {
+    this.props.displaySingle(user)
+  }
+
+  userPage = () => {
     const { users } = this.state
     if (!users) {
       return null
     } else {
       return (
-        <div>
-          <h2>{users.length} Users</h2>
-          {users.map((user, index) => <p key={index}> {user.user.email}</p>)}
-        </div>
+      <>
+      <h2>{users.length} Users</h2>
+      {users.map((user, index) => <button className="userButtons" key={index} onClick={() => this.handleUserInfo(user)}>{user.user.email}</button>)}
+      </>
       )
     }
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        {this.userPage()}
+      </React.Fragment>
+    )
   }
 }
 
