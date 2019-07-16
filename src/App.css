@@ -383,3 +383,231 @@ button:hover {
     padding: 2rem;
     font-family: 'Muli', sans-serif; */
 /* } */
+
+
+/* pricing section */
+
+.pricing-container {
+
+    height: 70rem;
+}
+
+.back-to-top {
+    display: flex;
+    justify-content: center;
+    font-family: 'Muli', sans-serif;
+    text-decoration: none;
+    /* color: gray; */
+    /* letter-spacing: 1rem; */
+}
+
+#back-to-top {
+    text-decoration: none;
+    color: black;
+}
+
+.Pricing-word {
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 12rem;
+    margin: 8rem 0rem 0rem 5rem;
+    padding: 0rem 0rem 0rem 0rem;
+    font-family: 'Muli', sans-serif;
+    color: lightgray;
+    /* font-weight: bold; */
+    letter-spacing: 5rem;
+    /* background-color: #3a7999; */
+}
+
+.sub-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: gray;
+}
+
+.pricing-grid-container {
+    height: 50rem;
+    /* background-color: #3a7999; */
+}
+
+.pricing-grid-box {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.33fr 0.33fr 0.33fr;
+    /* background-color: #3a7999; */
+}
+
+
+.pricing-left {
+    grid-column: (1,2) ;
+    /* background-color: blue; */
+}
+
+.pricing-middle {
+    grid-column: (2,3) ;
+    /* background-color: blue; */
+}
+
+.pricing-right {
+    grid-column: (3,3) ;
+    /* background-color: pink; */
+}
+
+.pricing-left-box {
+    height: 65%;
+    /* background-color: blue; */
+    /* display: flex;
+    justify-content: center; */
+    margin: 10rem 0rem 0rem 5rem;
+    border-left: solid black 0.01rem;
+}
+
+.essentials {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 3rem;
+    font-family: 'Muli', sans-serif;
+}
+
+.content-grid {
+    height: 90%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    /* background-color: lightcoral; */
+    font-family: 'Muli', sans-serif;
+}
+
+/* .content-grid-box {
+    height: 90%;
+    width: 70%;
+    background-color: lightgreen;
+   
+} */
+
+.clothes-name-left-box {
+    height: 90%;
+    width: 10rem;
+    grid-row: (1,2) ;
+    /* background-color: blue; */
+    padding: 1rem;
+}
+
+p {
+    margin: 0.5rem 0.5rem 0rem 0rem;
+    padding: 1rem 1rem 0rem 0rem;
+}
+
+.clothes-price-right-box {
+    height: 90%;
+    width: 5rem;
+    grid-row: (2,2) ;
+    background-color: rgb(170, 170, 170);
+    padding: 1rem;
+}
+
+/* pricing middle box */
+
+.pricing-middle-box {
+    height: 65%;
+    /* background-color: blue; */
+    /* display: flex;
+    justify-content: center; */
+    margin: 10rem 0rem 0rem 5rem;
+    border-left: solid black 0.01rem;
+}
+
+.specials {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 3rem;
+    font-family: 'Muli', sans-serif;
+}
+
+.pricing-content-grid {
+    height: 90%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    /* background-color: lightcoral; */
+    font-family: 'Muli', sans-serif;
+}
+
+.specials-name-left-box {
+    height: 90%;
+    width: 13rem;
+    grid-row: (1,2) ;
+    /* background-color: blue; */
+    padding: 1rem;
+}
+
+p {
+    margin: 0.5rem 0.5rem 0rem 0rem;
+    padding: 1rem 1rem 0rem 0rem;
+}
+
+h3 {
+    margin: 0.5rem 0rem 0rem 0rem;
+    padding: 0.5rem 0rem 0rem 0rem;
+}
+
+.wash-fold-laundry {
+    margin: 4rem 0rem 0rem 0rem;
+}
+
+.specials-price-right-box {
+    height: 90%;
+    width: 5rem;
+    grid-row: (2,2) ;
+    background-color: rgb(170, 170, 170);
+    padding: 1rem;
+}
+
+/* pricing right box */
+
+
+.pricing-right-box {
+    height: 65%;
+    /* background-color: blue; */
+    /* display: flex;
+    justify-content: center; */
+    margin: 10rem 0rem 0rem 5rem;
+    border-left: solid black 0.01rem;
+}
+
+.other {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 3rem;
+    font-family: 'Muli', sans-serif;
+}
+
+.other-content-grid {
+    height: 90%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    /* background-color: lightcoral; */
+    font-family: 'Muli', sans-serif;
+}
+
+.other-name-left-box {
+    height: 90%;
+    width: 14rem;
+    grid-row: (1,2) ;
+    /* background-color: blue; */
+    padding: 1rem;
+}
+
+.other-price-right-box {
+    height: 90%;
+    width: 5rem;
+    grid-row: (2,2) ;
+    background-color: rgb(170, 170, 170);
+    padding: 1rem;
+}
+
+.small-text {
+    font-size: 1rem;
+    color: gray;
+}
