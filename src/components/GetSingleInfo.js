@@ -24,13 +24,23 @@ class GetSingleInfo extends React.Component {
     return null
     } else {
       return (
+        <>
+        <div className="userTitle">
+          <p>{this.props.user.fullname}'s Information</p>
+        </div>
         <div className="outsideUserContainer">
           <div className="userContainer">
-            <p>Name: {this.props.user.fullname}</p>
-            <p>Email: {this.props.user.user.email}</p>
+            <p>Name:</p><h4>{this.props.user.fullname}</h4>
+            <p>Email:</p><h4>{this.props.user.user.email}</h4> 
+            <p>Address:</p><h4>{this.props.user.address}</h4>
+            <p>Last Login:</p><h4>{this.props.user.date}</h4>
             <div className="userJobsContainer">
+              <p>Current Jobs:</p>
               <div className="userJobsBox">
-              <p>THIS WILL BE JOBS  THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   
+                {/* {this.props.user.jobs.map((job) => {
+                  return<p>{job}</p>
+                })} */}
+              <p className="jobsPText">THIS WILL BE JOBS  THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   
               THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   
               THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   
               THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS   THIS WILL BE JOBS    </p>
@@ -39,6 +49,7 @@ class GetSingleInfo extends React.Component {
           </div>
           <button onClick={this.deleteThisUser}>Delete</button>
         </div>
+        </>
       )
     }
   }
