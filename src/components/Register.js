@@ -44,11 +44,12 @@ const Register = () => {
                 <div className="signup-container">
                     <form className="form" onSubmit={e => onSubmit(e)}>
                         <div className="form-group">
-                        <input type="email" placeholder="Email Address" name="email" value={email} onChange={e => onChange(e)} required />
+                        <input type="email" id="EA-register" placeholder="Email Address" name="email" value={email} onChange={e => onChange(e)} required />
                         </div>
                         <div className="form-group">
                         <input
                             type="password"
+                            id="pass-register"
                             placeholder="Password"
                             name="password"
                             value={password} onChange={e => onChange(e)} required
@@ -58,6 +59,7 @@ const Register = () => {
                         <div className="form-group">
                         <input
                             type="password"
+                            id="cpass-register"
                             placeholder="Confirm Password"
                             name="password2"
                             value={password2} onChange={e => onChange(e)} required
