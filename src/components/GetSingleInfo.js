@@ -18,7 +18,7 @@ class GetSingleInfo extends React.Component {
     } else {
       return (
         <div className="userContainer">
-          <p>THIS WILL BE USERS NAME</p>
+          <p>{this.props.user.fullname}</p>
           <p>Email: {this.props.user.user.email}</p>
           <p>THIS WILL BE JOBS</p>
         </div>
