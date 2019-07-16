@@ -1,13 +1,16 @@
 #Login-button {
     height: 2rem;
     width:  7rem;
-    margin: 1rem 1rem 1rem 2rem;
+    margin: 1rem 1rem 1rem 2.5rem;
     border-radius: 0.1rem;
-    background-color: lightgray;
     box-shadow: none;
     border: none;
     text-decoration: none;
-    color: grey;
+    color: white;
+    font-size: 1.1rem;
+    background-color: #3a7999;
+
+
 }
 
 
@@ -40,4 +43,12 @@ h1 {
 input {
     height: 1.2rem;
     width: 10rem;
+}
+
+#EA {
+    font-size: 1.1rem;
+}
+
+#pass {
+    font-size: 1.1rem;
 }

@@ -8,6 +8,7 @@ import Laundry from '../laundry2.jpg';
 import Icon from '../Group.svg';
 import Login from './Login';
 import Signup from './Signup';
+import Footer from './Footer';
 
 
 const Home = () => {
@@ -24,8 +25,8 @@ return (
         <div className="content">
           <li><a href="#hiw" className="Hiw" to={"/about"}>HOW IT WORKS</a></li>
           <li><a href="#pricing" className="Price" to={"/pricing"}>PRICING</a></li>
-          <li><a href="#faq" className="Faq" to={"/Faq"}>FAQ</a></li>
-          <li><Link className="Contact" to={"/contact"}>CONTACT</Link></li>
+          <li><Link className="Faq" to={"/Faq"}>FAQ</Link></li>
+          <li><a href="#contact" className="Contact" to={"/contact"}>CONTACT</a></li>
         </div>
       </ul>
     </div>
@@ -188,28 +189,32 @@ return (
       </div>
 
       <div className="parallax"></div>
-
-
-      <div id="faq" className="FAQ">FAQ</div>
-
-
-      <div className="parallax"></div>
-
-
-      <div className="Contact">Contact</div>
-
-
-      <div className="parallax"></div>
-
-
-      <div className="map-container">
+      <div id="contact" className="Contact"> 
+        <h1 className="contact-us-word">Contact Us</h1>   
+        <div className="contact-us-form-container">
+          <form className="contact-us-form">
+            <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+            <label for="nme"><span>What's your name?</span></label>
+            <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+            <label for="msg"><span>What's your message?</span></label>
+            <input id="contact-submit" type="submit" value="Submit!" />
+          </form>     
+        </div>  
+      </div>  
+      <p className="map-subtext">Here's a simple map of where we are</p>      
+      <div className="map-container">  
       <>
         <Maps />
-        {/* <Clothes /> */}
+        {/* <Clothes/> */}
       </>
       </div>
+
       <div className="parallax"></div>
-      <footer>Footer!!!</footer>
+
+
+     
+      <div className="parallax"></div>
+      <Footer/>
   </div>
 
  
