@@ -6,13 +6,6 @@ import { conditionalExpression } from '@babel/types';
 
 
 class Order extends Component {
-
-    // let clothes1 = []
-    // const [formData, setFormData] = useState({
-    //     clothes: [],
-    //     location: '',
-    //     price: ''
-    // })
     state = {
         cart: [],
         location: null,
