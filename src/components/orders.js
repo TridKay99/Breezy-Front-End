@@ -1,11 +1,9 @@
 import React, { Fragment, useState} from 'react'
 import axios from 'axios'
 
-
 const Order = () => {
 
-    const clothes1 = []
-
+    let clothes1 = []
 
     const [formData, setFormData] = useState({
         clothes: [],
@@ -84,30 +82,39 @@ const Order = () => {
 
     const HeavyCoatadd = () => {
         clothes1.push(HeavyCoat)
+        HeavyCoat.quanity +=1
         clothes.push(HeavyCoat.id)
         let result = clothes1.map(a => a.price);
         let added = result.reduce((a, b) => a + b, 0)
     }
 
     const Trousersadd = () => {
+        Trousers.quanity += 1
         clothes1.push(Trousers)
         clothes.push(Trousers.id)
         let result = clothes1.map(a => a.price);
         let added = result.reduce((a, b) => a + b, 0)
+        console.log(clothes1)
     }
 
     const Jacketadd = () => {
         clothes1.push(Jacket)
+        Jacket.quanity +=1
         clothes.push(Jacket.id)
         let result = clothes1.map(a => a.price);
         let added = result.reduce((a, b) => a + b, 0)
         console.log(clothes1)
         console.log(result)
         console.log(added)
+        console.log(Jacket)
      }
 
     const onSubmit = async e => {
         e.preventDefault()
+        let result = clothes1.map(a => a.price);
+        let added = result.reduce((a, b) => a + b, 0)
+        console.log(result)
+        let price = added
         const order1 = {
             clothes,
             location,
@@ -118,7 +125,7 @@ const Order = () => {
                 const config = {
                     headers: {
                         'Content-Type': 'application/json',
-                        'x-auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWQyMmRlM2RiMWE2MGYxY2Q0OWE2YTgyIn0sImlhdCI6MTU2MzE2ODA5NywiZXhwIjoxNTY2NzY4MDk3fQ.ze6DO_4ngdHzulRFniEcXbdIHqjKFj4c-U6zbsNb0fI'
+                        'x-auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWQyMmRlM2RiMWE2MGYxY2Q0OWE2YTgyIn0sImlhdCI6MTU2MzI0MzAzMiwiZXhwIjoxNTY2ODQzMDMyfQ.RLfKKjSE5ATdemDPu9zXCVBF67pzZ2QW_dLJZIRR6eE'
                }
                     }
 
@@ -142,9 +149,7 @@ const Order = () => {
         <div className="form-group">
           <input type="location" placeholder="Location" name="location" value={location} onChange={e => onChange(e)} required />
         </div>
-        <div className="form-group">
-          <input type="price" placeholder="Price" name="price" value={price} onChange={e => onChange(e)} required />
-        </div>
+
         <input type="submit" className="btn btn-primary" value="Log In" />
         </form>
         </Fragment>
