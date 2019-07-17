@@ -46,9 +46,11 @@ const Faq = () => {
                     </div>  
                 </div>                 
             </div>
+        </div>
         
     )
 
 }
+
 
 export default Faq;
