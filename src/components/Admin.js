@@ -50,10 +50,6 @@ class Admin extends React.Component {
     })
   }
 
-  // handleClick3() {
-  //   let path = <Link to={'/'}>Home</Link>
-  // }
-
   handleClickSingleUser = (user) => {
     this.setState({
       users: false,
