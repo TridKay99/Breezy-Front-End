@@ -72,7 +72,7 @@ return (
                   <h4>Step 3</h4>
                   <p>Lorem ipsum dolor, consectetur...</p>  
                   <br></br> 
-                  <i class="fa fas fa-chevron-up"></i>
+                  <div className="back-to-top"><a href="#top"><p id="back-to-top">Back to top <i class="fa fas fa-chevron-up"></i></p></a></div>
                 </div>
               </div>  
             </div>
@@ -194,13 +194,14 @@ return (
         <div className="contact-us-form-container">
           <form className="contact-us-form">
             <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
-            <label for="nme"><span>What's your name?</span></label>
+            <label for="nme"><span>What's your email?</span></label>
             <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
             <label for="msg"><span>What's your message?</span></label>
             <input id="contact-submit" type="submit" value="Submit!" />
           </form>     
         </div>  
       </div>  
+      <div className="back-to-top"><a href="#top"><p id="back-to-top-map">Back to top <i class="fa fas fa-chevron-up"></i></p></a></div>
       <p className="map-subtext">Here's a simple map of where we are</p>      
       <div className="map-container">  
       <>
@@ -212,9 +213,7 @@ return (
       <div className="parallax"></div>
 
 
-     
-      <div className="parallax"></div>
-      <Footer/>
+  
   </div>
 
  

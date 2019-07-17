@@ -232,7 +232,7 @@ li {
 
 .map-subtext {
     display: flex;
-    margin: 13rem 0rem 1rem -2.5rem;
+    margin: 1rem 0rem 1rem -2.5rem;
     justify-content: center;
     align-items: flex-end;
     font-family: 'Muli', sans-serif;
@@ -811,4 +811,9 @@ h3 {
     /* background-color: blueviolet; */
     display: flex;
     justify-content: center;
+}
+
+#back-to-top-map {
+    color: black;
+    margin-top: 10rem;
 }
