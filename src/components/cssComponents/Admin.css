@@ -7,6 +7,9 @@
   align-items: center;
   text-align: center;
   height: 100vh;
+  background-image: url(../../laundry1.jpg);
+  background-repeat: no-repeat;
+  background-position: center
 }
 
 .adminNav {
@@ -45,7 +48,7 @@
 }
 
 .userContainer p {
-  /* color: #3a7999 */
+  color: #3a7999
 }
 
 .userJobsContainer {

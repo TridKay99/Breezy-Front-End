@@ -63,7 +63,7 @@ class Admin extends React.Component {
         <div className="adminButtons">
           <button onClick={this.handleClick}>Users</button>
           <button onClick={this.handleClick2}>Admin Home</button>
-          <button><Link to='/'>Home</Link></button>
+          <button><Link to={'/'}>Home</Link></button>
         </div>
       </div>
       <div className="adminTitle">
