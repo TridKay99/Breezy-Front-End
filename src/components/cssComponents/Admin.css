@@ -60,6 +60,14 @@
   justify-content: space-evenly;
 }
 
+.userJobsContainer p {
+  color: black
+}
+
+.userJobsContainer h4 {
+  color: #3a7999
+}
+
 .userJobsBox {
   width: 100%;
   height: 40%;
@@ -72,5 +80,9 @@
 }
 
 .jobsPText {
+  color: black
+}
+
+.userButtons {
   color: black
 }

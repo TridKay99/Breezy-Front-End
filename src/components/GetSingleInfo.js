@@ -35,7 +35,7 @@ class GetSingleInfo extends React.Component {
             <p>Address:</p><h4>{this.props.user.address}</h4>
             <p>Last Login:</p><h4>{this.props.user.date}</h4>
             <div className="userJobsContainer">
-              <p>Current Jobs:</p>
+              <h4>Current Jobs:</h4>
               <div className="userJobsBox">
                 {/* {this.props.user.jobs.map((job) => {
                   return<p>{job}</p>

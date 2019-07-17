@@ -10,20 +10,24 @@ import Register from './components/Register'
 import Login from './components/Login'
 import Order from './components/orders'
 import LoginForm from './components/LoginForm'
+import ProtectedRoutes from './components/ProtectedRoutes'
 // import GetUsersInfo from './components/GetUsersInfo'
 import Users from './components/Users'
 // import SingleUser from './components/GetSingleInfo'
 
 class Routes extends React.Component {
   render () {
+    const { auth } = this.props
     return (
       <Switch>
+        {/* Protected Routes */}
+        <ProtectedRoutes path="/protected" component={Admin} auth={auth} />
+        {/* Unprotected Routes */}
         <Route path="/about" component= {About} />
         <Route path="/faq" component= {Faq} />
-        <Route path="/" exact component={Home} />
+        <Route exact path="/" component={Home} />
         <Route path="/orders" exact component={Order} />
         <Route path="/profile" component={Profile} />
-        <Route path="/admin" component={Admin} />
         {/* conditional if admin to view this */}
         <Switch>
           <Route exact path='/register'component={Register}/>
