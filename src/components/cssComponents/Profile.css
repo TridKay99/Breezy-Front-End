@@ -1,0 +1,15 @@
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileInfoContainer {
+  border: 1px solid black;
+  padding: 0% 2% 2% 2%;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+}
