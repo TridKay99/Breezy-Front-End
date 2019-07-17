@@ -7,6 +7,8 @@ import Faq from './components/Faq';
 import Admin from './components/Admin';
 import Profile from './components/Profile'
 import Register from './components/Register'
+import Login from './components/Login'
+import Order from './components/orders'
 import LoginForm from './components/LoginForm'
 // import GetUsersInfo from './components/GetUsersInfo'
 import Users from './components/Users'
@@ -19,10 +21,10 @@ class Routes extends React.Component {
         <Route path="/about" component= {About} />
         <Route path="/faq" component= {Faq} />
         <Route path="/" exact component={Home} />
+        <Route path="/orders" exact component={Order} />
         <Route path="/profile" component={Profile} />
         <Route path="/admin" component={Admin} />
         {/* conditional if admin to view this */}
-        <Route path="/allusers" component={Users} />
         <Switch>
           <Route exact path='/register'component={Register}/>
           <Route path="/login" component={LoginForm} />

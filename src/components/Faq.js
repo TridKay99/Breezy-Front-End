@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Icon from '../Group.svg';
 import '../components/Faq.css';
 
+
 const Faq = () => {
     return (
         <div className="MainContainer">
@@ -45,9 +46,6 @@ const Faq = () => {
                     </div>  
                 </div>                 
             </div>
-            
-            
-        </div>
         
     )
 

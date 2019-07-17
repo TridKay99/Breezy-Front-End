@@ -3,6 +3,7 @@ import axios from 'axios'
 import Users from './Users'
 import GetSingleInfo from './GetSingleInfo'
 import './cssComponents/Admin.css'
+import { Link } from 'react-router-dom'
 
 class Admin extends React.Component {
   state = {
@@ -25,11 +26,10 @@ class Admin extends React.Component {
       return null
     } else {
       return(
-      <>
-        <h1>Hello Admin</h1>
+      <div className="adminInfo">
         <p>{admin.date}</p>
         <p>{admin.email}</p>
-      </>
+      </div>
       )
     }
   }
@@ -60,14 +60,19 @@ class Admin extends React.Component {
     return(
     <div className="adminContainer">
       <div className="adminNav">
-        <button onClick={this.handleClick}>Users</button>
-        <button onClick={this.handleClick2}>Admin Home</button>
+        <div className="adminButtons">
+          <button onClick={this.handleClick}>Users</button>
+          <button onClick={this.handleClick2}>Admin Home</button>
+          <button><Link to={'/'}>Home</Link></button>
+        </div>
+      </div>
+      <div className="adminTitle">
+        <h2>Hello Admin</h2>
       </div>
       {this.state.users ?
       <Users displaySingle={this.handleClickSingleUser}/> : 
       this.state.displaySingle === null ?
       this.adminPage() :
-      // <h1>Hello</h1>
       <GetSingleInfo user={this.state.displaySingle} /> 
       }
     </div>

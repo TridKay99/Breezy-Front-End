@@ -1,38 +1,56 @@
 // This page will be the userpage.
 import React from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
+import './cssComponents/Profile.css'
 
 class Profile extends React.Component {
   state = {
-    user: null
+    users: null
   };
-  
-  async componentDidMount() {
-    const response = await axios('FIND USER BY _ID URL')
-    // Should be response.data
-    // After confirming its the right pathway for the data
+
+   async getUsers() {
+    const response = await axios('http://localhost:5000/api/profile/users')
     this.setState({
-      user: response.data
+      users: response.data
     })
   }
 
-  // In this render we ideally want basic information(Name, DOB, Date create,(IMAGE?, if no image, default image?))
-  // A link or a side box with the users pending/history of jobs thats been created. "DRY CLEANING COMING  UP"
-
   render() {
-    // return(
-    //   <h1>hello</h1>
-    // )
-    const { user } = this.state
-    // Assume user doesnt exist in first render or render user profile. Other wise this will crash.
-    if (!user) {
-      return null
+    this.getUsers();
+    const {users} = this.state
+    if (!users) {
+      return <h1>Loading...</h1>
     } else {
-      return // information for User profile page. 
-      // name, age, dob - links to pending orders.
+      const myuser = users.find((user) =>{
+        if (user._id === "5d2c13b9700c640b08924761") {
+          return user;
+        } else {
+          return null;
+        }
+      });
+      if(myuser) {
+        return (
+        <div className="profileContainer">
+          <div className="userTitle">
+            <h1>{myuser.fullname}'s Profile</h1>
+          </div>
+          <div className="profileInfoContainer">
+            <div className="profileInfo">
+              <p>Delivery Address:</p><h4>{myuser.address}</h4> 
+              <p>Email:</p><h4>{myuser.user.email}</h4> 
+              <p>User id:</p><h4>{myuser.user._id}</h4> 
+            </div>
+          </div>
+        </div>
+        )
+      } else {
+        return <h1>comes here</h1> 
+      }
     }
   }
 }
+
 
 
 export default Profile
