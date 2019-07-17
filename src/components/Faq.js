@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Icon from '../Group.svg';
+import './cssComponents/Faq.css'
 
 const Faq = () => {
     return (
@@ -19,6 +20,32 @@ const Faq = () => {
                         <li><Link className="Contact" to={"/"}>CONTACT</Link></li>
                     </div>
                 </ul>
+            </div>
+            <div className="faqContainer">
+                <div className="titleContainer">
+                    <h1>Frequently Asked Questions</h1>
+                </div>
+                <div className="questionsContainer">
+                    <div className="q1">
+                        <h2>WHAT IS THE TURN AROUND TIME?</h2>
+                        <p>Monday pickups are dropped off on wednesday, tuesday pickups are dropped off on thursday.
+                        Richmond pickups are Monday.
+                        South Yarra pickups are Tuesday.
+                        </p>
+                    </div>
+                    <div className="q2">
+                        <h2>HOW DO I MAKE A PAYMENT?</h2>
+                        <p>After you place your order, payment is required and gets instantly put through as an order to us.</p>
+                    </div>
+                    <div className="q3">
+                        <h2>HOW DO I MAKE AN ORDER?</h2>
+                        <p>After you’ve signed up and created profile simply click the order button.</p>
+                    </div>
+                    <div className="q4">
+                        <h2>HOW DO I MAKE A SPECIAL REQUEST FOR AN ORDER?</h2>
+                        <p>There is a notes to Iron Maiden section in the order form.</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

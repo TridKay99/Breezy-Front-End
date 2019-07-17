@@ -25,7 +25,6 @@ class Routes extends React.Component {
         <Route path="/profile" component={Profile} />
         <Route path="/admin" component={Admin} />
         {/* conditional if admin to view this */}
-        <Route path="/allusers" component={Users} />
         <Switch>
           <Route exact path='/register'component={Register}/>
           <Route path="/login" component={LoginForm} />
