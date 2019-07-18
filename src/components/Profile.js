@@ -1,71 +1,53 @@
 // This page will be the userpage.
-import React from 'react'
+import React, { Fragment} from 'react'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
-import './cssComponents/Profile.css'
-import Home from './Home'
+
 
 class Profile extends React.Component {
-  state = {
-    users: null
-  };
-
-   async getUsers() {
-    const response = await axios('http://localhost:5000/api/profile/users')
-    this.setState({
-      users: response.data
-    })
-  }
-
-  render() {
-    this.getUsers();
-    const {users} = this.state
-    if (!users) {
-      return <div class="spinner"></div>                 
-    } else {
-      const myuser = users.find((user) =>{
-        if (user._id === "5d2c13b9700c640b08924761") {
-          return user;
-        } else {
-          return null;
-        }
-      });
-      if(myuser) {
-        return (
-        <React.Fragment>
-        {/* <Nav /> */}
-        <div className="subNav">
-          <Link to={'/'}>Home</Link>
-        </div>
-        <div className="profileContainer">
-          <div className="userTitle">
-            <h1>{myuser.fullname}'s Profile</h1>
-          </div>
-          <div className="profileInfoContainer">
-            <div className="profileInfo">
-              <p>Delivery Address:</p><h4>{myuser.address}</h4> 
-              <p>Email:</p><h4>{myuser.user.email}</h4> 
-              <p>User id:</p><h4>{myuser.user._id}</h4>
-              <p>Current Orders:</p>
-            </div>
-            <div class="profileOrdersContainer">
-              <div className="profileOrders">
-                  <p>ORDERS GO HERE ORDERS GO HERE ORDERS GO HERE ORDERS GO HERE ORDERS GO HERE ORDERS GO HERE ORDERS GO HERE 
-                  ORDERS GO HERE ORDERS GO HERE ORDERS GO HERE ORDERS GO HERE ORDERS GO HERE ORDERS GO HERE ORDERS GO HERE ORDERS GO HERE 
-                  </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </React.Fragment>
-        )
-      } else {
-        return <h1>comes here</h1> 
-      }
+  constructor(props) {
+    super(props)
+    this.state = {
+      user: localStorage.getItem('token'),
+      creditcard: '',
+      email: '',
+      dob: ''
     }
   }
+  
+  async componentWillMount() {
+  try {
+    const config = {
+        headers: {
+            'Content-Type': 'application/json',
+            'x-auth-token': `${localStorage.getItem('token')}`
+        }
+    }
+    // const body = JSON.stringify(order1)
+    console.log('here')
+    const res = await axios.get('/api/profile/me', config)
+    console.log(res.data)
+    this.setState({
+      creditcard: res.data.creditcard,
+      email: res.data.user.email,
+      dob: res.data.dob,
+    })
+} catch (err) {
+    console.error(err.response.data)
+}
 }
 
+  // In this render we ideally want basic information(Name, DOB, Date create,(IMAGE?, if no image, default image?))
+  // A link or a side box with the users pending/history of jobs thats been created. "DRY CLEANING COMING  UP"
 
+  render() {
+    return(
+      <React.Fragment>
+      <div> <h1>hello {this.state.email}</h1> </div>
+      <div> <h1>Your credit card stored in plain text is: {this.state.creditcard}</h1> </div>
+      <div> <h1>Your date of birth is: {this.state.dob}</h1> </div>
+      </React.Fragment>
+    )
+  }
+}
 
 export default Profile
