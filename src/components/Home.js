@@ -56,21 +56,21 @@ return (
           <div className="right">
             <div className="right-box">
               <div className="hiw-content">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, t labore et dolore magna aliqu</h4>
+                <h4>It's fairly easy to use our app, read the instructions below and follow them step by step, and you're good to go!</h4>
                 <br></br> 
                 <div>
                   <h4>Step 1</h4>
-                  <p>Lorem ipsum dolor, consectetur...</p>
+                  <p>Create an account, and customize your own profile page.</p>
                   <br></br>
                 </div>
                 <div>
                   <h4>Step 2</h4>
-                  <p>Lorem ipsum dolor, consectetur...</p>  
+                  <p>Place your order here online, or call 0417194541.</p>  
                   <br></br>      
                 </div>
                 <div>
                   <h4>Step 3</h4>
-                  <p>Lorem ipsum dolor, consectetur...</p>  
+                  <p>Your order is ready for pickup! We notify you via SMS/email with the locker number your order is in and the code to open it (usually the last 4 digits of your phone number).</p>  
                   <br></br> 
                   <div className="back-to-top"><a href="#top"><p id="back-to-top">Back to top <i class="fa fas fa-chevron-up"></i></p></a></div>
                 </div>
