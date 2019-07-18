@@ -35,7 +35,6 @@ class Email extends Component {
         return (
             <Fragment>
             <h1>Contact us</h1>
-            <form className="form">
             <div className="form-group">
             <input type="email" placeholder="email" name="email" onChange={this.handleLocation} required />
             </div>
@@ -45,9 +44,10 @@ class Email extends Component {
             <div className="form-group">
             <input type="message" placeholder="message" name="message" onChange={this.handleLocation} required />
             </div>
-
-            <input type="submit" className="btn btn-primary" value="Log In" onClick={this.handleLogin} />
+            <form className="form">
+            <input type="button" id="Login" value="Log In" onClick={this.handleLogin} />
             </form>
+
             </Fragment>
         )
     }
