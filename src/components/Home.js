@@ -82,7 +82,7 @@ return (
       <div className="parallax"></div>
       <div className="pricing-container">
         <div id="pricing" className="Pricing-word">PRICINGS</div>
-        <div className="sub-text"><p>FREE PICK-UP, DELIVERY AND GST INCLUDED IN PRICING </p></div>
+        <div className="sub-text"><p>FREE PICK-UP, DELIVERY AND GST. INCLUDED IN PRICING </p></div>
         <div className="back-to-top"><a href="#top"><p id="back-to-top">Back to top <i class="fa fas fa-chevron-up"></i></p></a></div>
         <div className="pricing-grid-container">
           <div className="pricing-grid-box">
@@ -197,7 +197,7 @@ return (
             <label for="nme"><span>What's your email?</span></label>
             <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
             <label for="msg"><span>What's your message?</span></label>
-            <input id="contact-submit" type="submit" value="Submit!" />
+            <input id="contact-submit" type="submit" value="SUBMIT" />
           </form>     
         </div>  
       </div>  

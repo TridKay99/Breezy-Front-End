@@ -406,7 +406,7 @@ button:hover {
 
 .pricing-container {
 
-    height: 67rem;
+    height: 69rem;
 }
 
 .back-to-top {
@@ -760,7 +760,7 @@ h3 {
   }
   
   #contact-submit:hover {
-    background: lightseagreen;
+    background: #3a7999;
   }
   
   #contact-submit:active {
