@@ -13,6 +13,7 @@ import LoginForm from './components/LoginForm'
 import ProtectedRoutes from './components/ProtectedRoutes'
 // import GetUsersInfo from './components/GetUsersInfo'
 import Users from './components/Users'
+import Email from './components/email'
 // import SingleUser from './components/GetSingleInfo'
 
 class Routes extends React.Component {
@@ -32,6 +33,7 @@ class Routes extends React.Component {
         <Switch>
           <Route exact path='/register'component={Register}/>
           <Route path="/login" component={LoginForm} />
+          <Route path="/email" component={Email} />
         </Switch>
         {/* <Route path='/user/:email' component={SingleUser} /> */}
 
