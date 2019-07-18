@@ -4,8 +4,10 @@ import Users from './Users'
 import GetSingleInfo from './GetSingleInfo'
 import './cssComponents/Admin.css'
 import { Link } from 'react-router-dom'
+import Home from './Home'
 
 class Admin extends React.Component {
+
   state = {
     admin: null,
     users: false,
@@ -63,7 +65,6 @@ class Admin extends React.Component {
         <div className="adminButtons">
           <button onClick={this.handleClick}>Users</button>
           <button onClick={this.handleClick2}>Admin Home</button>
-          <button><Link to='/'>Home</Link></button>
         </div>
       </div>
       <div className="adminTitle">
