@@ -8,7 +8,8 @@ import Laundry from '../laundry2.jpg';
 import Icon from '../Group.svg';
 import Login from './Login';
 import Signup from './Signup';
-import Footer from './Footer';
+import Email from './email';
+
 
 
 const Home = () => {
@@ -189,7 +190,7 @@ return (
       </div>
 
       <div className="parallax"></div>
-      <div id="contact" className="Contact"> 
+      {/* <div id="contact" className="Contact"> 
         <h1 className="contact-us-word">Contact Us</h1>   
         <div className="contact-us-form-container">
           <form className="contact-us-form">
@@ -200,7 +201,8 @@ return (
             <input id="contact-submit" type="submit" value="SUBMIT" />
           </form>     
         </div>  
-      </div>  
+      </div>   */}
+      <Email />
       <div className="back-to-top"><a href="#top"><p id="back-to-top-map">Back to top <i class="fa fas fa-chevron-up"></i></p></a></div>
       <p className="map-subtext">Here's a simple map of where we are</p>      
       <div className="map-container">  
