@@ -8,6 +8,7 @@ import Laundry from '../laundry2.jpg';
 import Icon from '../Group.svg';
 import Login from './Login';
 import Signup from './Signup';
+import Footer from './Footer';
 
 
 const Home = () => {
@@ -24,8 +25,8 @@ return (
         <div className="content">
           <li><a href="#hiw" className="Hiw" to={"/about"}>HOW IT WORKS</a></li>
           <li><a href="#pricing" className="Price" to={"/pricing"}>PRICING</a></li>
-          <li><a href="#faq" className="Faq" to={"/Faq"}>FAQ</a></li>
-          <li><Link className="Contact" to={"/contact"}>CONTACT</Link></li>
+          <li><Link className="Faq" to={"/Faq"}>FAQ</Link></li>
+          <li><a href="#contact" className="Contact" to={"/contact"}>CONTACT</a></li>
         </div>
       </ul>
     </div>
@@ -55,23 +56,23 @@ return (
           <div className="right">
             <div className="right-box">
               <div className="hiw-content">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, t labore et dolore magna aliqu</h4>
+                <h4>It's fairly easy to use our app, read the instructions below and follow them step by step, and you're good to go!</h4>
                 <br></br> 
                 <div>
                   <h4>Step 1</h4>
-                  <p>Lorem ipsum dolor, consectetur...</p>
+                  <p>Create an account, and customize your own profile page.</p>
                   <br></br>
                 </div>
                 <div>
                   <h4>Step 2</h4>
-                  <p>Lorem ipsum dolor, consectetur...</p>  
+                  <p>Place your order here online, or call 0417194541.</p>  
                   <br></br>      
                 </div>
                 <div>
                   <h4>Step 3</h4>
-                  <p>Lorem ipsum dolor, consectetur...</p>  
+                  <p>Your order is ready for pickup! We notify you via SMS/email with the locker number your order is in and the code to open it (usually the last 4 digits of your phone number).</p>  
                   <br></br> 
-                  <i class="fa fas fa-chevron-up"></i>
+                  <div className="back-to-top"><a href="#top"><p id="back-to-top">Back to top <i class="fa fas fa-chevron-up"></i></p></a></div>
                 </div>
               </div>  
             </div>
@@ -188,28 +189,31 @@ return (
       </div>
 
       <div className="parallax"></div>
-
-
-      <div id="faq" className="FAQ">FAQ</div>
-
-
-      <div className="parallax"></div>
-
-
-      <div className="Contact">Contact</div>
-
-
-      <div className="parallax"></div>
-
-
-      <div className="map-container">
+      <div id="contact" className="Contact"> 
+        <h1 className="contact-us-word">Contact Us</h1>   
+        <div className="contact-us-form-container">
+          <form className="contact-us-form">
+            <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+            <label for="nme"><span>What's your email?</span></label>
+            <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+            <label for="msg"><span>What's your message?</span></label>
+            <input id="contact-submit" type="submit" value="Submit!" />
+          </form>     
+        </div>  
+      </div>  
+      <div className="back-to-top"><a href="#top"><p id="back-to-top-map">Back to top <i class="fa fas fa-chevron-up"></i></p></a></div>
+      <p className="map-subtext">Here's a simple map of where we are</p>      
+      <div className="map-container">  
       <>
         <Maps />
-        {/* <Clothes /> */}
+        {/* <Clothes/> */}
       </>
       </div>
+
       <div className="parallax"></div>
-      <footer>Footer!!!</footer>
+
+
+  
   </div>
 
  

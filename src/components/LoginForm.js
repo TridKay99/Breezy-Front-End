@@ -44,13 +44,14 @@ const LoginForm = () => {
                 <div className="form-container" >
                     <form className="form" onSubmit={e => onSubmit(e)}>
                         <div className="form-group">
-                        <input type="email" placeholder="Email Address" name="email" value={email} onChange={e => onChange(e)} required />
+                        <input type="email" id="EA" placeholder="Email Address" name="email" value={email} onChange={e => onChange(e)} required />
                         </div>
                         <div className="form-group">
                         <input
                             type="password"
                             placeholder="Password"
                             name="password"
+                            id="pass"
                             value={password} onChange={e => onChange(e)} required
                             minLength="6"
                         />
