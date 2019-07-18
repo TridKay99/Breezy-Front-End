@@ -30,7 +30,8 @@ const LoginForm = () => {
                 const body = JSON.stringify(newUser)
 
                 const res = await axios.post('/api/auth', body, config)
-                console.log(res.data)
+                localStorage.setItem('token', res.data.token)
+                console.log(res.data.token)
             } catch (err) {
                 console.error(err.response.data)
             }
