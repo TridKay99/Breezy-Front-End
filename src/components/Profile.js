@@ -1,38 +1,53 @@
 // This page will be the userpage.
-import React from 'react'
+import React, { Fragment} from 'react'
 import axios from 'axios'
 
+
 class Profile extends React.Component {
-  state = {
-    user: null
-  };
-  
-  async componentDidMount() {
-    const response = await axios('FIND USER BY _ID URL')
-    // Should be response.data
-    // After confirming its the right pathway for the data
-    this.setState({
-      user: response.data
-    })
+  constructor(props) {
+    super(props)
+    this.state = {
+      user: localStorage.getItem('token'),
+      creditcard: '',
+      email: '',
+      dob: ''
+    }
   }
+  
+  async componentWillMount() {
+  try {
+    const config = {
+        headers: {
+            'Content-Type': 'application/json',
+            'x-auth-token': `${localStorage.getItem('token')}`
+        }
+    }
+    // const body = JSON.stringify(order1)
+    console.log('here')
+    const res = await axios.get('/api/profile/me', config)
+    console.log(res.data)
+    this.setState({
+      creditcard: res.data.creditcard,
+      email: res.data.user.email,
+      dob: res.data.dob,
+    })
+} catch (err) {
+    console.error(err.response.data)
+}
+}
 
   // In this render we ideally want basic information(Name, DOB, Date create,(IMAGE?, if no image, default image?))
   // A link or a side box with the users pending/history of jobs thats been created. "DRY CLEANING COMING  UP"
 
   render() {
-    // return(
-    //   <h1>hello</h1>
-    // )
-    const { user } = this.state
-    // Assume user doesnt exist in first render or render user profile. Other wise this will crash.
-    if (!user) {
-      return null
-    } else {
-      return // information for User profile page. 
-      // name, age, dob - links to pending orders.
-    }
+    return(
+      <React.Fragment>
+      <div> <h1>hello {this.state.email}</h1> </div>
+      <div> <h1>Your credit card stored in plain text is: {this.state.creditcard}</h1> </div>
+      <div> <h1>Your date of birth is: {this.state.dob}</h1> </div>
+      </React.Fragment>
+    )
   }
 }
-
 
 export default Profile
