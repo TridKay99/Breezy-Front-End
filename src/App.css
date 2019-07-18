@@ -388,7 +388,9 @@ button:hover {
     font-weight: bold;
 }
 
-/* .hiw-content {
+.hiw-content {
+    /* background-color: red;  */
+    margin-top: 11rem;
     /* height: 100%; */
     /* display: flex;
     justify-content: flex-start;
@@ -397,14 +399,14 @@ button:hover {
     margin: 6rem 0rem 5rem -3rem;
     padding: 2rem;
     font-family: 'Muli', sans-serif; */
-/* } */
+}
 
 
 /* pricing section */
 
 .pricing-container {
 
-    height: 70rem;
+    height: 67rem;
 }
 
 .back-to-top {
@@ -446,6 +448,7 @@ button:hover {
 .pricing-grid-container {
     height: 50rem;
     /* background-color: #3a7999; */
+    margin-top: -4rem;
 }
 
 .pricing-grid-box {

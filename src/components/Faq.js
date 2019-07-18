@@ -27,12 +27,12 @@ const Faq = () => {
             </div>
 
             <div className="FAQ-container">
-                <div className="FAQ-title">Frequently Answered Questions</div>
+                <div className="FAQ-title">Frequently Asked Questions</div>
                 <div className="overall-content-container">
                     <div className="FAQ-content-container">
                         <div className="FAQ-content">
                             <h8>WHAT IS THE TURN AROUND TIME?</h8>
-                            <p className="turn-around">Monday pickups are dropped off on wednesday, tuesday pickups are dropped off on thursday. Richmond pickups are Monday. South Yarra pickups are Tuesday.</p>
+                            <p className="turn-around">Monday pickups are dropped off on Wednesday, Tuesday pickups are dropped off on Thursday. Richmond pickups are Monday. South Yarra pickups are Tuesday.</p>
                             <h8>HOW DO I MAKE A PAYMENT?</h8>
                             <p className="htm-payment">After you place your order, payment is required and gets instantly put through as an order to us.</p>
                             <h8>HOW DO I MAKE AN ORDER?</h8>
