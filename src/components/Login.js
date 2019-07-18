@@ -23,6 +23,10 @@ import LoginForm from './LoginForm';
         });
     }
 
+    // componentWillUpdate(nextProps, nextState) {
+    //     localStorage.setItem('token', 'THIS IS LOCAL STORAGE TESTTTTT')
+    // }
+
     render() {
         return (
             <section>

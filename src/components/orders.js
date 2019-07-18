@@ -119,7 +119,7 @@ class Order extends Component {
                 const config = {
                     headers: {
                         'Content-Type': 'application/json',
-                        'x-auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWQyMmRlM2RiMWE2MGYxY2Q0OWE2YTgyIn0sImlhdCI6MTU2MzI0MzAzMiwiZXhwIjoxNTY2ODQzMDMyfQ.RLfKKjSE5ATdemDPu9zXCVBF67pzZ2QW_dLJZIRR6eE'
+                        'x-auth-token': `${localStorage.getItem('token')}`
                     }
                 }
 
@@ -131,8 +131,8 @@ class Order extends Component {
                 console.error(err.response.data)
             }
         }
-    
-    render() {
+
+       render() {
         return (
             <Fragment>
             <h1>Orders page</h1>
