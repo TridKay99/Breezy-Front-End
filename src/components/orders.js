@@ -106,6 +106,72 @@ class Order extends Component {
         })
     }
 
+    Dressadd = () => {
+        const addedClothes = this.state.cart
+        const addedIds = this.state.ids
+        addedClothes.push(this.state.Dress)
+        addedIds.push(this.state.Dress.id)
+        this.setState({
+            clothes1: addedClothes,
+            ids: addedIds
+        })
+    }
+
+    Skirtadd = () => {
+        const addedClothes = this.state.cart
+        const addedIds = this.state.ids
+        addedClothes.push(this.state.Skirt)
+        addedIds.push(this.state.Skirt.id)
+        this.setState({
+            clothes1: addedClothes,
+            ids: addedIds
+        })
+    }
+
+    Blouseadd = () => {
+        const addedClothes = this.state.cart
+        const addedIds = this.state.ids
+        addedClothes.push(this.state.Blouse)
+        addedIds.push(this.state.Blouse.id)
+        this.setState({
+            clothes1: addedClothes,
+            ids: addedIds
+        })
+    }
+
+    Shirtadd = () => {
+        const addedClothes = this.state.cart
+        const addedIds = this.state.ids
+        addedClothes.push(this.state.Shirt)
+        addedIds.push(this.state.Shirt.id)
+        this.setState({
+            clothes1: addedClothes,
+            ids: addedIds
+        })
+    }
+
+    Tieadd = () => {
+        const addedClothes = this.state.cart
+        const addedIds = this.state.ids
+        addedClothes.push(this.state.Tie)
+        addedIds.push(this.state.Tie.id)
+        this.setState({
+            clothes1: addedClothes,
+            ids: addedIds
+        })
+    }
+
+    Scarvesadd = () => {
+        const addedClothes = this.state.cart
+        const addedIds = this.state.ids
+        addedClothes.push(this.state.Scarves)
+        addedIds.push(this.state.Scarves.id)
+        this.setState({
+            clothes1: addedClothes,
+            ids: addedIds
+        })
+    }
+
     handleLogin = async (e) => {
         e.preventDefault()
         let result = this.state.cart.map(a => a.price);
@@ -139,6 +205,12 @@ class Order extends Component {
             <button onClick={this.HeavyCoatadd}> Add Heavy Coat </button>
             <button onClick={this.Jacketadd}> Add Jacket </button> 
             <button onClick={this.Trousersadd}> Add Trousers </button>
+            <button onClick={this.Dressadd}> Add Dress </button>
+            <button onClick={this.Skirtadd}> Add Skirt </button>
+            <button onClick={this.Blouseadd}> Add Blouse </button>
+            <button onClick={this.Shirtadd}> Add Shirt </button>
+            <button onClick={this.Tieadd}> Add Tie </button>
+            <button onClick={this.Scarvesadd}> Add Scarves </button>
             <form className="form">
             <div className="form-group">
             <input type="location" placeholder="Location" name="location" onChange={this.handleLocation} required />
