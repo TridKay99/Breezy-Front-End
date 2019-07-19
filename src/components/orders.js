@@ -144,7 +144,7 @@ class Order extends Component {
             <input type="location" placeholder="Location" name="location" onChange={this.handleLocation} required />
             </div>
 
-            <input type="submit" className="btn btn-primary" value="Log In" onClick={this.handleLogin} />
+            <input type="button" id="Login"  value="Submit Order" onClick={this.handleLogin} />
             </form>
             </Fragment>
         )
