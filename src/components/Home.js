@@ -21,7 +21,7 @@ return (
         <div className="title">
           <li><Link className="Name" to={"/"}>IRON MAIDEN</Link></li>
           <li><img src={Icon} alt="icon" className="icon"/></li>
-          {/* <li><i className="fa fas fa-spinner fa-spin"></i></li> */}
+          <li><i className="fa fas fa-spinner fa-spin"></i></li>
         </div>
         <div className="content">
           <li><a href="#hiw" className="Hiw" to={"/about"}>HOW IT WORKS</a></li>
