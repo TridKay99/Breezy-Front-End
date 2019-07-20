@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios'
 import Users from './Users'
 import GetSingleInfo from './GetSingleInfo'
+import AdminOrders from './AdminOrders'
 import './cssComponents/Admin.css'
 import { Link } from 'react-router-dom'
 import Home from './Home'
@@ -11,19 +12,26 @@ class Admin extends React.Component {
   state = {
     admin: null,
     users: false,
-    displaySingle: null
+    displaySingle: null,
+    orders: null
   };
 
   async componentDidMount() {
-    const response = await axios('http://localhost:5000/api/profile/admins')
+  
+    const config = {
+      headers: {
+          'Content-Type': 'application/json',
+          'x-auth-token': `${localStorage.getItem('token')}`
+      }
+    }
+    const response = await axios.get('http://localhost:5000/api/profile/admins', config)
     this.setState({
-      admin: response.data[0].user
+      admin: response.data[1].user
     })
   }
 
   adminPage = () => {
     const { admin } = this.state
-    console.log('admin page')
     if (!admin) {
       return null
     } else {
@@ -39,32 +47,44 @@ class Admin extends React.Component {
   handleClick = () => {
     this.setState({
       users: true,
-      displaySingle: null
+      displaySingle: null,
+      orders: false
     })
   }
 
   handleClick2 = () => {
     this.setState({
       users: false,
-      displaySingle: null
+      displaySingle: null,
+      orders: false
     })
   }
 
   handleClickSingleUser = (user) => {
     this.setState({
       users: false,
-      displaySingle: user
+      displaySingle: user,
+      orders: false
     })
   }
 
+  handleClickOrders = () => {
+    this.setState({
+      users: false,
+      displaySingle: null,
+      orders: true
+    })
+  }
+
+
   render() {
-    console.log(this.state)
     return(
     <div className="adminContainer">
       <div className="adminNav">
         <div className="adminButtons">
           <button onClick={this.handleClick}>Users</button>
           <button onClick={this.handleClick2}>Admin Home</button>
+          <button onClick={this.handleClickOrders}>Orders</button>
         </div>
       </div>
       <div className="adminTitle">
@@ -72,9 +92,11 @@ class Admin extends React.Component {
       </div>
       {this.state.users ?
       <Users displaySingle={this.handleClickSingleUser}/> : 
+      this.state.orders === true ?
+      <AdminOrders orders={this.handleClickOrders}/> :
       this.state.displaySingle === null ?
       this.adminPage() :
-      <GetSingleInfo user={this.state.displaySingle} /> 
+      <GetSingleInfo user={this.state.displaySingle} />
       }
     </div>
     )
