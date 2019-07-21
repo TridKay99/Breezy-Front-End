@@ -275,6 +275,7 @@ class Order extends Component {
                                             <button className="jacket" onClick={this.Jacketadd}> JACKET </button> 
                                             <button className="dress" onClick={this.Dressadd}> DRESS </button>
                                             <button className="skirt" onClick={this.Skirtadd}> SKIRT </button>
+                                            <div><h1>TOTAL</h1></div>
                                         
                                         </div>
                                         <div className="cart-name-middle-box">
@@ -282,10 +283,13 @@ class Order extends Component {
                                             <p>$13.10</p>
                                             <p>$22.00</p>
                                             <p>$12.10</p>
-                                            
+                                            <div classname="total-price">
+                                                <h1 id="total-price-number">$177.57</h1> <p className="total-price-p"> (including 10% GST.)</p>
+                                            </div>
+                                           
                                         </div>
                                         <div className="cart-name-right-box">
-                                            <h1>CHECK OUT</h1>  
+                                            <input type="button" id="check-out"  value="CHECK OUT" onClick={this.handleLogin} />
                                         </div>
                                     </div>
                                 </div>
