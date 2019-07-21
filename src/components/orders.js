@@ -215,7 +215,7 @@ class Order extends Component {
                             <li><Link className="Price" to={"/"}>PRICING</Link></li>
                             <li><Link className="Faq" to={"/"}>FAQ</Link></li>
                             <li><Link className="Contact" to={"/"}>CONTACT</Link></li>
-                            <li><Link className="Contact" to={"/orders"}>PROFILE</Link></li>
+                            <li><Link className="Contact" to={"/profile"}>PROFILE</Link></li>
                             <li><Link className="Contact" to={"/"}>SIGN OUT</Link></li>
                         </div>
                     </ul>
