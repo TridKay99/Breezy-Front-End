@@ -1,14 +1,14 @@
 import React from 'react';
 import Maps from './MapContainer';
 import '../App.css';
-import Clothes from './Clothes';
-import { Link } from 'react-router-dom';
+// import Clothes from './Clothes';
+// import { Link } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import Laundry from '../laundry2.jpg';
-import Icon from '../Group.svg';
 import Login from './Login';
 import Signup from './Signup';
 import Email from './email';
+import Nav from './Nav';
 
 
 
@@ -16,21 +16,7 @@ const Home = () => {
 return (
   
   <div className="MainContainer">
-    <div className="navbar-c" id="top">
-      <ul className="navbar">
-        <div className="title">
-          <li><Link className="Name" to={"/"}>IRON MAIDEN</Link></li>
-          <li><img src={Icon} alt="icon" className="icon"/></li>
-          <li><i className="fa fas fa-spinner fa-spin"></i></li>
-        </div>
-        <div className="content">
-          <li><a href="#hiw" className="Hiw" to={"/about"}>HOW IT WORKS</a></li>
-          <li><a href="#pricing" className="Price" to={"/pricing"}>PRICING</a></li>
-          <li><Link className="Faq" to={"/Faq"}>FAQ</Link></li>
-          <li><a href="#contact" className="Contact" to={"/contact"}>CONTACT</a></li>
-        </div>
-      </ul>
-    </div>
+    <Nav />
     {/* <div class="parallax"></div> */}
     <div className="home">
       <img src={Laundry} alt="laundry" className="laundry"/>
