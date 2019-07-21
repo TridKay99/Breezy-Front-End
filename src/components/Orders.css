@@ -1,0 +1,257 @@
+.MainContainer-O {
+    font-family : "Muli", sans-serif;
+    height: 100vh;
+    /* background-color: blue; */
+    width: 100vw;
+}
+
+.Orders-Title {
+    display: flex;
+    justify-content: flex-start;
+    font-family : "Muli", sans-serif;
+    margin: 2rem 2rem 1rem 7rem;
+}
+
+.welcome-o {
+    font-size: 2.5rem;
+    font-family : "Muli", sans-serif;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.name-o {
+    font-size: 2.5rem;
+    font-family : "Muli", sans-serif;
+    color: gray;
+    letter-spacing: 2px;
+}
+
+.Orders-grid-container {
+    height: 50rem;
+    /* background-color: #3a7999; */
+    margin-top: -4rem;
+}
+
+.Orders-grid-box {
+    /* background-color: purple;  */
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+}
+
+.Orders-left {
+    /* background-color: red;   */
+}
+
+.Order-right {
+    /* background-color: red;   */
+}
+
+.Orders-left-box {
+    height: 65%;
+    /* background-color: blue; */
+    /* display: flex;
+    justify-content: center; */
+    margin: 10rem 0rem 0rem 5rem;
+    /* border-left: solid black 0.01rem; */
+}
+
+.trousers {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: bold;
+    width: 7.5rem;
+    height: 2.5rem;
+}
+
+.jacket {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: bold;
+    width: 7.5rem;
+    height: 2.5rem;
+}
+
+.dress {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: bold;
+    width: 7.5rem;
+    height: 2.5rem;
+}
+
+.skirt {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: bold;
+    width: 7.5rem;
+    height: 2.5rem;
+}
+
+.blouse {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: bold;
+    width: 7.5rem;
+    height: 2.5rem;
+}
+
+.shirt {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: bold;
+    width: 7.5rem;
+    height: 2.5rem;
+}
+
+.tie {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: bold;
+    width: 7.5rem;
+    height: 2.5rem;
+}
+
+.scarves {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: bold;
+    width: 7.5rem;
+    height: 2.5rem;
+}
+
+.heavy-coat {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: bold;
+    width: 7.5rem;
+    height: 2.5rem;
+}
+
+.clothings {
+    padding: 0rem 0rem 0rem 1rem;
+    font-size: 2rem;
+    font-family: 'Muli', sans-serif;
+}
+
+.content-grid-o {
+    height: 90%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    /* background-color: lightcoral; */
+    font-family: 'Muli', sans-serif;
+    margin-top: 4rem;
+}
+
+.orders-name-left-box {
+    height: 90%;
+    width: 10rem;
+    grid-row: (1,2) ;
+    /* background-color: blue; */
+    padding: 1rem;
+}
+
+.orders-name-right-box {
+    height: 85%;
+    width: 4.3rem;
+    grid-row: (2,2) ;
+    background-color: rgb(170, 170, 170);
+    padding: 1rem;
+    margin-top: 1.2rem;
+}
+
+.orders-name-right-box p {
+    height: 1.2rem;
+    margin: -0.3rem 1rem 1rem 0.3rem;
+    
+}
+
+/* //right grid */
+
+.Order-right {
+    grid-column: (2,2) ;
+    /* background-color: pink; */
+}
+
+.Order-right-box {
+    background-color: blue;
+    margin: 10rem 0rem 3rem 3rem;
+    height: 40rem;
+    border-left: solid black 0.01rem; 
+}
+
+.order-cart {
+    margin: -2rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 6rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.order-cart-word {
+    font-size: 2rem;
+    font-family: 'Muli', sans-serif;
+}
+
+.cart-grid-o {
+    height: 70%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 0.1fr 0.3fr 0.3fr 0.3fr;
+    /* background-color: lightcoral; */
+    font-family: 'Muli', sans-serif;
+    /* margin-top: 4rem; */
+}
+
+.cart-grid-container {
+    height: 100%;
+    width: 60rem;
+    margin: 0rem 0rem 0rem 5rem;
+    display: flex;
+    background-color: lightcoral;
+    /* justify-content: flex-end; */
+}
+
+.cart-name-top-box {
+    /* height: 90%;
+    width: 10rem; */
+    grid-row: (1,2) ;
+    background-color: pink;
+    padding: 2.5rem 5rem 0rem 2.5rem;
+}
+
+.cart-name-left-box {
+    /* height: 90%;
+    width: 10rem; */
+    grid-row: (2,3) ;
+    background-color: red;
+    padding: 2.5rem 5rem 0rem 2.5rem;
+}
+
+.cart-name-middle-box {
+      /* height: 90%;
+    /* width: 10rem; */ 
+    grid-row: (3,4) ;
+    background-color: purple;
+    padding: 2.5rem 5rem 0rem 2.5rem;
+}
+
+.cart-name-right-box {
+    
+  width: 60rem; 
+  display: flex;
+  align-items: flex-end;
+  grid-row: (4,4) ;
+  background-color: green;
+  padding: 1rem;
+}
+
