@@ -109,10 +109,10 @@ class Admin extends React.Component {
       <Users displaySingle={this.handleClickSingleUser}/> : 
       this.state.orders === true ?
       <AdminOrders orders={this.handleClickOrders} orderSingle={this.handleClickSingleOrder}/> :
-      // this.state.displaySingle === null ?
+      this.state.displaySingle !== null ?
+      <GetSingleInfo user={this.state.displaySingle} /> :
       this.state.orderSingle === null ?
       this.adminPage() :
-      // <GetSingleInfo user={this.state.displaySingle} />
       <DisplayOrder order={this.state.orderSingle} />
       }
     </div>
