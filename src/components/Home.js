@@ -12,6 +12,19 @@ import Footer from './Footer';
 
 
 const Home = () => {
+
+  const logout = () => {
+    localStorage.removeItem('token')
+  }
+
+  const ifloggedin = () => {
+    if (!localStorage.hasOwnProperty('token')) {
+      return null
+} else {
+return <li><a href="#contact" className="Contact" onClick={logout} to={"/"}>Log Out</a></li>
+}
+  }
+
 return (
   
   <div className="MainContainer">
@@ -27,6 +40,7 @@ return (
           <li><a href="#pricing" className="Price" to={"/pricing"}>PRICING</a></li>
           <li><Link className="Faq" to={"/Faq"}>FAQ</Link></li>
           <li><a href="#contact" className="Contact" to={"/contact"}>CONTACT</a></li>
+          {ifloggedin()}
         </div>
       </ul>
     </div>
