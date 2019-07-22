@@ -203,7 +203,13 @@ class Order extends Component {
        render() {
         let trousersCount = this.state.cart.filter((item) => item.name === "Trousers").length
         let jacketCount = this.state.cart.filter((item) => item.name === "Jacket").length
-
+        let dressCount = this.state.cart.filter((item) => item.name === "Dress").length
+        let skirtCount = this.state.cart.filter((item) => item.name === "Skirt").length
+        let blouseCount = this.state.cart.filter((item) => item.name === "Blouse").length
+        let shirtCount = this.state.cart.filter((item) => item.name === "Shirt").length
+        let tieCount = this.state.cart.filter((item) => item.name === "Tie").length
+        let scarvesCount = this.state.cart.filter((item) => item.name === "Scarves").length
+        let heavycoatCount = this.state.cart.filter((item) => item.name === "Heavy Coat").length
 
         return (
             <Fragment>
@@ -273,31 +279,43 @@ class Order extends Component {
                                            
                                         {trousersCount > 0 && <p>{trousersCount}</p>}
                                         {jacketCount > 0 && <p>{jacketCount}</p>}
-                                            {/* <p>{this.state.cart.filter((item) => item.name === "Jacket").length}</p>
-                                            <p>{this.state.cart.filter((item) => item.name === "Dress").length}</p>
-                                            <p>{this.state.cart.filter((item) => item.name === "Skirt").length}</p>
-                                            <p>{this.state.cart.filter((item) => item.name === "Blouse").length}</p>
-                                            <p>{this.state.cart.filter((item) => item.name === "Shirt").length}</p>
-                                            <p>{this.state.cart.filter((item) => item.name === "Tie").length}</p>
-                                            <p>{this.state.cart.filter((item) => item.name === "Heavy Coat").length}</p> */}
+                                        {dressCount > 0 && <p>{dressCount}</p>}
+                                        {skirtCount > 0 && <p>{skirtCount}</p>}
+                                        {blouseCount > 0 && <p>{blouseCount}</p>}
+                                        {shirtCount > 0 && <p>{shirtCount}</p>}
+                                        {tieCount > 0 && <p>{tieCount}</p>}
+                                        {scarvesCount > 0 && <p>{scarvesCount}</p>}
+                                        {heavycoatCount > 0 && <p>{heavycoatCount}</p>}
+                                           
                                                 
                                         </div>
                                         <div className="cart-name-left-box">
                                         {trousersCount > 0 && <button className="trousers" > TROUSERS </button> }
                                         {jacketCount > 0 && <button className="jacket" > JACKET </button> }
-                                            {/* <button className="dress" > DRESS </button>
-                                            <button className="skirt"> SKIRT </button> */}
+                                        {dressCount > 0 && <button className="dress" > DRESS </button> }
+                                        {skirtCount > 0 && <button className="dress" > SKIRT </button> }
+                                        {blouseCount > 0 && <button className="dress" > BLOUSE </button> }
+                                        {shirtCount > 0 && <button className="dress" > SHIRT </button> }
+                                        {tieCount > 0 && <button className="dress" > TIE </button> }
+                                        {scarvesCount > 0 && <button className="dress" > SCARVES </button> }
+                                        {heavycoatCount > 0 && <button className="dress" > HEAVY COAT </button> }
+
                                             <div><h1>TOTAL</h1></div>
                                         
                                         </div>
                                         <div className="cart-name-middle-box">
                                         {trousersCount > 0 &&  <p>$ {(trousersCount * this.state.Trousers.price).toFixed(2)}</p> }
                                         {jacketCount > 0 &&  <p>$ {(jacketCount * this.state.Jacket.price).toFixed(2)}</p> }
-                                            {/* <p>$13.10</p>
-                                            <p>$22.00</p>
-                                            <p>$12.10</p> */}
+                                        {dressCount > 0 &&  <p>$ {(dressCount * this.state.Dress.price).toFixed(2)}</p> }
+                                        {skirtCount > 0 &&  <p>$ {(skirtCount * this.state.Skirt.price).toFixed(2)}</p> }
+                                        {blouseCount > 0 &&  <p>$ {(blouseCount * this.state.Blouse.price).toFixed(2)}</p> }
+                                        {shirtCount > 0 &&  <p>$ {(shirtCount * this.state.Shirt.price).toFixed(2)}</p> }
+                                        {tieCount > 0 &&  <p>$ {(tieCount * this.state.Tie.price).toFixed(2)}</p> }
+                                        {scarvesCount > 0 &&  <p>$ {(scarvesCount * this.state.Scarves.price).toFixed(2)}</p> }
+                                        {heavycoatCount > 0 &&  <p>$ {(heavycoatCount * this.state.heavyCoat.price).toFixed(2)}</p> }
+                                           
                                             <div classname="total-price">
-                                                <h1 id="total-price-number">{(trousersCount * this.state.Trousers.price + jacketCount * this.state.Jacket.price).toFixed(2)}</h1> <p className="total-price-p"> (including 10% GST.)</p>
+                                                <h1 id="total-price-number">{(trousersCount * this.state.Trousers.price + jacketCount * this.state.Jacket.price + dressCount * this.state.Dress.price + skirtCount * this.state.Skirt.price + blouseCount * this.state.Blouse.price + shirtCount * this.state.Shirt.price + tieCount * this.state.Tie.price + scarvesCount * this.state.Scarves.price + heavycoatCount * this.state.heavyCoat.price).toFixed(2)}</h1> <p className="total-price-p"> (including 10% GST.)</p>
                                             </div>
                                            
                                         </div>
