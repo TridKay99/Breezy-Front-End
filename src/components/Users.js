@@ -25,10 +25,10 @@ class AllUsers extends React.Component {
       return null
     } else {
       return (
-      <>
+      <React.Fragment>
       <h2>{users.length} Users</h2>
       {users.map((user, index) => <button className="userButtons" key={index} onClick={() => this.handleUserInfo(user)}>{user.user.email}</button>)}
-      </>
+      </React.Fragment>
       )
     }
   }

@@ -4,6 +4,18 @@ import Icon from '../Group.svg';
 
 class Nav extends React.Component {
 
+  logout = () => {
+    localStorage.removeItem('token')
+  }
+
+  ifloggedin = () => {
+    if (!localStorage.hasOwnProperty('token')) {
+      return null
+} else {
+return <li><a href="#" className="Contact" onClick={this.logout} to={"/"}>Log Out</a></li>
+}
+  }
+
   render() {
     return (
     // <div className="navbar-c">
@@ -31,7 +43,8 @@ class Nav extends React.Component {
         <li><a href="#hiw" className="Hiw" to={"/about"}>HOW IT WORKS</a></li>
         <li><a href="#pricing" className="Price" to={"/pricing"}>PRICING</a></li>
         <li><Link className="Faq" to={"/Faq"}>FAQ</Link></li>
-        <li><a href="#contact" className="Contact" to={"/contact"}>CONTACT</a></li>
+        <li><a href="#contact" className="Contact" to={"/"}>Contact</a></li>
+        {this.ifloggedin()}
       </div>
     </ul>
   </div>

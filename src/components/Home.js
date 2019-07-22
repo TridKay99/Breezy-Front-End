@@ -2,17 +2,19 @@ import React from 'react';
 import Maps from './MapContainer';
 import '../App.css';
 // import Clothes from './Clothes';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import Laundry from '../laundry2.jpg';
 import Login from './Login';
 import Signup from './Signup';
 import Email from './email';
 import Nav from './Nav';
+import Icon from '../Group.svg';
 
 
 
 const Home = () => {
+
 return (
   
   <div className="MainContainer">

@@ -19,7 +19,6 @@ class GetSingleInfo extends React.Component {
   }
 
   render() {
-    console.log('HELLO')
     if (!this.props.user) {
     return null
     } else {

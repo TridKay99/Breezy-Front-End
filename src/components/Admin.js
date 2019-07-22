@@ -6,6 +6,7 @@ import AdminOrders from './AdminOrders'
 import './cssComponents/Admin.css'
 import { Link } from 'react-router-dom'
 import Home from './Home'
+import DisplayOrder from './displayOrder'
 
 class Admin extends React.Component {
 
@@ -13,7 +14,8 @@ class Admin extends React.Component {
     admin: null,
     users: false,
     displaySingle: null,
-    orders: null
+    orders: false,
+    orderSingle: null
   };
 
   async componentDidMount() {
@@ -48,7 +50,8 @@ class Admin extends React.Component {
     this.setState({
       users: true,
       displaySingle: null,
-      orders: false
+      orders: false,
+      orderSingle: null
     })
   }
 
@@ -56,7 +59,8 @@ class Admin extends React.Component {
     this.setState({
       users: false,
       displaySingle: null,
-      orders: false
+      orders: false,
+      orderSingle: null
     })
   }
 
@@ -64,7 +68,17 @@ class Admin extends React.Component {
     this.setState({
       users: false,
       displaySingle: user,
-      orders: false
+      orders: false,
+      orderSingle: null
+    })
+  }
+
+  handleClickSingleOrder = (order) => {
+    this.setState({
+      users: false,
+      displaySingle: null,
+      orders: false,
+      orderSingle: order
     })
   }
 
@@ -72,7 +86,8 @@ class Admin extends React.Component {
     this.setState({
       users: false,
       displaySingle: null,
-      orders: true
+      orders: true,
+      orderSingle: null
     })
   }
 
@@ -93,10 +108,12 @@ class Admin extends React.Component {
       {this.state.users ?
       <Users displaySingle={this.handleClickSingleUser}/> : 
       this.state.orders === true ?
-      <AdminOrders orders={this.handleClickOrders}/> :
-      this.state.displaySingle === null ?
+      <AdminOrders orders={this.handleClickOrders} orderSingle={this.handleClickSingleOrder}/> :
+      this.state.displaySingle !== null ?
+      <GetSingleInfo user={this.state.displaySingle} /> :
+      this.state.orderSingle === null ?
       this.adminPage() :
-      <GetSingleInfo user={this.state.displaySingle} />
+      <DisplayOrder order={this.state.orderSingle} />
       }
     </div>
     )
