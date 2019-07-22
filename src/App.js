@@ -17,14 +17,20 @@ class App extends React.Component {
       }
     }
     const response = await axios('http://localhost:5000/api/profile/usersall', config)
-    // console.log(response.data)
+    console.log(response.data)
+    if (response.data[0]) {
+      return this.setState({
+        auth: true
+      })
+    } else {
+      return this.setState({
+        auth: false
+      })
+    }
     // hit the backend
     // check the token
     // get the response
     // if boolean is true in response set auth to be true
-    this.setState({
-      auth: true
-    })
     // otherwise set auth to be false
   }
   render () { 
