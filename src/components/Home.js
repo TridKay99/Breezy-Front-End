@@ -1,14 +1,15 @@
 import React from 'react';
 import Maps from './MapContainer';
 import '../App.css';
-import Clothes from './Clothes';
-import { Link } from 'react-router-dom';
+// import Clothes from './Clothes';
+// import { Link } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import Laundry from '../laundry2.jpg';
-import Icon from '../Group.svg';
 import Login from './Login';
 import Signup from './Signup';
-import Footer from './Footer';
+import Email from './email';
+import Nav from './Nav';
+
 
 
 const Home = () => {
@@ -44,6 +45,7 @@ return (
         </div>
       </ul>
     </div>
+    <Nav />
     {/* <div class="parallax"></div> */}
     <div className="home">
       <img src={Laundry} alt="laundry" className="laundry"/>
@@ -96,7 +98,7 @@ return (
       <div className="parallax"></div>
       <div className="pricing-container">
         <div id="pricing" className="Pricing-word">PRICINGS</div>
-        <div className="sub-text"><p>FREE PICK-UP, DELIVERY AND GST INCLUDED IN PRICING </p></div>
+        <div className="sub-text"><p>FREE PICK-UP, DELIVERY AND GST. INCLUDED IN PRICING </p></div>
         <div className="back-to-top"><a href="#top"><p id="back-to-top">Back to top <i class="fa fas fa-chevron-up"></i></p></a></div>
         <div className="pricing-grid-container">
           <div className="pricing-grid-box">
@@ -203,7 +205,7 @@ return (
       </div>
 
       <div className="parallax"></div>
-      <div id="contact" className="Contact"> 
+      {/* <div id="contact" className="Contact"> 
         <h1 className="contact-us-word">Contact Us</h1>   
         <div className="contact-us-form-container">
           <form className="contact-us-form">
@@ -211,10 +213,11 @@ return (
             <label for="nme"><span>What's your email?</span></label>
             <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
             <label for="msg"><span>What's your message?</span></label>
-            <input id="contact-submit" type="submit" value="Submit!" />
+            <input id="contact-submit" type="submit" value="SUBMIT" />
           </form>     
         </div>  
-      </div>  
+      </div>   */}
+      <Email />
       <div className="back-to-top"><a href="#top"><p id="back-to-top-map">Back to top <i class="fa fas fa-chevron-up"></i></p></a></div>
       <p className="map-subtext">Here's a simple map of where we are</p>      
       <div className="map-container">  
