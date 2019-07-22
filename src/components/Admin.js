@@ -6,6 +6,7 @@ import AdminOrders from './AdminOrders'
 import './cssComponents/Admin.css'
 import { Link } from 'react-router-dom'
 import Home from './Home'
+import displayOrder from './displayOrder'
 
 class Admin extends React.Component {
 
@@ -13,7 +14,8 @@ class Admin extends React.Component {
     admin: null,
     users: false,
     displaySingle: null,
-    orders: null
+    orders: null,
+    displayOrder: false
   };
 
   async componentDidMount() {
@@ -48,7 +50,8 @@ class Admin extends React.Component {
     this.setState({
       users: true,
       displaySingle: null,
-      orders: false
+      orders: false,
+      displayOrder: false
     })
   }
 
@@ -56,7 +59,8 @@ class Admin extends React.Component {
     this.setState({
       users: false,
       displaySingle: null,
-      orders: false
+      orders: false,
+      displayOrder: false
     })
   }
 
@@ -64,7 +68,17 @@ class Admin extends React.Component {
     this.setState({
       users: false,
       displaySingle: user,
-      orders: false
+      orders: false,
+      displayOrder: false
+    })
+  }
+
+  handleClickSingleOrder = (order) => {
+    this.setState({
+      users: false,
+      displaySingle: false,
+      orders: false,
+      displayOrder: order
     })
   }
 
@@ -72,7 +86,8 @@ class Admin extends React.Component {
     this.setState({
       users: false,
       displaySingle: null,
-      orders: true
+      orders: true,
+      displayOrder: false
     })
   }
 
@@ -94,9 +109,11 @@ class Admin extends React.Component {
       <Users displaySingle={this.handleClickSingleUser}/> : 
       this.state.orders === true ?
       <AdminOrders orders={this.handleClickOrders}/> :
-      this.state.displaySingle === null ?
+      // this.state.displaySingle === null ?
+      this.state.displayOrder === null ?
       this.adminPage() :
-      <GetSingleInfo user={this.state.displaySingle} />
+      // <GetSingleInfo user={this.state.displaySingle} />
+      <displayOrder order={this.state.displayOrder} />
       }
     </div>
     )
