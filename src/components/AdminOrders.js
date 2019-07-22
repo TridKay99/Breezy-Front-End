@@ -20,13 +20,9 @@ class AdminOrders extends React.Component {
     })
   }
 
-  // not yet made
-  // handleOrderInfo(order) {
-  //   this.props.singleOrder(order)
-  // }
-  // Add this to button later
-  // onClick={() => this.handleOrdereInfo(order)}
-
+  handleOrderInfo(order) {
+    this.props.displayOrder(order)
+  }
 
   render() {
     const { orders } = this.state
@@ -37,7 +33,7 @@ class AdminOrders extends React.Component {
         <>
         <h1>you have {orders.length}'s orders</h1>
         {orders.map((order, index) => {
-        return <button className="orderButtons" key={index}>{order.location} ${order.price.toFixed(2)}</button>
+        return <button className="orderButtons" key={index} onClick={() => this.handleOrderInfo(order)}>{order.location} ${order.price.toFixed(2)}</button>
         })}
         </>
       )
