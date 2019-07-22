@@ -61,7 +61,7 @@ class Order extends Component {
             id: "5d281b8d95643703ba61b8d8"
         },
         Scarves: {
-            name: "Tie",
+            name: "Scarf",
             price: 12.20,
             quanity: 0,
             id: "5d281b8d95643703ba61b8d9"
