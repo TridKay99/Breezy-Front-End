@@ -21,7 +21,7 @@ class AdminOrders extends React.Component {
   }
 
   handleOrderInfo(order) {
-    this.props.displayOrder(order)
+    this.props.orderSingle(order)
   }
 
   render() {

@@ -1,0 +1,15 @@
+.clothingContainer {
+  width: 100vw;
+  height: 100vh
+}
+
+.order {
+  height: 30%;
+  overflow: scroll;
+  border: 1px solid black;
+}
+
+.insideOrderBox {
+  border: 1px solid black;
+  overflow: scroll
+}
