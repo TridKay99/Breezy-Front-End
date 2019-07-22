@@ -77,7 +77,7 @@ const LoginForm = () => {
                         />
                         </div>
                         {/* <input id="Login-button" type="submit" value="Log In" href="www.google.com"  /> */}
-                        <input id="Login-button" type="submit"  value="Submit Order" />
+                        <input id="Login-button" type="submit"  value="Login" />
                     </form>
                  </div>
         </Fragment>
