@@ -15,18 +15,6 @@ import Icon from '../Group.svg';
 
 const Home = () => {
 
-  const logout = () => {
-    localStorage.removeItem('token')
-  }
-
-  const ifloggedin = () => {
-    if (!localStorage.hasOwnProperty('token')) {
-      return null
-} else {
-return <li><a href="#contact" className="Contact" onClick={logout} to={"/"}>Log Out</a></li>
-}
-  }
-
 return (
   
   <div className="MainContainer">
