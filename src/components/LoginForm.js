@@ -12,6 +12,20 @@ const LoginForm = () => {
 
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value})
 
+    const validate = () => {
+        if (!localStorage.hasOwnProperty('token')) {
+                console.log("wrong username or password")
+          } else {
+        //   window.location.assign("https://www.google.com")
+        console.log("Correct")
+          }
+    }
+
+    const validatetimer = () => {
+        setInterval(validate(), 200);
+    }
+
+
     const onSubmit = async e => {
         e.preventDefault()
         if(password === null) {
@@ -30,7 +44,13 @@ const LoginForm = () => {
                 const body = JSON.stringify(newUser)
 
                 const res = await axios.post('/api/auth', body, config)
-                localStorage.setItem('token', res.data.token)
+                await localStorage.setItem('token', res.data.token)
+                if (!localStorage.hasOwnProperty('token')) {
+                    console.log("wrong username or password")
+              } else {
+              window.location.assign("/orders")
+            console.log("Correct")
+              }
                 console.log(res.data.token)
             } catch (err) {
                 console.error(err.response.data)
@@ -56,7 +76,8 @@ const LoginForm = () => {
                             minLength="6"
                         />
                         </div>
-                        <input id="Login-button" type="submit" value="Log In" />
+                        {/* <input id="Login-button" type="submit" value="Log In" href="www.google.com"  /> */}
+                        <input id="Login-button" type="submit"  value="Submit Order" />
                     </form>
                  </div>
         </Fragment>

@@ -31,6 +31,13 @@ const Register = () => {
                 const body = JSON.stringify(newUser)
 
                 const res = await axios.post('/api/users', body, config)
+                await localStorage.setItem('token', res.data.token)
+                if (!localStorage.hasOwnProperty('token')) {
+                    console.log("Wrong data entered")
+              } else {
+              window.location.assign("/profilereg")
+            console.log("Correct")
+              }
                 console.log(res.data)
             } catch (err) {
                 console.error(err.response.data)
