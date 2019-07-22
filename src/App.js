@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Routes from './Routes';
+import axios from 'axios'
 
 
 class App extends React.Component {
@@ -8,7 +9,15 @@ class App extends React.Component {
     auth: false
   }
 
-  componentDidMount() {
+  async componentDidMount() {
+    const config = {
+      headers: {
+          'Content-Type': 'application/json',
+          'x-auth-token': `${localStorage.getItem('token')}`
+      }
+    }
+    const response = await axios('http://localhost:5000/api/profile/usersall', config)
+    // console.log(response.data)
     // hit the backend
     // check the token
     // get the response
