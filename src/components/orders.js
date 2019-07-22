@@ -76,6 +76,7 @@ class Order extends Component {
 
     HeavyCoatadd = () => {
         const addedClothes = this.state.cart
+        console.log(this.state.cart)
         const addedIds = this.state.ids
         addedClothes.push(this.state.heavyCoat)
         addedIds.push(this.state.heavyCoat.id)
@@ -200,6 +201,10 @@ class Order extends Component {
         }
 
        render() {
+        let trousersCount = this.state.cart.filter((item) => item.name === "Trousers").length
+        let jacketCount = this.state.cart.filter((item) => item.name === "Jacket").length
+
+
         return (
             <Fragment>
             <div className="MainContainer-O">
@@ -263,28 +268,36 @@ class Order extends Component {
                                 </div>
                                 <div className="cart-grid-o">
                                     <div className="cart-grid-container">
-                                        <div className="cart-name-top-box">
-                                                <p>1</p>
-                                                <p>2</p>
-                                                <p>1</p>
-                                                <p>3</p>
+                                         <div className="cart-name-top-box">
+
+                                           
+                                        {trousersCount > 0 && <p>{trousersCount}</p>}
+                                        {jacketCount > 0 && <p>{jacketCount}</p>}
+                                            {/* <p>{this.state.cart.filter((item) => item.name === "Jacket").length}</p>
+                                            <p>{this.state.cart.filter((item) => item.name === "Dress").length}</p>
+                                            <p>{this.state.cart.filter((item) => item.name === "Skirt").length}</p>
+                                            <p>{this.state.cart.filter((item) => item.name === "Blouse").length}</p>
+                                            <p>{this.state.cart.filter((item) => item.name === "Shirt").length}</p>
+                                            <p>{this.state.cart.filter((item) => item.name === "Tie").length}</p>
+                                            <p>{this.state.cart.filter((item) => item.name === "Heavy Coat").length}</p> */}
                                                 
                                         </div>
                                         <div className="cart-name-left-box">
-                                            <button className="trousers" onClick={this.Trousersadd}> TROUSERS </button>
-                                            <button className="jacket" onClick={this.Jacketadd}> JACKET </button> 
-                                            <button className="dress" onClick={this.Dressadd}> DRESS </button>
-                                            <button className="skirt" onClick={this.Skirtadd}> SKIRT </button>
+                                        {trousersCount > 0 && <button className="trousers" > TROUSERS </button> }
+                                        {jacketCount > 0 && <button className="jacket" > JACKET </button> }
+                                            {/* <button className="dress" > DRESS </button>
+                                            <button className="skirt"> SKIRT </button> */}
                                             <div><h1>TOTAL</h1></div>
                                         
                                         </div>
                                         <div className="cart-name-middle-box">
-                                            <p>$12.10</p>
-                                            <p>$13.10</p>
+                                        {trousersCount > 0 &&  <p>$ {(trousersCount * this.state.Trousers.price).toFixed(2)}</p> }
+                                        {jacketCount > 0 &&  <p>$ {(jacketCount * this.state.Jacket.price).toFixed(2)}</p> }
+                                            {/* <p>$13.10</p>
                                             <p>$22.00</p>
-                                            <p>$12.10</p>
+                                            <p>$12.10</p> */}
                                             <div classname="total-price">
-                                                <h1 id="total-price-number">$177.57</h1> <p className="total-price-p"> (including 10% GST.)</p>
+                                                <h1 id="total-price-number">{(trousersCount * this.state.Trousers.price + jacketCount * this.state.Jacket.price).toFixed(2)}</h1> <p className="total-price-p"> (including 10% GST.)</p>
                                             </div>
                                            
                                         </div>
