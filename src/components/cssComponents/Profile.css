@@ -7,11 +7,16 @@
  
 }
 
+.email-title {
+  color: #3a7999;
+  font-family: 'Muli', sans-serif;
+}
+
 .profile-c-box {
   border-left: 1px solid black;
   padding: 0% 2% 2% 2%;
   width: 60%;
-  height: 80%;
+  height: 60%;
 }
 
 .profile-email {
@@ -21,10 +26,12 @@
 
 .profile-credit-card {
   font-family: 'Muli', sans-serif;
+  margin: 1rem 0rem 4rem 10rem;
 }
 
 .profile-dob {
   font-family: 'Muli', sans-serif;
+  margin: 1rem 0rem 1rem 10rem;
 }
 
 

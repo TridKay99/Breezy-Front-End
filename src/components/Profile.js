@@ -48,9 +48,9 @@ class Profile extends React.Component {
       <Nav />
       <div className="profile-container"> 
         <div className="profile-c-box"> 
-          <h1 className="profile-email">Hello -email {this.state.email}</h1>
-          <h1 className="profile-credit-card">Your credit card stored in plain text is: {this.state.creditcard}</h1>
-          <h1 className="profile-dob">Your date of birth is: {this.state.dob}</h1> 
+          <h1 className="profile-email">Hello and Welcome, <h1 className="email-title">{this.state.email}</h1></h1>
+          <h2 className="profile-credit-card">Your credit card stored in plain text is: {this.state.creditcard}</h2>
+          <h2 className="profile-dob">Your date of birth is: {this.state.dob}</h2> 
         </div>
       </div>
       </React.Fragment>
