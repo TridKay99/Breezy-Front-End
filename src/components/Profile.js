@@ -27,7 +27,7 @@ class Profile extends React.Component {
     }
     // const body = JSON.stringify(order1)
     console.log('here')
-    const res = await axios.get('/api/profile/me', config)
+    const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/profile/me`, config)
     console.log(res.data)
     this.setState({
       creditcard: res.data.creditcard,
