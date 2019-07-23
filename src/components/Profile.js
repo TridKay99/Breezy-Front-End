@@ -3,7 +3,7 @@ import React, { Fragment} from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Icon from '../Group.svg';
-
+import Nav from './Nav';
 
 
 class Profile extends React.Component {
@@ -45,23 +45,7 @@ class Profile extends React.Component {
   render() {
     return(
       <React.Fragment>
-         <div className="navbar-c" id="top">
-          <ul className="navbar">
-            <div className="title">
-              <li><Link className="Name" to={"/"}>IRON MAIDEN</Link></li>
-              <li><img src={Icon} alt="icon" className="icon"/></li>
-              <li><i className="fa fas fa-spinner fa-spin"></i></li>
-            </div>
-            <div className="content">
-              <li><Link className="Hiw" to={"/"}>HOW IT WORKS</Link></li>
-              <li><Link className="Price" to={"/"}>PRICING</Link></li>
-              <li><Link className="Faq" to={"/"}>FAQ</Link></li>
-              <li><Link className="Contact" to={"/"}>CONTACT</Link></li>
-              <li><Link className="Contact" to={"/orders"}>ORDERS</Link></li>
-              <li><Link className="Contact" to={"/"}>SIGN OUT</Link></li>
-            </div>
-          </ul>
-        </div>
+      <Nav />
       <div> <h1>hello {this.state.email}</h1> </div>
       <div> <h1>Your credit card stored in plain text is: {this.state.creditcard}</h1> </div>
       <div> <h1>Your date of birth is: {this.state.dob}</h1> </div>
