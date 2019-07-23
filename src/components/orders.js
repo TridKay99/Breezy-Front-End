@@ -209,7 +209,7 @@ class Order extends Component {
         let blouseCount = this.state.cart.filter((item) => item.name === "Blouse").length
         let shirtCount = this.state.cart.filter((item) => item.name === "Shirt").length
         let tieCount = this.state.cart.filter((item) => item.name === "Tie").length
-        let scarvesCount = this.state.cart.filter((item) => item.name === "Scarves").length
+        let scarvesCount = this.state.cart.filter((item) => item.name === "Scarf").length
         let heavycoatCount = this.state.cart.filter((item) => item.name === "Heavy Coat").length
 
         return (
@@ -278,12 +278,12 @@ class Order extends Component {
                                         {trousersCount > 0 && <button className="trousers" > TROUSERS </button> }
                                         {jacketCount > 0 && <button className="jacket" > JACKET </button> }
                                         {dressCount > 0 && <button className="dress" > DRESS </button> }
-                                        {skirtCount > 0 && <button className="dress" > SKIRT </button> }
-                                        {blouseCount > 0 && <button className="dress" > BLOUSE </button> }
-                                        {shirtCount > 0 && <button className="dress" > SHIRT </button> }
-                                        {tieCount > 0 && <button className="dress" > TIE </button> }
-                                        {scarvesCount > 0 && <button className="dress" > SCARVES </button> }
-                                        {heavycoatCount > 0 && <button className="dress" > HEAVY COAT </button> }
+                                        {skirtCount > 0 && <button className="skirt" > SKIRT </button> }
+                                        {blouseCount > 0 && <button className="blouse" > BLOUSE </button> }
+                                        {shirtCount > 0 && <button className="shirt" > SHIRT </button> }
+                                        {tieCount > 0 && <button className="tie" > TIE </button> }
+                                        {scarvesCount > 0 && <button className="scarves" > SCARVES </button> }
+                                        {heavycoatCount > 0 && <button className="heavycoat" > HEAVY COAT </button> }
 
                                             <div><h1>TOTAL</h1></div>
                                         
