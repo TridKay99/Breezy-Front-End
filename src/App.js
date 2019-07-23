@@ -6,7 +6,7 @@ import axios from 'axios'
 
 class App extends React.Component {
   state = {
-    auth: false
+    auth: true
   }
 
   async componentDidMount() {
@@ -16,17 +16,17 @@ class App extends React.Component {
           'x-auth-token': `${localStorage.getItem('token')}`
       }
     }
-    const response = await axios('http://localhost:5000/api/profile/usersall', config)
-    console.log(response.data)
-    if (response.data[0]) {
-      return this.setState({
-        auth: true
-      })
-    } else {
-      return this.setState({
-        auth: false
-      })
-    }
+    
+    // const response = await axios(`${process.env.BACKEND_URL}/api/profile/usersall`, config)
+    // if (response.data[0]) {
+    //   return this.setState({
+    //     auth: true
+    //   })
+    // } else {
+    //   return this.setState({
+    //     auth: false
+    //   })
+    // }
     // hit the backend
     // check the token
     // get the response
