@@ -195,6 +195,7 @@
     padding: 0rem 0rem 6rem 2rem;
     display: flex;
     justify-content: flex-start;
+    /* background-color: blue; */
 }
 
 .order-cart-word {
@@ -208,6 +209,7 @@
     display: grid;
     grid-template-columns: 0.1fr 0.3fr 0.3fr 0.3fr;
     /* background-color: lightcoral; */
+    margin-top: -5rem;
     font-family: 'Muli', sans-serif;
     /* margin-top: 4rem; */
 }
