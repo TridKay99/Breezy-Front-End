@@ -24,7 +24,7 @@ class Email extends Component {
         e.preventDefault()
         const order = {
             email: this.state.email,
-            // subject: this.state.subject,
+            subject: this.state.subject,
             message: this.state.message
         }
             try {
@@ -32,6 +32,7 @@ class Email extends Component {
                 // const body = JSON.stringify(order1)
                 const res = await axios.post('/api/email', order)
                 console.log(res.data)
+                alert("Email Sent")
             } catch (err) {
                 console.error(err.response.data)
             }
@@ -85,9 +86,9 @@ class Email extends Component {
                 <label for="msg"><span>Subject for this message?</span></label> */}
                 <textarea type="message" name="message" rows="2" className="question" id="msg" onChange={this.handleLocation} required></textarea>
                 <label for="msg"><span>What's your message?</span></label>
-                <input id="contact-submit" type="submit" value="SUBMIT" onClick={this.handleLogin} onClick={() => {
-                    alert.show('Submitted')
-                    }} />
+                <textarea type="subject" name="subject" rows="2" className="question" id="sub" onChange={this.handleLocation} required></textarea>
+                <label for="sub"><span>What's your subject?</span></label>
+                <input id="contact-submit" type="submit" value="SUBMIT" onClick={this.handleLogin} />
             </form>     
             </div>
         </div>  

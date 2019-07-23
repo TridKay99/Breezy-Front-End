@@ -16,6 +16,7 @@ import AdminOrders from './components/AdminOrders'
 import Users from './components/Users'
 import Email from './components/email'
 import ProfileReg from './components/ProfileReg'
+import UserOrders from './components/UserOrders'
 // import SingleUser from './components/GetSingleInfo'
 
 class Routes extends React.Component {
@@ -32,6 +33,7 @@ class Routes extends React.Component {
         <Route path="/orders" exact component={Order} />
         <Route path="/profile" component={Profile} />
         <Route path="/adminorders" component={AdminOrders} />
+        <Route path="/userorders" component={UserOrders} />
         {/* conditional if admin to view this */}
         <Switch>
           <Route exact path='/register'component={Register}/>

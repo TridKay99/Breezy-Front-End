@@ -302,6 +302,9 @@ class Order extends Component {
                                             <div classname="total-price">
                                                 <h1 id="total-price-number">{(trousersCount * this.state.Trousers.price + jacketCount * this.state.Jacket.price + dressCount * this.state.Dress.price + skirtCount * this.state.Skirt.price + blouseCount * this.state.Blouse.price + shirtCount * this.state.Shirt.price + tieCount * this.state.Tie.price + scarvesCount * this.state.Scarves.price + heavycoatCount * this.state.heavyCoat.price).toFixed(2)}</h1> <p className="total-price-p"> (including 10% GST.)</p>
                                             </div>
+                                            <div className="form-group">
+                                                   <input type="location" placeholder="Location" name="location" onChange={this.handleLocation} required />
+                                        </div>
                                            
                                         </div>
                                         <div className="cart-name-right-box">

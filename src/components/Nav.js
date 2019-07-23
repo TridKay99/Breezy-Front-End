@@ -43,7 +43,7 @@ return <li><a href="http://localhost:3000" className="Contact" onClick={this.log
         <li><a href="#hiw" className="Hiw" to={"/about"}>HOW IT WORKS</a></li>
         <li><a href="#pricing" className="Price" to={"/pricing"}>PRICING</a></li>
         <li><Link className="Faq" to={"/Faq"}>FAQ</Link></li>
-        <li><a href="#contact" className="Contact" to={"/"}>Contact</a></li>
+        <li><a href="http://localhost:3000/email" className="Contact" to={"/email"}>Contact</a></li>
         {this.ifloggedin()}
       </div>
     </ul>
