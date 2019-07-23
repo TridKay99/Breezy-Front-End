@@ -283,7 +283,7 @@ class Order extends Component {
                                         {shirtCount > 0 && <button className="shirt" > SHIRT </button> }
                                         {tieCount > 0 && <button className="tie" > TIE </button> }
                                         {scarvesCount > 0 && <button className="scarves" > SCARVES </button> }
-                                        {heavycoatCount > 0 && <button className="heavycoat" > HEAVY COAT </button> }
+                                        {heavycoatCount > 0 && <button className="heavy-coat" > HEAVY COAT </button> }
 
                                             <div><h1>TOTAL</h1></div>
                                         
