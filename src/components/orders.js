@@ -3,6 +3,7 @@ import axios from 'axios'
 import { conditionalExpression } from '@babel/types';
 import { Link } from 'react-router-dom';
 import Icon from '../Group.svg';
+import Nav from './Nav';
 import './Orders.css';
 
 
@@ -208,23 +209,7 @@ class Order extends Component {
         return (
             <Fragment>
             <div className="MainContainer-O">
-                <div className="navbar-c" id="top">
-                    <ul className="navbar">
-                        <div className="title">
-                            <li><Link className="Name" to={"/"}>IRON MAIDEN</Link></li>
-                            <li><img src={Icon} alt="icon" className="icon"/></li>
-                            <li><i className="fa fas fa-spinner fa-spin"></i></li>
-                        </div>
-                        <div className="content">
-                            <li><Link className="Hiw" to={"/"}>HOW IT WORKS</Link></li>
-                            <li><Link className="Price" to={"/"}>PRICING</Link></li>
-                            <li><Link className="Faq" to={"/"}>FAQ</Link></li>
-                            <li><Link className="Contact" to={"/"}>CONTACT</Link></li>
-                            <li><Link className="Contact" to={"/profile"}>PROFILE</Link></li>
-                            <li><Link className="Contact" to={"/"}>SIGN OUT</Link></li>
-                        </div>
-                    </ul>
-                </div>
+            <Nav />
                 <div className="Orders-Title">
                     <p className="welcome-o">WELCOME</p>
                     <p className="name-o">NAME, CHOOSE YOUR ORDERS</p>

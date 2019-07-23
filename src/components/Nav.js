@@ -12,7 +12,7 @@ class Nav extends React.Component {
     if (!localStorage.hasOwnProperty('token')) {
       return null
 } else {
-return <li><a href="#" className="Contact" onClick={this.logout} to={"/"}>Log Out</a></li>
+return <li><a href="http://localhost:3000" className="Contact" onClick={this.logout} to={"/"}>Log Out</a></li>
 }
   }
 
