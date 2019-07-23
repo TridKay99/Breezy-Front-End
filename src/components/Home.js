@@ -12,8 +12,8 @@ import Nav from './Nav';
 import Icon from '../Group.svg';
 
 
-
 const Home = () => {
+
 
 return (
   

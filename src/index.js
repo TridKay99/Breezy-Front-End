@@ -7,7 +7,8 @@ import '../node_modules/font-awesome/css/font-awesome.min.css';
 import { BrowserRouter } from 'react-router-dom';
 import { transitions, positions, Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
-
+import dotenv from 'dotenv'
+dotenv.config()
 
 const options = {
     // you can also just use 'bottom center'

@@ -1,15 +1,40 @@
-.profileContainer {
+.profile-container {
+  height: 50rem;
+  align-items: flex-start;
+  /* background-color: #3a7999; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+ 
 }
 
-.profileInfoContainer {
-  border: 2px solid #3a7999;
+.email-title {
+  color: #3a7999;
+  font-family: 'Muli', sans-serif;
+}
+
+.profile-c-box {
+  border-left: 1px solid black;
   padding: 0% 2% 2% 2%;
   width: 60%;
-  height: 100%;
+  height: 60%;
 }
+
+.profile-email {
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+}
+
+.profile-credit-card {
+  font-family: 'Muli', sans-serif;
+  margin: 1rem 0rem 4rem 10rem;
+}
+
+.profile-dob {
+  font-family: 'Muli', sans-serif;
+  margin: 1rem 0rem 1rem 10rem;
+}
+
+
 
 .profileInfo {
   display: flex;
@@ -17,7 +42,7 @@
 }
 
 .profileOrdersContainer {
-  border: 1px solid black;
+  border-left: 1px solid black;
   display: flex;
   flex-direction: column;
   padding: 0 0 2% 2%;
