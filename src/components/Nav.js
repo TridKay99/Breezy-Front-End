@@ -16,6 +16,14 @@ return <li><a href="http://localhost:3000" className="Contact" onClick={this.log
 }
   }
 
+  ifloggedin2 = () => {
+    if (!localStorage.hasOwnProperty('token')) {
+      return null
+} else {
+return <li><a href="http://localhost:3000/userorders" className="Contact">Order History</a></li>
+}
+  }
+
   render() {
     return (
     // <div className="navbar-c">
@@ -44,6 +52,7 @@ return <li><a href="http://localhost:3000" className="Contact" onClick={this.log
         <li><a href="#pricing" className="Price" to={"/pricing"}>PRICING</a></li>
         <li><Link className="Faq" to={"/Faq"}>FAQ</Link></li>
         <li><a href="http://localhost:3000/email" className="Contact" to={"/email"}>Contact</a></li>
+        {this.ifloggedin2()}
         {this.ifloggedin()}
       </div>
     </ul>
