@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Icon from '../Group.svg';
 import Nav from './Nav';
-
+import '../components/cssComponents/Profile.css';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -46,9 +46,13 @@ class Profile extends React.Component {
     return(
       <React.Fragment>
       <Nav />
-      <div> <h1>hello {this.state.email}</h1> </div>
-      <div> <h1>Your credit card stored in plain text is: {this.state.creditcard}</h1> </div>
-      <div> <h1>Your date of birth is: {this.state.dob}</h1> </div>
+      <div className="profile-container"> 
+        <div className="profile-c-box"> 
+          <h1 className="profile-email">Hello -email {this.state.email}</h1>
+          <h1 className="profile-credit-card">Your credit card stored in plain text is: {this.state.creditcard}</h1>
+          <h1 className="profile-dob">Your date of birth is: {this.state.dob}</h1> 
+        </div>
+      </div>
       </React.Fragment>
     )
   }
