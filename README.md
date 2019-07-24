@@ -110,6 +110,7 @@ In current version 1.0 users create a default account (Student), and can opt in 
 
 ## User Journey
 
+
 <p align="center">
  <img width="" height="120" src=./https://res.cloudinary.com/dqsacxogt/image/upload/v1563936492/Workflow_Diagram_ijwdz0.png></p>
 
