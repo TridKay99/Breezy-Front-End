@@ -21,30 +21,29 @@ import UserOrders from './components/UserOrders'
 
 class Routes extends React.Component {
   render () {
-    // const { auth } = this.props
+    const { auth } = this.props
     return (
       <Switch>
-        <Route exact path="/test" component={About} />
-        {/* Protected Routes */}
-        {/* <ProtectedRoutes path="/protected" component={Admin} auth={auth} /> */}
-        {/* Unprotected Routes */}
-        {/* <Route path="/about" component= {About} />
+
+        <ProtectedRoutes path="/protected" component={Admin} auth={auth} />
+
+        <Route path="/about" component= {About} />
         <Route path="/faq" component= {Faq} />
         <Route exact path="/" component={Home} />
         <Route path="/orders" exact component={Order} />te
         <Route path="/profile" component={Profile} />
         <Route path="/adminorders" component={AdminOrders} />
         <Route path="/userorders" component={UserOrders} />
-        {/* conditional if admin to view this */}
-        {/* <Switch>
+
+        <Switch>
           <Route exact path='/register'component={Register}/>
           <Route path="/login" component={LoginForm} />
           <Route path="/email" component={Email} />
           <Route path="/profilereg" component={ProfileReg} />
-        </Switch> */}
+        </Switch>
         {/* <Route path='/user/:email' component={SingleUser} /> */}
 
-        {/* <Route component={Nomatch} /> */} */}
+        <Route component={Nomatch} /> */}
       </Switch>
     );
   }
