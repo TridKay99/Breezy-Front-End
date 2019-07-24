@@ -220,7 +220,7 @@ Authetication is importantly held through the App.js as a state thats only chang
 
 
 
-
+---
 
 ## __Section 3: Short Answer Questions__
 
@@ -238,14 +238,14 @@ Many libraries are involved in the creation of this app including React, Node.js
 
 `Frontend`
 
-  - **React v16.8.6:** A JavaScript library for creating user interfaces
-  - **React-router-dom v5.0.:** Collection of navigational components that compose declaratively with your application
+  - **React v16.8.6:** A JavaScript library for creating user interfaces.
+  - **React-router-dom v5.0.:** Collection of navigational components that compose declaratively with your application.
     - link
     - BrowserRouter
     - Switch
     - Route
-  - **axios v0.19.0:** Promise based HTTP client for the browser and node.js
-  - **leaflet v1.5.1:** Open-source JavaScript library for interactive maps
+  - **axios v0.19.0:** Promise based HTTP client for the browser and node.js.
+  - **leaflet v1.5.1:** Open-source JavaScript library for interactive maps.
   - **font-awesome v4.7.0:** Full suite of pictographic icons for easily scalble vector graphics.
 
 
@@ -260,11 +260,49 @@ Many libraries are involved in the creation of this app including React, Node.js
 
 
 ### 3)  A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
+After working in this project there is a few things that stand out when a small team is about to set out on the same journey we did.
+
+- **A well rounded idea of the whole App:**\
+At firs this may sound absurd. But what it means is although someone is working through the backend while someone else is working through the frontend, they both should make sure how opposite ends are created and how they function to get a good grasp of the whole application. 
+
+- **Plan ahead:**\
+Looking into the future when thinking about strategic moves is important because without a doubt, blockers will be inevitable. Problem solving will need to be done throughout and perhaps begin to limit time. Planning ahead/ have a plan of attack can help time restrictions cause by unforseen events.
+
+- **Understanding of your scope:**\
+Early stages require strategic planning but what is a necessity to take in mind is the scope of the project. A scope of a project looks at specific goals, deliverables, tasks, costs and deadlines. Taking on too many of any of these things will result in a struggle.\
+
+
+
 
 
 ### 4)  Within your own project what knowledge or skills were required to complete your project, and overcome challenges?
+This project has a vast range of different skills that were required to bring about the final product shown through URL, Studio Visual Code and the README.md filled with graphs, knowledge and images.\
+\
+  `Social Skills`
+  - **Work Ethic:** Keep work ethic high but balance work and play. Not overworking created more work ethic for our team.
+  - **Communication:** Chatter between the group not only creates a bond but it stops over lapping of work which avoids gross githug conflicts.
+  - **Team Collaboration:** Working together and using each others strength showed a smooth work flow and good times.
 
-Ans: project management skills
+  `Techincal Skills`
+  - **MongoDB/Mongoose:** Holds the relevant DB that we created that holds the information we receive from API calls.
+  - **Express:** Middleware that manages requests and responses.
+  - **React.js:** A JavaScript library for creating user interfaces with layers of components.
+  - **JavaScript:** An understand of basic javascript that allows you to work with the DB create with MongoDB.
+  - **Node.js:** Node is designed to build scalable network applications, and allows mutiple servers to be run.
+  - **Npm Libray:** Understanding of required NPM libraries that are needed in your application.
+  - **GitHub:** Able to git push/pull/merge etc.. and work simutaneously with others without creating conflicts.
+  - **CSS:** Harnessing css to beautify your rendered components.
+  - **Figma:** Figma for pre-design, and a great framework for creating graphs.
+  - **Trello:** The delegation of tasks between each other to ensure everything is complete.
+  - **Deployed Services:** A clear understanding of the services you decide to deply off (This causes issues if not sorted early)
+
 
 
 ### 5)  Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?
+
+As the nature of this course is fast and the knowledge you learn is vast, it goes without saying none of us where fully ready for this assignment. However, like our rails assessment a lot of those skills you forgot become honed by the due date.
+
+When we started we focused mainly on our strengths depending on frontend or backend. Components where simultaneously being created while the backend was being put together. As time progressed this seemed to actually work pretty well as the backend building efficiency was impressive. Having a second opportunity at this assignment we all decided it would've been nice to focus on some weaknesses rather than our strengths.
+
+Having an admin and user authentication system meant that we planned to create the admin page in a certain way to place all the authorized pages in one route or url. This seemed to be an easy way to work around the authetication at first but as we continued to build it became evident that for the Routes it was easier, but for everything else it created a mess. 
+This is just one of those situations that require trial and error to realise, this will happen in countless other situations in the industry.
