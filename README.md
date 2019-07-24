@@ -333,7 +333,7 @@ At firs this may sound absurd. But what it means is although someone is working 
 Looking into the future when thinking about strategic moves is important because without a doubt, blockers will be inevitable. Problem solving will need to be done throughout and perhaps begin to limit time. Planning ahead/ have a plan of attack can help time restrictions cause by unforseen events.
 
 - **Understanding of your scope:**\
-Early stages require strategic planning but what is a necessity to take in mind is the scope of the project. A scope of a project looks at specific goals, deliverables, tasks, costs and deadlines. Taking on too many of any of these things will result in a struggle.\
+Early stages require strategic planning but what is a necessity to take in mind is the scope of the project. A scope of a project looks at specific goals, deliverables, tasks, costs and deadlines. Taking on too many of any of these things will result in a struggle.
 
 
 
