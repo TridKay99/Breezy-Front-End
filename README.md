@@ -162,10 +162,10 @@ Essentially, we needed to find a find an issue with our client's service and fin
 
 
 <p align="center">
- <img width="" height="300" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563936492/Workflow_Diagram_ijwdz0.png></p>
+ <img width="" height="400" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563937313/WorkFlow_DIagram_ddy5za.png></p>
 
 <p align="center">
- <img width="" height="300" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563936492/UserStories_hnnzot.png></p>
+ <img width="" height="400" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563936492/UserStories_hnnzot.png></p>
 
 
 ## Team Communication
