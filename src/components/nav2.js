@@ -12,7 +12,7 @@ class Nav2 extends React.Component {
     if (!localStorage.hasOwnProperty('token')) {
       return null
 } else {
-return <li><Link className="Contact" onClick={this.logout} to={"/"}>Log Out</Link></li>
+return <li><Link className="Contact" onClick={this.logout} to={"/"}>LOG OUT</Link></li>
 }
   }
 
@@ -20,7 +20,7 @@ return <li><Link className="Contact" onClick={this.logout} to={"/"}>Log Out</Lin
     if (!localStorage.hasOwnProperty('token')) {
       return null
 } else {
-return <li><Link to={'/userorders'} className="Contact">Order History</Link></li>
+return <li><Link to={'/userorders'} className="Contact">ORDER HISTORY</Link></li>
 }
   }
 
@@ -51,7 +51,7 @@ return <li><Link to={'/userorders'} className="Contact">Order History</Link></li
         <li><a href="#hiw" className="Hiw" to={"/about"}>HOW IT WORKS</a></li>
         <li><a href="#pricing" className="Price" to={"/pricing"}>PRICING</a></li>
         <li><Link className="Faq" to={"/Faq"}>FAQ</Link></li>
-        <li><Link className="Contact" to={"/email"}>Contact</Link></li>
+        <li><Link className="Contact" to={"/email"}>CONTACT</Link></li>
         {this.ifloggedin2()}
         {this.ifloggedin()}
       </div>
