@@ -155,15 +155,25 @@ Essentially, we needed to find a find an issue with our client's service and fin
 
 ## ERD
 
+---
 
-## User Journey
+## User **Stories** && User **Journey** ##
 
+### User Stories ###
+Using figma, we created user stories where developed to give an example of a certain situation in which our product would work. A back an forth idea between the admin and user can be invisioned after the story is told.
+Ultimately, gathered out of this can be the way our software features are used to help each perspective.
 
-<p align="center">
- <img width="" height="400" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563937313/WorkFlow_DIagram_ddy5za.png></p>
+  - Tom (admin) is in the need of an application that allows him to view information from the admins side. He needs access to address', orders and the users that placed them.
+
+  - Fred, Tristan, Nick (users) are in need of an application that will allow them to place an order(within reason). They need to supply their address and name to allow pickup and prove legitimact at times.
 
 <p align="center">
  <img width="" height="400" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563936492/UserStories_hnnzot.png></p>
+
+### User Journey ###
+Using Figma, we created a user journey to show the flow of redirection when traveling through our application. Admin and user share different experiences.
+<p align="center">
+ <img width="" height="470" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563937313/WorkFlow_DIagram_ddy5za.png></p>
 
 
 ## Team Communication
