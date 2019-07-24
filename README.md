@@ -139,9 +139,18 @@ Essentially, we needed to find a find an issue with our client's service and fin
 
 ### __Inspiration / Ideas__
 
-We were inspired by the old webiste Breezy, http://www.breezy.com.au/
+We were inspired by our client's previous webiste Breezy, http://www.breezy.com.au/
 
-Other laundry websites :
+![Breezy](./src/Breezy1.png "Breezy website1 Screenshot")
+![Breezy](./src/Breezy2.png "Breezy website2 Screenshot")
+
+We had a discussion with our client and had an overall idea that our site will have the essential details from the previous webiste, but with a new design style and with some additional features.
+
+Other laundry website that inspired us was : https://www.laundrychief.com/
+
+![LaundryChief](./src/Laundrychief.png "Laundry Chief Screenshot")
+
+The functionality of this website is very user friendly and easy to use. It has inspired us to create a simple and intuitive website which includes features such as 'make an order' , 'admin dashboard', and 'order history'. The eye-catching and simple combination of colours inspired us to create a straightforward and clean looking website.
 
 
 ### __Project Planning__
@@ -205,11 +214,15 @@ __WEEK THREE__
 
 ### __Wireframes__
 
-
-
-
+![Wireframes (1)](./docs/wireframes1.png "Wireframes")
+![Wireframes (2)](./docs/wireframes2.png "Wireframes")
+![Wireframes (3)](./docs/wireframes3.png "Wireframes")
+![Wireframes (4)](./docs/wireframes4.png "Wireframes")
+![Wireframes (7)](./docs/wireframes7.png "Wireframes")
 
 ### __ERD__
+
+![ERD](./docs/ERD.png "ERD")
 
 ---
 
