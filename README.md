@@ -112,7 +112,10 @@ In current version 1.0 users create a default account (Student), and can opt in 
 
 
 <p align="center">
- <img width="" height="120" src=./https://res.cloudinary.com/dqsacxogt/image/upload/v1563936492/Workflow_Diagram_ijwdz0.png></p>
+ <img width="" height="300" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563936492/Workflow_Diagram_ijwdz0.png></p>
+
+<p align="center">
+ <img width="" height="300" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563936492/UserStories_hnnzot.png></p>
 
 
 ## Team Communication
