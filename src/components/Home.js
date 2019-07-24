@@ -8,7 +8,7 @@ import Laundry from '../laundry2.jpg';
 import Login from './Login';
 import Signup from './Signup';
 import Email from './email';
-import Nav from './Nav';
+import Nav2 from './nav2';
 import Icon from '../Group.svg';
 
 
@@ -18,7 +18,7 @@ const Home = () => {
 return (
   
   <div className="MainContainer">
-    <Nav />
+    <Nav2 />
     {/* <div class="parallax"></div> */}
     <div className="home">
       <img src={Laundry} alt="laundry" className="laundry"/>
