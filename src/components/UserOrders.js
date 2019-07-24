@@ -8,6 +8,7 @@ import Home from './Home'
 import DisplayOrder from './displayOrder'
 import UserOrders1 from './UserOrders1'
 import Nav from './Nav';
+import './UserOrders.css';
 
 class UserOrders extends React.Component {
 
@@ -80,7 +81,7 @@ class UserOrders extends React.Component {
       <div className="adminNav">
       </div>
       <div className="adminTitle">
-        <h2>Order History</h2>
+        <h2 className="order-history">Order History</h2>
         {this.state.orders}
       </div>
       <UserOrders1 orders={this.handleClickOrders} orderSingle={this.handleClickSingleOrder}/>

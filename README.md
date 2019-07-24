@@ -8,7 +8,6 @@
 [Live App](https://compassionate-saha-819100.netlify.com/)\
 [BackEnd Deploy](https://breezy-back-end.tridkay90.now.sh/)
 
-
 ## Contents
 <!-- links  -->
 **[=> Section 1: Description](#Section-1:-Description)**
@@ -17,13 +16,12 @@
 **[Group Members](#Contributors)**\
 **[About](#About-Iron-Maiden)**\
 **[Background](#Project-background)**\
-
 **[Tech Stack](#Tech-Stack)**\
 **[Configuration](#Configuration-/-Installation-Instructions)**\
 **[Sitemap](#Sitemap)**\
 **[Features](#Features)**\
 **[Screenshots](#Screenshots)**\
-**[Our Inspiration & The Idea](#Inspiration-/-Original-Idea)**
+**[Our Inspiration & The Idea](#Inspiration-/-Ideas)**
 
 **[=> Section 2: Planning](#Section-2:-Planning)**
 
@@ -120,40 +118,47 @@ Essentially, we needed to find a find an issue with our client's service and fin
 
 - Secure Login, User Authentication and Authorization
 - Personalized User Profiles
-- Admin Dashboard 
+- Admin Dashboard where admin can view their customer's orders, location, and total price
 - Clear, well-organised and innovative UI with slimmed down content and features
-- Order Cart section to select clothings. Auto calculation for total price and a checkout system. 
+- User orders where users can view list of orders and make changes
+- Order Cart section to select clothings. Auto calculation for total price and a checkout system
 - Log in and Sign up modals (pop ups)
 - Checkout / payment using Credit Card with Strip Integration
-- Contact via mailgun
+- Contact form via mailgun
 - Map of the location (Leaflet)
-- View list of orders and make changes
 
 
-## Screenshots
+
+### __Screenshots__
 
 ![Screenshot](./src/Home1.png)\
 ![Screenshot](./src/Home2.png)\
 ![Screenshot](./src/Home3.png)\
 ![Screenshot](./src/Home4.png)\
 ![Screenshot](./src/Orders.png)\
-![Screenshot](./src/Profile.png)\
+![Screenshot](./src/Profile.png)
+
+
+### __Inspiration / Ideas__
+
+We were inspired by the old webiste Breezy, http://www.breezy.com.au/
+
+Other laundry websites :
+
+
+### __Project Planning__
 
 
 
-## Inspiration / Ideas
+
+
+### __Wireframes__
 
 
 
 
 
-## Project Planning
-
-
-## Wireframes
-
-
-## ERD
+### __ERD__
 
 ---
 
@@ -164,6 +169,10 @@ Essentially, we needed to find a find an issue with our client's service and fin
 Using figma, we developed user stories to give an example of a certain situation in which our product would work. A back and forth idea between the admin and user can be invisioned after the story is told.
 Ultimately, gathered out of this can be the way our software features are used to help each perspective.
 
+
+
+### __User Journey__
+
   - Tom (admin) is in the need of an application that allows him to view information from the admins side. He needs access to address', orders and the users that placed them.
 
   - Fred, Tristan, Nick (users) are in need of an application that will allow them to place an order(within reason). They need to supply their address and name to allow pickup and prove legitimact at times.
@@ -171,11 +180,13 @@ Ultimately, gathered out of this can be the way our software features are used t
 <p align="center">
  <img width="" height="400" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563936492/UserStories_hnnzot.png></p>
 
+
 `User Journey`
 
 Using Figma, we created a user journey to show the flow of redirection when traveling through our application. Admin and user share different experiences.
 <p align="center">
  <img width="" height="470" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563937313/WorkFlow_DIagram_ddy5za.png></p>
+
 
 ---
 
@@ -198,11 +209,12 @@ Authetication is importantly held through the App.js as a state thats only chang
 <p align="center">
  <img width="" height="345" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563939241/OO_Design_Documentation_jr8uwh.png></p>
 
-## Team Communication
+
+### __Team Communication__
 
 
 
-## Task Management
+### __Task Management__
 
 
 
@@ -210,39 +222,42 @@ Authetication is importantly held through the App.js as a state thats only chang
 
 
 
-##Short Answer Questions
-
-1) What are the most important aspects of quality software?
+## __Section 3: Short Answer Questions__
 
 
-2) What libraries are being used in the app and why?
+### 1) What are the most important aspects of quality software?
+
+
+### 2) What libraries are being used in the app and why?
+
 Many libraries are involved in the creation of this app including React, Node.js, axios, react-router-dom and mongoose.
 
-React
+__React__
 React may be seen as a framework rather than a library, however many have argued that it is qualified as both.
 React is a library for building composable user interfaces. It encourages the creation of reusable UI components which present data that changes over time.
 
-Node.js/NPM
+__Node.js/NPM__
 Node.js is also very popular due to its large ecosystem of libraries known as NPM modules. NPM stands for Node Package Manager. It is the largest software package library in the world, with over 600,000 packages.
 
-React-router-dom
+__React-router-dom__
 -- link
 -- BrowserRouter
 -- switch
 -- Route
 
-Axios
+__Axios__
 Axios is a very popular JavaScript library you can use to perform HTTP requests.
 
-Mongoose
+__Mongoose__
 Mongoose (web server) Mongoose is a cross-platform embedded web server and networking library with functions including TCP, HTTP client and server, WebSocket client and server, MQTT client and broker and much more. The small size of the software enables any Internet-connected device to function as a web server.
 
 
-3) A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
+### 3)  A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
 
-4) Within your own project what knowledge or skills were required to complete your project, and overcome challenges?
+### 4)  Within your own project what knowledge or skills were required to complete your project, and overcome challenges?
+
 Ans: project management skills
 
 
-5) Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?
+### 5)  Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?
