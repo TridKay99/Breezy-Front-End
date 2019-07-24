@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useAlert } from 'react-alert'
 import { Link } from 'react-router-dom';
 import Icon from '../Group.svg';
-
+import Nav2 from './nav2'
 
 
 
@@ -45,6 +45,7 @@ class Email extends Component {
        render() {
         return (
             <Fragment>
+                <Nav2/>
             {/* <div className="navbar-c" id="top">
                 <ul className="navbar">
                     <div className="title">

@@ -28,7 +28,8 @@
 **[Project Plan](#Project-Plan)**\
 **[Wireframes](#Wireframes)**\
 **[ERD](#ERD-/-Database-Relationships)**\
-**[User Journey Diagram](#User-Journey-Diagram)**\
+**[User stories Diagram](#User-Stories)**\
+**[User Journey Diagram](#User-Journey)**\
 **[Team Communication](#Team-Communication)**\
 **[Task Management](#Task-Management)**\
 **[Version / Source-Control](#Version-/-Source-Control)**
@@ -108,9 +109,7 @@ Essentially, we needed to find a find an issue with our client's service and fin
 ### __Site Map__
 
 
-
-
-
+![Site Map](./src/Site-Map.png "Site Map")
 
 
 
@@ -126,7 +125,6 @@ Essentially, we needed to find a find an issue with our client's service and fin
 - Checkout / payment using Credit Card with Strip Integration
 - Contact form via mailgun
 - Map of the location (Leaflet)
-
 
 
 ### __Screenshots__
@@ -148,8 +146,61 @@ Other laundry websites :
 
 ### __Project Planning__
 
+After the first meeting with our client, we wrote a Project Plan and approximate timeline: 
 
 
+__WEEK ONE__
+
+FUNDAMENTALS :
+- decide the structure of our app
+- decided on our models and database structure
+- what functionality our users would prefer
+- features
+- wireframes
+- moodboard (design/color/layout)
+- ERD diagram 
+- database set up, models and relationship structure
+- link our github accounts
+- link our trello accounts
+- link figma accounts
+- Pair-programming to create database 
+- deployment to UP for backend and Netlify for frontend
+- basic structure of our files
+
+__WEEK TWO__
+
+
+MVP :
+
+- routes, components
+- distribute workload
+- create structure for homepage (important) 
+- authorisation & authentication
+- stripe
+- css and modals
+- functionality of our app (orders, history, admin dashboards...etc)
+- more styling (for all the different pages)
+- mailgun
+- advanced features
+
+
+Then we decided on our colour palette and some design details: 
+
+![Design](./src/design-details.png "Design Details")
+
+Drafted our user-stories:
+
+![User-Stories](./src/User-stories.png "User Stories")
+
+__WEEK THREE__
+
+
+- completing all the necessary functionalities 
+- more styling (complete for all pages)
+- fixing bugs 
+- deployment
+- readme
+- plan our presentation
 
 
 ### __Wireframes__
@@ -164,9 +215,9 @@ Other laundry websites :
 
 ## User **Stories** && User **Journey** ##
 
-`User Stories`
 
-Using figma, we developed user stories to give an example of a certain situation in which our product would work. A back and forth idea between the admin and user can be invisioned after the story is told.
+### __User Stories__ ###
+Using figma, we created user stories where developed to give an example of a certain situation in which our product would work. A back an forth idea between the admin and user can be invisioned after the story is told.
 Ultimately, gathered out of this can be the way our software features are used to help each perspective.
 
 
@@ -211,12 +262,25 @@ Authetication is importantly held through the App.js as a state thats only chang
 
 
 ### __Team Communication__
+Besides talking in person we would also use slack to communicate. 
+
+<p align="center">
+ <img width="" height="345" src=https://imgur.com/VtZWySE.png></p>
+ <p align="center">
+ <img width="" height="345" src=https://imgur.com/YEf0QqO.png></p>
+ <p align="center">
+ <img width="" height="345" src=https://imgur.com/2e1oyPg.png></p>
+ <p align="center">
+ <img width="" height="345" src=https://imgur.com/MeqHXcw.png></p>
+
+
 
 
 
 ### __Task Management__
-
-
+We used trello for a quick overview of what tasks needed to be completed and stayed in constant communication so we knew who was doing each task.
+<p align="center">
+ <img width="" height="345" src=https://imgur.com/sKKdf21.png></p>
 
 
 
@@ -303,6 +367,7 @@ This project has a vast range of different skills that were required to bring ab
 As the nature of this course is fast and the knowledge you learn is vast, it goes without saying none of us where fully ready for this assignment. However, like our rails assessment a lot of those skills you forgot become honed by the due date.
 
 When we started we focused mainly on our strengths depending on frontend or backend. Components where simultaneously being created while the backend was being put together. As time progressed this seemed to actually work pretty well as the backend building efficiency was impressive. Having a second opportunity at this assignment we all decided it would've been nice to focus on some weaknesses rather than our strengths.
+
 
 Having an admin and user authentication system meant that we planned to create the admin page in a certain way to place all the authorized pages in one route or url. This seemed to be an easy way to work around the authetication at first but as we continued to build it became evident that for the Routes it was easier, but for everything else it created a mess. 
 This is just one of those situations that require trial and error to realise, this will happen in countless other situations in the industry.

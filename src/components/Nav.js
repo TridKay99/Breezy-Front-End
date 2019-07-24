@@ -32,6 +32,14 @@ return <li><Link to={'/profile'} className="Contact">PROFILE</Link></li>
 }
   }
 
+  ifloggedin4 = () => {
+    if (!localStorage.hasOwnProperty('token')) {
+      return null
+} else {
+return <li><Link to={'/orders'} className="Contact">ORDERS</Link></li>
+}
+  }
+
   render() {
     return (
     // <div className="navbar-c">
@@ -58,6 +66,8 @@ return <li><Link to={'/profile'} className="Contact">PROFILE</Link></li>
       <div className="content">
         {this.ifloggedin3()}
         {this.ifloggedin2()}
+        {this.ifloggedin4()}
+
         <li><Link to={'/email'} className="Contact" >CONTACT</Link></li>
         {this.ifloggedin()}
       </div>
