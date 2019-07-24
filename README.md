@@ -262,7 +262,7 @@ Authetication is importantly held through the App.js as a state thats only chang
 
 
 ### __Team Communication__
-Besides talking in person we would use slack to communicate. 
+Besides talking in person we would also use slack to communicate. 
 
 <p align="center">
  <img width="" height="345" src=https://imgur.com/VtZWySE.png></p>
