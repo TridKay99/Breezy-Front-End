@@ -265,9 +265,12 @@ Authetication is importantly held through the App.js as a state thats only chang
 
 
 
+
+
 ### __Task Management__
 
-
+<p align="center">
+ <img width="" height="345" src=https://imgur.com/sKKdf21></p>
 
 
 
