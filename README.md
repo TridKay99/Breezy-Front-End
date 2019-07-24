@@ -28,7 +28,8 @@
 **[Project Plan](#Project-Plan)**\
 **[Wireframes](#Wireframes)**\
 **[ERD](#ERD-/-Database-Relationships)**\
-**[User Journey Diagram](#User-Journey-Diagram)**\
+**[User stories Diagram](#User-Stories)**\
+**[User Journey Diagram](#User-Journey)**\
 **[Team Communication](#Team-Communication)**\
 **[Task Management](#Task-Management)**\
 **[Version / Source-Control](#Version-/-Source-Control)**
@@ -108,9 +109,7 @@ Essentially, we needed to find a find an issue with our client's service and fin
 ### __Site Map__
 
 
-
-
-
+![Site Map](./src/Site-Map.png "Site Map")
 
 
 
@@ -126,7 +125,6 @@ Essentially, we needed to find a find an issue with our client's service and fin
 - Checkout / payment using Credit Card with Strip Integration
 - Contact form via mailgun
 - Map of the location (Leaflet)
-
 
 
 ### __Screenshots__
@@ -164,7 +162,7 @@ Other laundry websites :
 
 ## User **Stories** && User **Journey** ##
 
-### User Stories ###
+### __User Stories__ ###
 Using figma, we created user stories where developed to give an example of a certain situation in which our product would work. A back an forth idea between the admin and user can be invisioned after the story is told.
 Ultimately, gathered out of this can be the way our software features are used to help each perspective.
 
@@ -204,23 +202,23 @@ Ultimately, gathered out of this can be the way our software features are used t
 
 Many libraries are involved in the creation of this app including React, Node.js, axios, react-router-dom and mongoose.
 
-__React__
+__React__\
 React may be seen as a framework rather than a library, however many have argued that it is qualified as both.
 React is a library for building composable user interfaces. It encourages the creation of reusable UI components which present data that changes over time.
 
-__Node.js/NPM__
+__Node.js/NPM__\
 Node.js is also very popular due to its large ecosystem of libraries known as NPM modules. NPM stands for Node Package Manager. It is the largest software package library in the world, with over 600,000 packages.
 
-__React-router-dom__
+__React-router-dom__\
 -- link
 -- BrowserRouter
 -- switch
 -- Route
 
-__Axios__
+__Axios__\
 Axios is a very popular JavaScript library you can use to perform HTTP requests.
 
-__Mongoose__
+__Mongoose__\
 Mongoose (web server) Mongoose is a cross-platform embedded web server and networking library with functions including TCP, HTTP client and server, WebSocket client and server, MQTT client and broker and much more. The small size of the software enables any Internet-connected device to function as a web server.
 
 
