@@ -190,7 +190,7 @@ Then we decided on our colour palette and some design details:
 
 Drafted our user-stories:
 
-![User-Stories](./src/user-stories.png "User Stories")
+![User-Stories](./src/User-stories.png "User Stories")
 
 __WEEK THREE__
 
