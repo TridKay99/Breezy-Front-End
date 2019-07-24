@@ -8,46 +8,78 @@
 [Live App](https://compassionate-saha-819100.netlify.com/)\
 [BackEnd Deploy](https://breezy-back-end.tridkay90.now.sh/)
 
----
 
-## Summary ##
+## Contents
+<!-- links  -->
+**[=> Section 1: Description](#Section-1:-Description)**
+
+**[Overview](#Overview)**\
+**[Group Members](#Contributors)**\
+**[About](#About-Iron-Maiden)**\
+**[Background](#Project-Background)**\
+
+
+
+**[Tech Stack](#Tech-Stack)**\
+**[Configuration](#Configuration-/-Installation-Instructions)**\
+**[Sitemap](#Sitemap)**\
+**[Features](#Features)**\
+**[Screenshots](#Screenshots)**\
+**[Our Inspiration & The Idea](#Inspiration-/-Original-Idea)**
+
+**[=> Section 2: Planning](#Section-2:-Planning)**
+
+**[Project Plan](#Project-Plan)**\
+**[Wireframes](#Wireframes)**\
+**[ERD](#ERD-/-Database-Relationships)**\
+**[User Journey Diagram](#User-Journey-Diagram)**\
+**[Team Communication](#Team-Communication)**\
+**[Task Management](#Task-Management)**\
+**[Version / Source-Control](#Version-/-Source-Control)**
+
+**[=> Section 3: Short Answer Questions](#Section-3:-Short-Answer-Questions)**
+
+**[=> Section 4: Reflection](#Section-4:-Reflection)**
+
+**[Challenges](#Challenges)**\
+**[Take-Aways](#Take-Aways)**\
+**[Extending-Coding-Tutor](#Extending-Breezy)**
+
+**[=> Section 4: Section 5: Appendix](#Section-5:-Appendix)**
+**[Single Page Scrolling](#Single-Page-Scrolling)**\
+**[Search & Filtering](#Search-&-Filtering)**
+
+
+---
+## __Section 1: Description__
+
+
+### __Overview__ ###
 Iron Maiden is a service that allows users to log in and make an order to have their laundry pickedup and dropped off two days later.
 
 This application is built using javascript and the MERN stack (**M**ongoDB, **E**xpress, **R**eact and **N**ode.js) for our final assignment at Coder Academy.
 
 ---
 
-## Contributors ##
+### __Contributors__ ###
 Suet Er Lee\
 Alex Bishop\
 Tristan Kay
 
 ---
 
-## About Iron Maiden
+### __About Iron Maiden__ ###
 
-### Project Background ###
-
-The aim was to find a real world client to represent and present a web application for a final assessment. A minimum of MVP required us to build a working prototype of the client concept and print it to a working deployed URL. Front-end deployed through Netlify and back-end deployed through Ziet Now.
-
-Essentially, we needed to find a find an issue with our client's service and find a solution. Considering it had not yet been given a website, our solution was to create the website from scratch. This implements a user login system that uses a boolean (true or false) to determin whether the user was an Admin or normal user. This led into a a user profile that allowed them to place orders for their laundry.
-
-### Functionality, Features and About ###
 Iron Maiden is a business that works in favour with the trend of the lazy world. As we indulged in the constant service of UberEats and Airtasker, people like me look towards applications to take care of other issues that my laziness intends to repent. 
 
 With the simplicity of Iron Maiden, your laundry will simply be picked up from your address in Prahan or Richmond and delivered back to you after two days.\
 i.e Richmind, pickup Monday and dropoff Wednesday.
 
+###__ Project Background__ ###
 
+The aim was to find a real world client to represent and present a web application for a final assessment. A minimum of MVP required us to build a working prototype of the client concept and print it to a working deployed URL. Front-end deployed through Netlify and back-end deployed through Ziet Now.
 
-
-
-
-## __Section 1: Description__
-
-
-
-
+Essentially, we needed to find a find an issue with our client's service and find a solution. Considering it had not yet been given a website, our solution was to create the website from scratch. This implements a user login system that uses a boolean (true or false) to determin whether the user was an Admin or normal user. This led into a a user profile that allowed them to place orders for their laundry.
 
 
 ### __Tech Stack__    
