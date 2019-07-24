@@ -97,8 +97,8 @@ class Admin extends React.Component {
     <div className="adminContainer">
       <div className="adminNav">
         <div className="adminButtons">
-          <button onClick={this.handleClick}>Users</button>
           <button onClick={this.handleClick2}>Admin Home</button>
+          <button onClick={this.handleClick}>Users</button>
           <button onClick={this.handleClickOrders}>Orders</button>
         </div>
       </div>
