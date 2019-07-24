@@ -28,7 +28,8 @@
 **[Project Plan](#Project-Plan)**\
 **[Wireframes](#Wireframes)**\
 **[ERD](#ERD-/-Database-Relationships)**\
-**[User Journey Diagram](#User-Journey-Diagram)**\
+**[User stories Diagram](#User-Stories)**\
+**[User Journey Diagram](#User-Journey)**\
 **[Team Communication](#Team-Communication)**\
 **[Task Management](#Task-Management)**\
 **[Version / Source-Control](#Version-/-Source-Control)**
@@ -108,9 +109,7 @@ Essentially, we needed to find a find an issue with our client's service and fin
 ### __Site Map__
 
 
-
-
-
+![Site Map](./src/Site-Map.png "Site Map")
 
 
 
@@ -126,7 +125,6 @@ Essentially, we needed to find a find an issue with our client's service and fin
 - Checkout / payment using Credit Card with Strip Integration
 - Contact form via mailgun
 - Map of the location (Leaflet)
-
 
 
 ### __Screenshots__
@@ -164,9 +162,9 @@ Other laundry websites :
 
 ## User **Stories** && User **Journey** ##
 
-`User Stories`
 
-Using figma, we developed user stories to give an example of a certain situation in which our product would work. A back and forth idea between the admin and user can be invisioned after the story is told.
+### __User Stories__ ###
+Using figma, we created user stories where developed to give an example of a certain situation in which our product would work. A back an forth idea between the admin and user can be invisioned after the story is told.
 Ultimately, gathered out of this can be the way our software features are used to help each perspective.
 
 
