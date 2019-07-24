@@ -14,11 +14,7 @@
 
 ## __Section 1: Description__
 
-### __About CodingTutor__
-
-CodingTutor is a Code Mentoring and Tutoring platfrom built for and by Australian Programmers. Inspired by open source and private projects that operate globally but under-represent Australian developers, CodingTutor is an open-source project built to foster the development of the next generation of Australian software engineers.
-
-In current version 1.0 users create a default account (Student), and can opt in to creating a Tutor account, adding their profile to the list of Tutors students can book coaching with.  
+  
 
 ### __Tech Stack__    
 
@@ -30,13 +26,13 @@ In current version 1.0 users create a default account (Student), and can opt in 
 
 ### __Configuration / Installation Instructions__
 
-1) Within your computer terminal, Nnavigate the directory where you want to install the application files, and run 'git clone https://github.com/JoshTeperman/rails_coding_tutor.git'
+1) Within your CLI, navigate the directory where you want to install the application files, and run 'git clone https://github.com/TridKay99/Breezy-Front-End' and https://github.com/alexanderb444/Breezy-Back-End.
 
-2) Run 'bundle install' to install the dependencies
+2) Run 'npm install' to install the dependencies
 
-3) Run 'rails db:reset' to reset the database
+3) Run 'npx create-react-app filename' to use React for front end.
 
-4) Run rails s to run the server in development mode
+4) Run npm start to run the server in development mode
 
 5) In your browser, navigate to 'http://localhost:3000/' to view the website
 
@@ -47,21 +43,43 @@ In current version 1.0 users create a default account (Student), and can opt in 
 7) Or Sign Up to create a new account
 
 
-## Site Map
+### __Site Map__
 
 
 
-## Features
 
 
+
+
+
+### __Features__
+
+- Secure Login, User Authentication and Authorization
+- Personalized User Profiles
+- Admin Dashboard 
+- Clear, well-organised and innovative UI with slimmed down content and features
+- Order Cart section to select clothings. Auto calculation for total price and a checkout system. 
+- Log in and Sign up modals (pop ups)
+- Checkout / payment using Credit Card with Strip Integration
+- Contact via mailgun
+- Map of the location (Leaflet)
+- View list of orders and make changes
 
 
 ## Screenshots
 
+![Screenshot](./src/Home1.png)\
+![Screenshot](./src/Home2.png)\
+![Screenshot](./src/Home3.png)\
+![Screenshot](./src/Home4.png)\
+![Screenshot](./src/Orders.png)\
+![Screenshot](./src/Profile.png)\
 
 
 
 ## Inspiration / Ideas
+
+
 
 
 
