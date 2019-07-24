@@ -128,6 +128,7 @@ i.e Richmind, pickup Monday and dropoff Wednesday.
 
 ## User Journey
 
+
 <p align="center">
  <img width="" height="120" src=./https://res.cloudinary.com/dqsacxogt/image/upload/v1563936492/Workflow_Diagram_ijwdz0.png></p>
 
