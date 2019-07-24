@@ -13,8 +13,7 @@ class AdminOrders extends React.Component {
           'x-auth-token': `${localStorage.getItem('token')}`
       }
     }
-    const response = await axios.get('http://localhost:5000/api/orders', config)
-    console.log(response.data)
+    const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/orders`, config)
     this.setState({
       orders: response.data
     })

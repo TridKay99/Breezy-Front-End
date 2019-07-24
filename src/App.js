@@ -17,31 +17,31 @@ class App extends React.Component {
       }
     }
     
-    // const response = await axios(`${process.env.BACKEND_URL}/api/profile/usersall`, config)
-    // if (response.data[0]) {
-    //   return this.setState({
-    //     auth: true
-    //   })
-    // } else {
-    //   return this.setState({
-    //     auth: false
-    //   })
-    // }
-    // hit the backend
-    // check the token
-    // get the response
-    // if boolean is true in response set auth to be true
-    // otherwise set auth to be false
+    const response = await axios(`${process.env.REACT_APP_BACKEND_URL}/api/profile/usersall`, config)
+    if (response.data[0]) {
+      return this.setState({
+        auth: true
+      })
+    } else {
+      return this.setState({
+        auth: false
+      })
+    }
+  //   // hit the backend
+  //   // check the token
+  //   // get the response
+  //   // if boolean is true in response set auth to be true
+  //   // otherwise set auth to be false
   }
   render () { 
     const { auth } = this.state
-    if (!this.state.auth) {
-      return null
-    } else {
-      return (
-        <Routes auth={auth} />
-      )
-    }
+    // if (!this.state.auth) {
+    //   return null
+    // } else {
+    return (
+      <Routes auth={auth} />
+    )
+    // }
   }
 }
 

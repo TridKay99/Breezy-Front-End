@@ -26,9 +26,7 @@ class Admin extends React.Component {
           'x-auth-token': `${localStorage.getItem('token')}`
       }
     }
-    console.log(process.env.REACT_APP_BACKEND_URL)
     const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/profile/admins`, config)
-    console.log(response.data)
     this.setState({
       admin: response.data[0].user
     })
@@ -99,8 +97,8 @@ class Admin extends React.Component {
     <div className="adminContainer">
       <div className="adminNav">
         <div className="adminButtons">
-          <button onClick={this.handleClick}>Users</button>
           <button onClick={this.handleClick2}>Admin Home</button>
+          <button onClick={this.handleClick}>Users</button>
           <button onClick={this.handleClickOrders}>Orders</button>
         </div>
       </div>
