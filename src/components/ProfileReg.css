@@ -1,0 +1,56 @@
+.profile-register-container {
+    height: 60rem;
+    /* background-color: #3a7999; */
+    font-family: "Muli", sans-serif;
+    letter-spacing: 0.1rem;
+ 
+}
+
+.fullname {
+    font-size: 1rem;
+}
+
+.fullname-label {
+    width: 10rem;
+}
+
+.creditcard-label {
+    width: 10rem;
+}
+
+.dob-label {
+    width: 10rem;
+}
+
+.creditcard {
+    font-size: 1rem;
+}
+
+.dob {
+    font-size: 1rem;
+}
+
+.profile-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    margin-top: 4rem;
+    /* background-color: red; */
+
+}
+
+.profile-reg-form {
+    padding: 8rem;
+    height: 15rem;
+    width: 10rem;
+    /* background-color: pink; */
+}
+
+.profile-regandform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    /* background-color: purple; */
+}

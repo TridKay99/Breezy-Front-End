@@ -26,7 +26,9 @@ class Admin extends React.Component {
           'x-auth-token': `${localStorage.getItem('token')}`
       }
     }
-    const response = await axios.get('http://localhost:5000/api/profile/admins', config)
+    console.log(process.env.REACT_APP_BACKEND_URL)
+    const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/profile/admins`, config)
+    console.log(response.data)
     this.setState({
       admin: response.data[0].user
     })
@@ -111,9 +113,9 @@ class Admin extends React.Component {
       <AdminOrders orders={this.handleClickOrders} orderSingle={this.handleClickSingleOrder}/> :
       this.state.displaySingle !== null ?
       <GetSingleInfo user={this.state.displaySingle} /> :
-      this.state.orderSingle === null ?
-      this.adminPage() :
-      <DisplayOrder order={this.state.orderSingle} />
+      this.state.orderSingle !== null ?
+      <DisplayOrder order={this.state.orderSingle} /> :
+      this.adminPage()
       }
     </div>
     )
