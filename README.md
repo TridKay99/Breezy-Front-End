@@ -164,8 +164,9 @@ Other laundry websites :
 
 ## User **Stories** && User **Journey** ##
 
-### User Stories ###
-Using figma, we created user stories where developed to give an example of a certain situation in which our product would work. A back an forth idea between the admin and user can be invisioned after the story is told.
+`User Stories`
+
+Using figma, we developed user stories to give an example of a certain situation in which our product would work. A back and forth idea between the admin and user can be invisioned after the story is told.
 Ultimately, gathered out of this can be the way our software features are used to help each perspective.
 
 
@@ -180,6 +181,33 @@ Ultimately, gathered out of this can be the way our software features are used t
  <img width="" height="400" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563936492/UserStories_hnnzot.png></p>
 
 
+`User Journey`
+
+Using Figma, we created a user journey to show the flow of redirection when traveling through our application. Admin and user share different experiences.
+<p align="center">
+ <img width="" height="470" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563937313/WorkFlow_DIagram_ddy5za.png></p>
+
+
+---
+
+## Data Flow Diagram ##
+
+
+With the largely used MERN stack (**M**ongoDB, **E**xpress, **R**eact and **N**ode.js) as well as packages provided and downloaded from npm like Mongoose Axios and React-router-dom, we created a user friendly MVP for Iron Maiden. The data flow diagram for this project is represented below.
+
+<p align="center">
+ <img width="" height="345" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563939241/DataFlow_akewrp.png></p>
+
+---
+
+## OO Design Documentation ##
+
+The OO design thinks about the countless componets and their relationship with, what is exported from and imported into. During the creation of this we thought about the three directions the Home.js could go. One being the Admin.js direction which holds protecting for all its child components. The second being the Registration.js that allows the user to be created which then connects to its child component, ProfileReg.js which then prompts the new user to fill out more information about him/herself. The final third component is the Profile.js that represents the current user's information and holds the important link to the orders.js to create an order for the company, Iron Maiden.
+
+Authetication is importantly held through the App.js as a state thats only changed upon log in. An account variable is looked at. Depending on the the state, the user will be directed to the user page and will not be allowed access to the admin page. Or the admin will be directed to his/her page.
+
+<p align="center">
+ <img width="" height="345" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563939241/OO_Design_Documentation_jr8uwh.png></p>
 
 
 ### __Team Communication__
