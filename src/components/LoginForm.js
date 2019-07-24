@@ -1,6 +1,7 @@
 import React, { Fragment, useState} from 'react'
 import axios from 'axios'
 import './LoginForm.css';
+import { readdirSync } from 'fs';
 
 const LoginForm = () => {
     const [formData, setFormData] = useState({
@@ -11,20 +12,6 @@ const LoginForm = () => {
     const {email, password} = formData
 
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value})
-
-    const validate = () => {
-        if (!localStorage.hasOwnProperty('token')) {
-                console.log("wrong username or password")
-          } else {
-        //   window.location.assign("https://www.google.com")
-        console.log("Correct")
-          }
-    }
-
-    const validatetimer = () => {
-        setInterval(validate(), 200);
-    }
-
 
     const onSubmit = async e => {
         e.preventDefault()
@@ -42,14 +29,22 @@ const LoginForm = () => {
                     }
                 }
                 const body = JSON.stringify(newUser)
-
                 const res = await axios.post('/api/auth', body, config)
+                const config1 = {
+                    headers: {
+                        'x-auth-token': res.data.token
+                    }
+                }
                 await localStorage.setItem('token', res.data.token)
+                const account = await axios.get('api/profile/me', config1)
                 if (!localStorage.hasOwnProperty('token')) {
                     console.log("wrong username or password")
-              } else {
+              } else if (account.data.user.account === false && localStorage.hasOwnProperty('token')) {
               window.location.assign("/orders")
-            console.log("Correct")
+            // console.log(res)
+            console.log(account.data.user.account)
+              } else {
+                window.location.assign("/protected/admin")
               }
                 console.log(res.data.token)
             } catch (err) {

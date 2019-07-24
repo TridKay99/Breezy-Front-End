@@ -211,6 +211,9 @@ class Order extends Component {
         let shirtCount = this.state.cart.filter((item) => item.name === "Shirt").length
         let tieCount = this.state.cart.filter((item) => item.name === "Tie").length
         let scarvesCount = this.state.cart.filter((item) => item.name === "Scarf").length
+        if (!localStorage.hasOwnProperty('token')) {
+            return <h1>YOU NEED TO LOGIN TO VIEW THIS PAGE</h1>
+      } else {
         return (
             <Fragment>
             <div className="MainContainer-O">
@@ -319,6 +322,7 @@ class Order extends Component {
             </Fragment>
         )
     }
+       }
 }
 
 export default Order;
