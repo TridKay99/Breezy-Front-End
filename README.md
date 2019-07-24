@@ -262,13 +262,23 @@ Authetication is importantly held through the App.js as a state thats only chang
 
 
 ### __Team Communication__
+Besides talking in person we would use slack to communicate. 
+
+<p align="center">
+ <img width="" height="345" src=https://imgur.com/VtZWySE.png></p>
+ <p align="center">
+ <img width="" height="345" src=https://imgur.com/YEf0QqO.png></p>
+ <p align="center">
+ <img width="" height="345" src=https://imgur.com/2e1oyPg.png></p>
+ <p align="center">
+ <img width="" height="345" src=https://imgur.com/MeqHXcw.png></p>
 
 
 
 
 
 ### __Task Management__
-
+We used trello for a quick overview of what tasks needed to be completed and stayed in constant communication so we knew who was doing each task.
 <p align="center">
  <img width="" height="345" src=https://imgur.com/sKKdf21.png></p>
 
