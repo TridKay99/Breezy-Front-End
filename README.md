@@ -146,8 +146,61 @@ Other laundry websites :
 
 ### __Project Planning__
 
+After the first meeting with our client, we wrote a Project Plan and approximate timeline: 
 
 
+__WEEK ONE__
+
+FUNDAMENTALS :
+- decide the structure of our app
+- decided on our models and database structure
+- what functionality our users would prefer
+- features
+- wireframes
+- moodboard (design/color/layout)
+- ERD diagram 
+- database set up, models and relationship structure
+- link our github accounts
+- link our trello accounts
+- link figma accounts
+- Pair-programming to create database 
+- deployment to UP for backend and Netlify for frontend
+- basic structure of our files
+
+__WEEK TWO__
+
+
+MVP :
+
+- routes, components
+- distribute workload
+- create structure for homepage (important) 
+- authorisation & authentication
+- stripe
+- css and modals
+- functionality of our app (orders, history, admin dashboards...etc)
+- more styling (for all the different pages)
+- mailgun
+- advanced features
+
+
+Then we decided on our colour palette and some design details: 
+
+![Design](./src/design-details.png "Design Details")
+
+Drafted our user-stories:
+
+![User-Stories](./src/user-stories.png "User Stories")
+
+__WEEK THREE__
+
+
+- completing all the necessary functionalities 
+- more styling (complete for all pages)
+- fixing bugs 
+- deployment
+- readme
+- plan our presentation
 
 
 ### __Wireframes__
