@@ -67,10 +67,10 @@ Tristan Kay
 
 ### __About Iron Maiden__ ###
 
-Iron Maiden is a business that works in favour with the trend of the lazy world. As we indulged in the constant service of UberEats and Airtasker, people like me look towards applications to take care of other issues that my laziness intends to repent. 
+Iron Maiden is a business that works in favour with the trend of the lazy world. As we indulged in the constant service of UberEats and Airtasker, people like us look towards applications to take care of other issues that my laziness intends to repent. 
 
 With the simplicity of Iron Maiden, your laundry will simply be picked up from your address in Prahan or Richmond and delivered back to you after two days.\
-i.e Richmind, pickup Monday and dropoff Wednesday.
+i.e Richmond, pickup Monday and dropoff Wednesday.
 
 ### __Project Background__  
 
@@ -215,6 +215,7 @@ __WEEK THREE__
 
 ## User **Stories** && User **Journey** ##
 
+
 ### __User Stories__ ###
 Using figma, we created user stories where developed to give an example of a certain situation in which our product would work. A back an forth idea between the admin and user can be invisioned after the story is told.
 Ultimately, gathered out of this can be the way our software features are used to help each perspective.
@@ -231,6 +232,33 @@ Ultimately, gathered out of this can be the way our software features are used t
  <img width="" height="400" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563936492/UserStories_hnnzot.png></p>
 
 
+`User Journey`
+
+Using Figma, we created a user journey to show the flow of redirection when traveling through our application. Admin and user share different experiences.
+<p align="center">
+ <img width="" height="470" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563937313/WorkFlow_DIagram_ddy5za.png></p>
+
+
+---
+
+## Data Flow Diagram ##
+
+
+With the largely used MERN stack (**M**ongoDB, **E**xpress, **R**eact and **N**ode.js) as well as packages provided and downloaded from npm like Mongoose Axios and React-router-dom, we created a user friendly MVP for Iron Maiden. The data flow diagram for this project is represented below.
+
+<p align="center">
+ <img width="" height="345" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563939241/DataFlow_akewrp.png></p>
+
+---
+
+## OO Design Documentation ##
+
+The OO design thinks about the countless componets and their relationship with, what is exported from and imported into. During the creation of this we thought about the three directions the Home.js could go. One being the Admin.js direction which holds protecting for all its child components. The second being the Registration.js that allows the user to be created which then connects to its child component, ProfileReg.js which then prompts the new user to fill out more information about him/herself. The final third component is the Profile.js that represents the current user's information and holds the important link to the orders.js to create an order for the company, Iron Maiden.
+
+Authetication is importantly held through the App.js as a state thats only changed upon log in. An account variable is looked at. Depending on the the state, the user will be directed to the user page and will not be allowed access to the admin page. Or the admin will be directed to his/her page.
+
+<p align="center">
+ <img width="" height="345" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1563939241/OO_Design_Documentation_jr8uwh.png></p>
 
 
 ### __Team Communication__
@@ -249,30 +277,37 @@ Ultimately, gathered out of this can be the way our software features are used t
 
 
 ### 1) What are the most important aspects of quality software?
+Based on what we've learnt in this course, and the hands on practical work in this assingment there are a few things that stand out. One is the constant amount of problem solving that is necessary in as a group of students chips away and a full working application.
+Rather than taking on too much and creating a mess for us all to clean up. Limiting problem solving comes with limiting the amount of work you set yourself. As its always good to push yourself, taking on too much with a dead line can end in trouble. A huge aspect is setting a reasonable goal to everyones work ethic and skill.
+
+When thinking about code thats being shared between developers, a large aspect to be thought about is the ability to write clean and well labeled code that is filled with logic. Having the skill to write clean, consice code for your peers to work with is something that should be harnest when thinking about getting a job and merging into the wide world. Working smoothly with the codebase also means working along side someone on a different computer and not overlapping and creating merge conflicts.
 
 
 ### 2) What libraries are being used in the app and why?
 
 Many libraries are involved in the creation of this app including React, Node.js, axios, react-router-dom and mongoose.
 
-__React__\
-React may be seen as a framework rather than a library, however many have argued that it is qualified as both.
-React is a library for building composable user interfaces. It encourages the creation of reusable UI components which present data that changes over time.
+`Frontend`
 
-__Node.js/NPM__\
-Node.js is also very popular due to its large ecosystem of libraries known as NPM modules. NPM stands for Node Package Manager. It is the largest software package library in the world, with over 600,000 packages.
+  - **React v16.8.6:** A JavaScript library for creating user interfaces
+  - **React-router-dom v5.0.:** Collection of navigational components that compose declaratively with your application
+    - link
+    - BrowserRouter
+    - Switch
+    - Route
+  - **axios v0.19.0:** Promise based HTTP client for the browser and node.js
+  - **leaflet v1.5.1:** Open-source JavaScript library for interactive maps
+  - **font-awesome v4.7.0:** Full suite of pictographic icons for easily scalble vector graphics.
 
-__React-router-dom__\
--- link
--- BrowserRouter
--- switch
--- Route
 
-__Axios__\
-Axios is a very popular JavaScript library you can use to perform HTTP requests.
+`Backend`
 
-__Mongoose__\
-Mongoose (web server) Mongoose is a cross-platform embedded web server and networking library with functions including TCP, HTTP client and server, WebSocket client and server, MQTT client and broker and much more. The small size of the software enables any Internet-connected device to function as a web server.
+  - **dotenv v8.0.0:** Zero-dependency module that loads environment variables from a .env file into process.env.
+  - **mongoose v5.6.3:** MongoDB object modeling tool design to work in an asynchronous environment.
+  - **express v4.17.1:** Fast, unopinionated, minimalist web framework for node.
+  - **cors v2.8.5:** Provides a Connents/Express middleware that can be used to enable CORS with various options.
+  - **jsonwebtoken v8.5.1:** An implementation of JSON web tokens.
+  - **mailgun v0.5.0:** Simple Node.js module for Mailgun.
 
 
 ### 3)  A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
