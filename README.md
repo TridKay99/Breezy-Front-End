@@ -25,6 +25,12 @@ Tristan Kay
 ---
 
 ## About Iron Maiden
+
+###Project Background
+
+The aim was to find a real world client to represent and present a web application for a final assessment. A minimum of MVP required us to build a working prototype of the client concept and print it to a working deployed URL. Front-end deployed through Netlify and back-end deployed through Ziet Now. Essentially, we needed to find a find an issue with our client's service and find a solution. 
+
+
 Iron Maiden is a business that works in favour with the trend of the lazy world. As we indulged in the constant service of UberEats and Airtasker, people like me look towards applications to take care of other issues that my laziness intends to repent. 
 
 With the simplicity of Iron Maiden, your laundry will simply be picked up from your address in Prahan or Richmond and delivered back to you after two days.\
