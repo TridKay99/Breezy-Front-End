@@ -1,12 +1,35 @@
-# Breezy
+# IRON MAIDEN
 
+## GitHub Repositories ##
 [GithHub Repo Front-End](https://github.com/TridKay99/Breezy-Front-End)\
-[GitHub Repo Back-End](https://github.com/alexanderb444/Breezy-Back-End)\
-[Live App](https://compassionate-saha-819100.netlify.com/)
+[GitHub Repo Back-End](https://github.com/alexanderb444/Breezy-Back-End)
+
+## Deployed ##
+[Live App](https://compassionate-saha-819100.netlify.com/)\
+[BackEnd Deploy](https://breezy-back-end.tridkay90.now.sh/)
 
 ---
-## Contents
-<!-- links  -->
+
+## Summary ##
+Iron Maiden is a service that allows users to log in and make an order to have their laundry pickedup and dropped off two days later.
+
+This application is built using javascript and the MERN stack (**M**ongoDB, **E**xpress, **R**eact and **N**ode.js) for our final assignment at Coder Academy.
+
+---
+
+## Contributors ##
+Suet Er Lee\
+Alex Bishop\
+Tristan Kay
+
+---
+
+## About Iron Maiden
+Iron Maiden is a business that works in favour with the trend of the lazy world. As we indulged in the constant service of UberEats and Airtasker, people like me look towards applications to take care of other issues that my laziness intends to repent. 
+
+With the simplicity of Iron Maiden, your laundry will simply be picked up from your address in Prahan or Richmond and delivered back to you after two days.\
+i.e Richmind, pickup Monday and dropoff Wednesday.
+
 
 
 
