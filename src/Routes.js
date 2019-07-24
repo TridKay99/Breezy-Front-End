@@ -16,6 +16,7 @@ import AdminOrders from './components/AdminOrders'
 import Users from './components/Users'
 import Email from './components/email'
 import ProfileReg from './components/ProfileReg'
+import UserOrders from './components/UserOrders'
 // import SingleUser from './components/GetSingleInfo'
 
 class Routes extends React.Component {
@@ -23,16 +24,17 @@ class Routes extends React.Component {
     const { auth } = this.props
     return (
       <Switch>
-        {/* Protected Routes */}
+
         <ProtectedRoutes path="/protected" component={Admin} auth={auth} />
-        {/* Unprotected Routes */}
+
         <Route path="/about" component= {About} />
         <Route path="/faq" component= {Faq} />
         <Route exact path="/" component={Home} />
-        <Route path="/orders" exact component={Order} />
+        <Route path="/orders" exact component={Order} />te
         <Route path="/profile" component={Profile} />
         <Route path="/adminorders" component={AdminOrders} />
-        {/* conditional if admin to view this */}
+        <Route path="/userorders" component={UserOrders} />
+
         <Switch>
           <Route exact path='/register'component={Register}/>
           <Route path="/login" component={LoginForm} />
@@ -41,7 +43,7 @@ class Routes extends React.Component {
         </Switch>
         {/* <Route path='/user/:email' component={SingleUser} /> */}
 
-        <Route component={Nomatch} />
+        <Route component={Nomatch} /> */}
       </Switch>
     );
   }

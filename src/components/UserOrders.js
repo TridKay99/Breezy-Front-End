@@ -2,18 +2,17 @@ import React from 'react';
 import axios from 'axios'
 import Users from './Users'
 import GetSingleInfo from './GetSingleInfo'
-import AdminOrders from './AdminOrders'
 import './cssComponents/Admin.css'
 import { Link } from 'react-router-dom'
 import Home from './Home'
 import DisplayOrder from './displayOrder'
+import UserOrders1 from './UserOrders1'
+import Nav from './Nav';
 
-class Admin extends React.Component {
+class UserOrders extends React.Component {
 
   state = {
-    admin: null,
     users: false,
-    displaySingle: null,
     orders: false,
     orderSingle: null
   };
@@ -25,24 +24,6 @@ class Admin extends React.Component {
           'Content-Type': 'application/json',
           'x-auth-token': `${localStorage.getItem('token')}`
       }
-    }
-    const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/profile/admins`, config)
-    this.setState({
-      admin: response.data[0].user
-    })
-  }
-
-  adminPage = () => {
-    const { admin } = this.state
-    if (!admin) {
-      return null
-    } else {
-      return(
-      <div className="adminInfo">
-        <p>{admin.date}</p>
-        <p>{admin.email}</p>
-      </div>
-      )
     }
   }
 
@@ -95,29 +76,20 @@ class Admin extends React.Component {
   render() {
     return(
     <div className="adminContainer">
+      <Nav />
       <div className="adminNav">
-        <div className="adminButtons">
-          <button onClick={this.handleClick2}>Admin Home</button>
-          <button onClick={this.handleClick}>Users</button>
-          <button onClick={this.handleClickOrders}>Orders</button>
-        </div>
       </div>
       <div className="adminTitle">
-        <h2>Hello Admin</h2>
+        <h2>Order History</h2>
+        {this.state.orders}
       </div>
-      {this.state.users ?
-      <Users displaySingle={this.handleClickSingleUser}/> : 
-      this.state.orders === true ?
-      <AdminOrders orders={this.handleClickOrders} orderSingle={this.handleClickSingleOrder}/> :
-      this.state.displaySingle !== null ?
-      <GetSingleInfo user={this.state.displaySingle} /> :
-      this.state.orderSingle !== null ?
-      <DisplayOrder order={this.state.orderSingle} /> :
-      this.adminPage()
-      }
+      <UserOrders1 orders={this.handleClickOrders} orderSingle={this.handleClickSingleOrder}/>
+      <GetSingleInfo user={this.state.displaySingle} /> 
+      <DisplayOrder order={this.state.orderSingle} />
+      
     </div>
     )
   }
 }
 
-export default Admin;
+export default UserOrders;

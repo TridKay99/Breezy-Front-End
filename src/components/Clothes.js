@@ -7,7 +7,7 @@ class Clothes extends React.Component {
   };
 
   async componentDidMount() {
-    const response = await axios('http://localhost:5000/api/clothes/')
+    const response = await axios(`${process.env.REACT_APP_BACKEND_URL}/api/clothes/`)
     this.setState({
       clothes: response.data
     })

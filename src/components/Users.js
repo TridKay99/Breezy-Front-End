@@ -9,7 +9,7 @@ class AllUsers extends React.Component {
   };
 
   async componentDidMount() {
-    const response = await axios('http://localhost:5000/api/profile/users')
+    const response = await axios(`${process.env.REACT_APP_BACKEND_URL}api/profile/users`)
     this.setState({
       users: response.data
     })

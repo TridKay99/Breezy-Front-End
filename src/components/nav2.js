@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Icon from '../Group.svg';
 
-class Nav extends React.Component {
+class Nav2 extends React.Component {
 
   logout = () => {
     localStorage.removeItem('token')
@@ -21,14 +21,6 @@ return <li><Link className="Contact" onClick={this.logout} to={"/"}>Log Out</Lin
       return null
 } else {
 return <li><Link to={'/userorders'} className="Contact">Order History</Link></li>
-}
-  }
-
-  ifloggedin3 = () => {
-    if (!localStorage.hasOwnProperty('token')) {
-      return null
-} else {
-return <li><Link to={'/profile'} className="Contact">Profile</Link></li>
 }
   }
 
@@ -56,9 +48,11 @@ return <li><Link to={'/profile'} className="Contact">Profile</Link></li>
         <li><i className="fa fas fa-spinner fa-spin"></i></li>
       </div>
       <div className="content">
-        {this.ifloggedin3()}
+        <li><a href="#hiw" className="Hiw" to={"/about"}>HOW IT WORKS</a></li>
+        <li><a href="#pricing" className="Price" to={"/pricing"}>PRICING</a></li>
+        <li><Link className="Faq" to={"/Faq"}>FAQ</Link></li>
+        <li><Link className="Contact" to={"/email"}>Contact</Link></li>
         {this.ifloggedin2()}
-        <li><Link to={'/email'} className="Contact" >Contact</Link></li>
         {this.ifloggedin()}
       </div>
     </ul>
@@ -67,4 +61,4 @@ return <li><Link to={'/profile'} className="Contact">Profile</Link></li>
   }
 }
 
-export default Nav
+export default Nav2

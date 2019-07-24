@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
-class AdminOrders extends React.Component {
+class UserOrders1 extends React.Component {
   state = {
     orders: null
   }
@@ -13,7 +13,8 @@ class AdminOrders extends React.Component {
           'x-auth-token': `${localStorage.getItem('token')}`
       }
     }
-    const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/orders`, config)
+    const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/orders/me`, config)
+    console.log(response.data)
     this.setState({
       orders: response.data
     })
@@ -30,7 +31,7 @@ class AdminOrders extends React.Component {
     } else {
       return(
         <>
-        <h1>you have {orders.length}'s orders</h1>
+        <h1>You have {orders.length}'s orders</h1>
         {orders.map((order, index) => {
         return <button className="orderButtons" key={index} onClick={() => this.handleOrderInfo(order)}>{order.location} ${order.price.toFixed(2)}</button>
         })}
@@ -40,4 +41,4 @@ class AdminOrders extends React.Component {
   }
 }
 
-export default AdminOrders
+export default UserOrders1

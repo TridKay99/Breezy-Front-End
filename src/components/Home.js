@@ -8,7 +8,7 @@ import Laundry from '../laundry2.jpg';
 import Login from './Login';
 import Signup from './Signup';
 import Email from './email';
-import Nav from './Nav';
+import Nav2 from './nav2';
 import Icon from '../Group.svg';
 
 
@@ -18,7 +18,7 @@ const Home = () => {
 return (
   
   <div className="MainContainer">
-    <Nav />
+    <Nav2 />
     {/* <div class="parallax"></div> */}
     <div className="home">
       <img src={Laundry} alt="laundry" className="laundry"/>
@@ -178,19 +178,6 @@ return (
       </div>
 
       <div className="parallax"></div>
-      {/* <div id="contact" className="Contact"> 
-        <h1 className="contact-us-word">Contact Us</h1>   
-        <div className="contact-us-form-container">
-          <form className="contact-us-form">
-            <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
-            <label for="nme"><span>What's your email?</span></label>
-            <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
-            <label for="msg"><span>What's your message?</span></label>
-            <input id="contact-submit" type="submit" value="SUBMIT" />
-          </form>     
-        </div>  
-      </div>   */}
-      <Email />
       <div className="back-to-top"><a href="#top"><p id="back-to-top-map">Back to top <i class="fa fas fa-chevron-up"></i></p></a></div>
       <p className="map-subtext">Here's a simple map of where we are</p>      
       <div className="map-container">  
