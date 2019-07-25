@@ -17,8 +17,15 @@ class App extends React.Component {
       }
     }
     
+<<<<<<< HEAD
     const response = await axios(`${process.env.REACT_APP_BACKEND_URL}api/profile/usersall`, config)
     console.log('hello')
+=======
+
+    const response = await axios(`${process.env.REACT_APP_BACKEND_URL}/api/profile/usersall`, config)
+    console.log('hello')
+
+>>>>>>> a1e5cb66bc30746b34dfeffd70ad412280011be5
     if (response.data[0]) {
       return this.setState({
         auth: true
