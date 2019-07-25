@@ -43,13 +43,15 @@ const LoginForm = () => {
                 if (!localStorage.hasOwnProperty('token')) {
                     console.log("wrong username or password")
               } else if (account.data.user.account === false && localStorage.hasOwnProperty('token')) {
-              window.location.assign("/orders")
+              window.location.href = "/orders"
+            //   history.push('/orders')
             //   return <Link to={'/orders'}>Profile</Link>
             //   return <Redirect push to="/orders" />;
             // console.log(res)
             // console.log(account.data.user.account)
               } else {
-                window.location.assign("/protected/admin")
+                window.location.href = "/protected/admin"
+                // history.push('/protected/admin')
                 // return <Link to={'/protected/admin'} className="Contact">Profile</Link>
                 // return <Redirect push to="/protected/admin" />;
               }
