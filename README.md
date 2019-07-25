@@ -66,7 +66,7 @@ i.e Richmond, pickup Monday and dropoff Wednesday.
 
 The aim was to find a real world client to represent and present a web application for a final assessment. A minimum of MVP required us to build a working prototype of the client concept and print it to a working deployed URL. Front-end deployed through Netlify and back-end deployed through Ziet Now.
 
-Essentially, we needed to find a find an issue with our client's service and find a solution. Considering it had not yet been given a website, our solution was to create the website from scratch. This implements a user login system that uses a boolean (true or false) to determin whether the user was an Admin or normal user. This led into a a user profile that allowed them to place orders for their laundry.
+Essentially, we needed to find a find an issue with our client's service and find a solution. Considering it had not yet been given a website, our solution was to create the website from scratch. This implements a user login system that uses a boolean (true or false) to determine whether the user was an Admin or normal user. This led into a a user profile that allowed them to place orders for their laundry.
 
 
 ### __Tech Stack__    
@@ -124,7 +124,8 @@ Essentially, we needed to find a find an issue with our client's service and fin
 ![Screenshot](./src/Home3.png)\
 ![Screenshot](./src/Home4.png)\
 ![Screenshot](./src/Orders.png)\
-![Screenshot](./src/Profile.png)
+![Screenshot](./src/Profile.png)\
+![Screenshot](./src/OrderHistory.png)
 
 
 ### __Inspiration / Ideas__
