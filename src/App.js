@@ -6,7 +6,7 @@ import axios from 'axios'
 
 class App extends React.Component {
   state = {
-    auth: true
+    auth: false
   }
 
   async componentDidMount() {
@@ -18,6 +18,7 @@ class App extends React.Component {
     }
     
     const response = await axios(`${process.env.REACT_APP_BACKEND_URL}/api/profile/usersall`, config)
+    console.log('hello')
     if (response.data[0]) {
       return this.setState({
         auth: true
@@ -33,7 +34,7 @@ class App extends React.Component {
   //   // if boolean is true in response set auth to be true
   //   // otherwise set auth to be false
   }
-  render () { 
+  render () {
     const { auth } = this.state
     // if (!this.state.auth) {
     //   return null
