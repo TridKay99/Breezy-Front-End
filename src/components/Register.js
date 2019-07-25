@@ -35,7 +35,8 @@ const Register = () => {
                 if (!localStorage.hasOwnProperty('token')) {
                     console.log("Wrong data entered")
               } else {
-              window.location.assign("/profilereg")
+            //   window.location.assign("/profilereg")
+              window.location.href = "/profilereg"
             console.log("Correct")
               }
                 console.log(res.data)
