@@ -14,7 +14,6 @@ class UserOrders1 extends React.Component {
       }
     }
     const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}api/orders/me`, config)
-    console.log(response.data)
     this.setState({
       orders: response.data
     })
@@ -26,6 +25,7 @@ class UserOrders1 extends React.Component {
 
   render() {
     const { orders } = this.state
+    console.log(orders)
     if (!orders) {
       return null
     } else {
@@ -33,7 +33,7 @@ class UserOrders1 extends React.Component {
         <>
         <h1>You have {orders.length}'s orders</h1>
         {orders.map((order, index) => {
-        return <button className="orderButtons" key={index} onClick={() => this.handleOrderInfo(order)}>{order.location} ${order.price.toFixed(2)}</button>
+          return <button className="orderButtons" key={index} onClick={() => this.handleOrderInfo(order)}>{order.location} ${order.price.toFixed(2)}</button>
         })}
         </>
       )
