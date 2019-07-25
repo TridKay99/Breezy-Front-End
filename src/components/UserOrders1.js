@@ -25,7 +25,6 @@ class UserOrders1 extends React.Component {
 
   render() {
     const { orders } = this.state
-    console.log(orders)
     if (!orders) {
       return null
     } else {
