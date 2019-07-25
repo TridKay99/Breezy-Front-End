@@ -216,7 +216,7 @@ __WEEK THREE__
 
 ### __ERD__
 
-![ERD](./docs/ERD.png "ERD")
+![ERD](./src/ERD.png "ERD")
 
 ---
 
