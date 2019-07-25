@@ -281,9 +281,6 @@ Besides talking in person we would also use slack to communicate.
  <img width="" height="345" src=https://imgur.com/MeqHXcw.png></p>
 
 
-
-
-
 ### __Task Management__
 We used trello for a quick overview of what tasks needed to be completed and stayed in constant communication so we knew who was doing each task.
 <p align="center">
