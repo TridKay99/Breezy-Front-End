@@ -194,7 +194,7 @@ class Order extends Component {
 
                 // const body = JSON.stringify(order1)
                 console.log('here')
-                const res = await axios.post('/api/orders', order, config)
+                const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/orders`, order, config)
                 console.log(res.data)
             } catch (err) {
                 console.error(err.response.data)
