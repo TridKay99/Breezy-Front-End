@@ -33,21 +33,9 @@
 **[Data Flow Diagram](#Data-Flow-Diagram)**\
 **[OO Design Documentation](#OO-Design-Documentation)**\
 **[Team Communication](#Team-Communication)**\
-**[Task Management](#Task-Management)**\
-**[Version / Source-Control](#Version-/-Source-Control)**
+**[Task Management](#Task-Management)**
 
 **[=> Section 3: Short Answer Questions](#Section-3:-Short-Answer-Questions)**
-
-**[=> Section 4: Reflection](#Section-4:-Reflection)**
-
-**[Challenges](#Challenges)**\
-**[Take-Aways](#Take-Aways)**\
-**[Extending-Coding-Tutor](#Extending-Breezy)**
-
-**[=> Section 4: Section 5: Appendix](#Section-5:-Appendix)**
-**[Single Page Scrolling](#Single-Page-Scrolling)**\
-**[Search & Filtering](#Search-&-Filtering)**
-
 
 ---
 ## __Section 1: Description__
