@@ -5,7 +5,7 @@
 [GitHub Repo Back-End](https://github.com/alexanderb444/Breezy-Back-End)
 
 ## Deployed ##
-[Live App](https://compassionate-saha-819100.netlify.com/)\
+[Live App](https://tender-hodgkin-a112a7.netlify.com)\
 [BackEnd Deploy](https://breezy-back-end.tridkay90.now.sh/)
 
 ## Contents
@@ -286,6 +286,22 @@ We used trello for a quick overview of what tasks needed to be completed and sta
 <p align="center">
  <img width="" height="345" src=https://imgur.com/sKKdf21.png></p>
 
+---
+
+### Client Diary ###
+
+<p align="center">
+ <img width="" height="345" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1564034299/Screen_Shot_2019-07-25_at_3.57.53_pm_f2lvew.png></p>
+
+---
+
+### Clients Questionnaire ###
+
+<p align="center">
+<img width="" height="395" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1564034421/Screen_Shot_2019-07-25_at_3.59.01_pm_qky1xl.png></p>
+
+<p align="center">
+<img width="" height="300" src=https://res.cloudinary.com/dqsacxogt/image/upload/v1564034426/Screen_Shot_2019-07-25_at_3.59.07_pm_reft4p.png></p>
 
 
 ---
