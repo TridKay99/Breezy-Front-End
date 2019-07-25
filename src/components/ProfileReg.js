@@ -32,8 +32,8 @@ class ProfileReg extends Component {
                 }
 
                 // const body = JSON.stringify(order1)
-                const res = await axios.post('/api/profile', order, config)
-                window.location.assign("/orders")
+                const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/profile`, order, config)
+                window.location.href = "/orders"
                 console.log(res.data)
             } catch (err) {
                 console.error(err.response.data)
