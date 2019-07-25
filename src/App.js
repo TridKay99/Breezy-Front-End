@@ -17,7 +17,7 @@ class App extends React.Component {
       }
     }
 
-    const response = await axios(`${process.env.REACT_APP_BACKEND_URL}/api/profile/usersall`, config)
+    const response = await axios(`${process.env.REACT_APP_BACKEND_URL}api/profile/usersall`, config)
     console.log('hello')
     if (response.data[0]) {
       return this.setState({
