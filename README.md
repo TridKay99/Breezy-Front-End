@@ -214,11 +214,11 @@ __WEEK THREE__
 
 ### __Wireframes__
 
-![Wireframes (1)](./docs/wireframes1.png "Wireframes")
-![Wireframes (2)](./docs/wireframes2.png "Wireframes")
-![Wireframes (3)](./docs/wireframes3.png "Wireframes")
-![Wireframes (4)](./docs/wireframes4.png "Wireframes")
-![Wireframes (7)](./docs/wireframes7.png "Wireframes")
+![Wireframes (1)](./src/wireframes1.png "Wireframes")
+![Wireframes (2)](./src/wireframes2.png "Wireframes")
+![Wireframes (3)](./src/wireframes3.png "Wireframes")
+![Wireframes (4)](./src/wireframes4.png "Wireframes")
+![Wireframes (5)](./src/wireframes5.png "Wireframes")
 
 ### __ERD__
 
