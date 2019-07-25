@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom';
 import Icon from '../Group.svg';
 import Nav from './Nav';
 import './Orders.css';
+import Stripe from './Stripe'
 
 
 class Order extends Component {
     state = {
+        checkout: null,
         cart: [],
         location: null,
         ids: [],
@@ -195,7 +197,7 @@ class Order extends Component {
                 // const body = JSON.stringify(order1)
                 console.log('here')
                 const res = await axios.post('/api/orders', order, config)
-                console.log(res.data)
+                this.props.history.push('/checkout')
             } catch (err) {
                 console.error(err.response.data)
             }
@@ -311,14 +313,11 @@ class Order extends Component {
                                         </div>
                                     </div>
                                 </div>
-                        </div>
-                                
-                                </div>
-                            
+                            </div>
+                            </div>
                         </div>
                         </div>
-                    </div>                    
-              
+                    </div>
             </Fragment>
         )
     }

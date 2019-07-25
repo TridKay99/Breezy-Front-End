@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+.adminOrderTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  font-family: 'Muli', sans-serif;
+}
+
+.adminOrdersContainer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Muli', sans-serif;
+}
+
+.adminOrders2 {
+  overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Muli', sans-serif;
+}

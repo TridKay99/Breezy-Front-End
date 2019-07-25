@@ -29,7 +29,7 @@ const LoginForm = () => {
                     }
                 }
                 const body = JSON.stringify(newUser)
-                const res = await axios.post('/api/auth', body, config)
+                const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/auth`, body, config)
                 const config1 = {
                     headers: {
                         'x-auth-token': res.data.token
