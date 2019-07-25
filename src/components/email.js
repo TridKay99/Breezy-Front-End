@@ -30,7 +30,7 @@ class Email extends Component {
             try {
 
                 // const body = JSON.stringify(order1)
-                const res = await axios.post('/api/email', order)
+                const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/email`, order)
                 console.log(res.data)
                 alert("Email Sent")
             } catch (err) {
