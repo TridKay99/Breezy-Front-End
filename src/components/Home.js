@@ -24,10 +24,11 @@ return (
       <img src={Laundry} alt="laundry" className="laundry"/>
       <div className="home-section ">
         <div id="home" className="section-content">
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, t labore et dolore magna aliqua </h4>
-          <h4>sed do eiusmod temporincididunt ut labore et dolore magna aliqua  et dolore magna aliqua .</h4> 
-          <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat. </h4>
-          <h4>Ut enim ad minim veniam, quis nostrud exercitation . </h4>
+          <h4>Iron Maiden is a business that works in favour with the trend of the lazy world.</h4>
+          <h4>As we indulged in the constant service of UberEats and Airtasker, people like us look</h4> 
+          <h4>towards applications to take care of other issues that my laziness intends to repent.</h4>
+          <h4>With the simplicity of Iron Maiden, your laundry will simply be picked up from your</h4>
+          <h4>address in Prahan or Richmond and delivered back to you after two days.</h4>
           <div className="button-container">
             <Login />
             <Signup />

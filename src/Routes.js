@@ -18,6 +18,7 @@ import Email from './components/email'
 import ProfileReg from './components/ProfileReg'
 import UserOrders from './components/UserOrders'
 // import SingleUser from './components/GetSingleInfo'
+import Stripe from './components/Stripe'
 
 class Routes extends React.Component {
   render () {
@@ -30,10 +31,11 @@ class Routes extends React.Component {
         <Route path="/about" component= {About} />
         <Route path="/faq" component= {Faq} />
         <Route exact path="/" component={Home} />
-        <Route path="/orders" exact component={Order} />te
+        <Route path="/orders" exact component={Order} />
         <Route path="/profile" component={Profile} />
         <Route path="/adminorders" component={AdminOrders} />
         <Route path="/userorders" component={UserOrders} />
+        <Route path="/checkout" component={Stripe} />
 
         <Switch>
           <Route exact path='/register'component={Register}/>

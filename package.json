@@ -12,6 +12,7 @@
     "font-awesome": "^4.7.0",
     "get-google-fonts": "^1.2.0",
     "leaflet": "^1.5.1",
+    "netlify": "^2.4.8",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-alert": "^5.5.0",

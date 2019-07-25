@@ -8,15 +8,15 @@ class DisplayOrder extends React.Component {
     if (!this.props.order) {
       return null
     } else {
-      console.log(this.props.order)
       return (
       <React.Fragment>
         <div className="clothingTitle">
-          <h3>Title</h3>
+          <h3>Order</h3>
         </div>
         <div className="orderContainer">
           <p>Email:</p> <h4>{this.props.order.user.email}</h4>
           <p>Address:</p> <h4>{this.props.order.location}</h4>
+          <a href="https://www.google.com/maps" class="button">Google Maps</a>
           <div className="order">
             <h3>Order:</h3>
           </div>
