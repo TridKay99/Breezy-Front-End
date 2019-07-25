@@ -18,18 +18,20 @@
 **[Background](#Project-background)**\
 **[Tech Stack](#Tech-Stack)**\
 **[Configuration](#Configuration-/-Installation-Instructions)**\
-**[Sitemap](#Sitemap)**\
+**[Sitemap](#Site-Map)**\
 **[Features](#Features)**\
 **[Screenshots](#Screenshots)**\
 **[Our Inspiration & The Idea](#Inspiration-/-Ideas)**
 
 **[=> Section 2: Planning](#Section-2:-Planning)**
 
-**[Project Plan](#Project-Plan)**\
+**[Project Plan](#Project-Planning)**\
 **[Wireframes](#Wireframes)**\
-**[ERD](#ERD-/-Database-Relationships)**\
+**[ERD](#ERD)**\
 **[User stories Diagram](#User-Stories)**\
 **[User Journey Diagram](#User-Journey)**\
+**[Data Flow Diagram](#Data-Flow-Diagram)**\
+**[OO Design Documentation](#OO-Design-Documentation)**\
 **[Team Communication](#Team-Communication)**\
 **[Task Management](#Task-Management)**\
 **[Version / Source-Control](#Version-/-Source-Control)**
@@ -153,6 +155,9 @@ Other laundry website that inspired us was : https://www.laundrychief.com/
 The functionality of this website is very user friendly and easy to use. It has inspired us to create a simple and intuitive website which includes features such as 'make an order' , 'admin dashboard', and 'order history'. The eye-catching and simple combination of colours inspired us to create a straightforward and clean looking website.
 
 
+## __Section 2: Planning__
+
+
 ### __Project Planning__
 
 After the first meeting with our client, we wrote a Project Plan and approximate timeline: 
@@ -254,7 +259,7 @@ Using Figma, we created a user journey to show the flow of redirection when trav
 
 ---
 
-## Data Flow Diagram ##
+### __Data Flow Diagram__ 
 
 
 With the largely used MERN stack (**M**ongoDB, **E**xpress, **R**eact and **N**ode.js) as well as packages provided and downloaded from npm like Mongoose Axios and React-router-dom, we created a user friendly MVP for Iron Maiden. The data flow diagram for this project is represented below.
@@ -264,7 +269,7 @@ With the largely used MERN stack (**M**ongoDB, **E**xpress, **R**eact and **N**o
 
 ---
 
-## OO Design Documentation ##
+### __OO Design Documentation__
 
 The OO design thinks about the countless componets and their relationship with, what is exported from and imported into. During the creation of this we thought about the three directions the Home.js could go. One being the Admin.js direction which holds protecting for all its child components. The second being the Registration.js that allows the user to be created which then connects to its child component, ProfileReg.js which then prompts the new user to fill out more information about him/herself. The final third component is the Profile.js that represents the current user's information and holds the important link to the orders.js to create an order for the company, Iron Maiden.
 
