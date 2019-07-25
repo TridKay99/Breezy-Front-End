@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import './cssComponents/AdminOrders.css'
 
 class AdminOrders extends React.Component {
   state = {
@@ -30,10 +31,16 @@ class AdminOrders extends React.Component {
     } else {
       return(
         <>
-        <h1>you have {orders.length}'s orders</h1>
-        {orders.map((order, index) => {
-        return <button className="orderButtons" key={index} onClick={() => this.handleOrderInfo(order)}>{order.location} ${order.price.toFixed(2)}</button>
-        })}
+          <div className="adminOrderTitle">
+            <h3>you have {orders.length}'s orders</h3>
+          </div>
+          <div className="adminOrdersContainer2">
+            <div className="adminOrders2">
+              {orders.map((order, index) => {
+              return <button className="orderButtons" key={index} onClick={() => this.handleOrderInfo(order)}>{order.location} ${order.price.toFixed(2)}</button>
+              })}
+            </div>
+          </div>
         </>
       )
     }
