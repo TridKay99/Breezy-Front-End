@@ -30,7 +30,7 @@ const Register = () => {
                 }
                 const body = JSON.stringify(newUser)
 
-                const res = await axios.post('/api/users', body, config)
+                const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/users`, body, config)
                 await localStorage.setItem('token', res.data.token)
                 if (!localStorage.hasOwnProperty('token')) {
                     console.log("Wrong data entered")
